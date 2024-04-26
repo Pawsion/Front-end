@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +11,20 @@ module.exports = {
         mainColorWhite: '#FEF9F3',
         pageColorWhite: '#F2F2F2'
       },
+      keyframes: {
+        slideInRight: {
+          '0%': { transform: 'translateX(-20%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        slideInLeft: {
+          '0%': { transform: 'translateX(20%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+      },
+      animation: {
+        slideInRight: 'slideInRight 2s ease-in-out forwards',
+        slideInLeft: 'slideInLeft 2s ease-in-out forwards',
+      },
       backgroundColor: {
         'custom-gray': '#F2F2F2',
       },
@@ -19,6 +32,7 @@ module.exports = {
         Bogart: ['Bogart', 'sans-serif'],
         OpenSans: ['Open Sans', 'sans-serif'],
       },
+      
     },
   },
   
