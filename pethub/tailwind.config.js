@@ -23,7 +23,7 @@ module.exports = {
       },
       animation: {
         slideInRight: 'slideInRight 2s ease-in-out forwards',
-        slideInLeft: 'slideInLeft 2s ease-in-out forwards',
+        slideInLeft: 'slideInLeft 3s ease-in-out forwards',
       },
       backgroundColor: {
         'custom-gray': '#F2F2F2',
