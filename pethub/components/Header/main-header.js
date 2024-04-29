@@ -1,7 +1,20 @@
+"use client";
 import Link from "next/link";
 import logoImage from "@/assets/images/logoImage.png";
+import { useState } from "react";
+import LoginForm from "../Login/loginForm";
 
 export default function MainHeader() {
+  const [showLoginForm, setShowLoginForm] = useState(false);
+
+  const handleLoginClick = () => {
+    setShowLoginForm(true);
+  };
+
+  const handleCloseLoginForm = () => {
+    setShowLoginForm(false);
+  };
+
   return (
     <header className="bg-mainColorBlue py-4 px-8 flex justify-between items-center" style={{ padding: "28px 8px" }}>
       <div className="flex items-center ml-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
@@ -18,8 +31,9 @@ export default function MainHeader() {
         <Link href="/dresura">Dresura</Link>
         <Link href="/parkici">Parkići</Link>
         <Link href="/blog">Blog</Link>
-        <Link href="/login">Login</Link>
+        <a href="#" onClick={handleLoginClick}>Login</a>
       </nav>
+      {showLoginForm && <LoginForm onClose={handleCloseLoginForm} />}
     </header>
   );
 }
