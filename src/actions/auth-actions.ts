@@ -1,4 +1,4 @@
-import { users } from "../shared/dummy";
+import { users } from "../../shared/dummy";
 
 export async function login(formData: { get: (arg0: string) => string }) {
   const username = formData.get("username");

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import logoImage from "../../public/assets/images/logoImage.png";
+import logoImage from "../../../public/assets/images/logoImage.png";
 import { useState } from "react";
 import LoginForm from "../Login/loginForm";
 import Image from "next/image";
