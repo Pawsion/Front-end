@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ButtonKlikinder() {
   return (
-    <button className="bg-mainColorBlue text-mainColorWhite py-4 px-10 rounded-full mt-16 font-Bogart w-56 ml-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 animate-slideInRight">
+    <button className="ml-56 mt-16 w-56 animate-slideInRight rounded-full bg-mainColorBlue px-10 py-4 font-Bogart text-mainColorWhite transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500">
       Kliknider!
     </button>
   );

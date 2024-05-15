@@ -18,10 +18,10 @@ export default function MainHeader() {
 
   return (
     <header
-      className="bg-mainColorBlue py-4 px-8 flex justify-between items-center"
+      className="flex items-center justify-between bg-mainColorBlue px-8 py-4"
       style={{ padding: "28px 8px" }}
     >
-      <div className="flex items-center ml-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+      <div className="ml-56 flex items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
         <Link href="/">
           <Image
             src={logoImage}
@@ -30,7 +30,7 @@ export default function MainHeader() {
           />
         </Link>
       </div>
-      <nav className="flex space-x-20 mr-16 text-mainColorWhite font-Bogart">
+      <nav className="mr-16 flex space-x-20 font-Bogart text-mainColorWhite">
         <Link href="/pansioni">Pansioni</Link>
         <Link href="/saloni">Saloni</Link>
         <Link href="/azili">Azili</Link>

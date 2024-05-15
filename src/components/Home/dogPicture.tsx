@@ -7,7 +7,7 @@ export default function DogImage() {
     <Image
       src={dogImage}
       alt="Dog"
-      className="w-auto max-w-full max-h-[100vh] absolute right-[25vh] top-[-30vh] z-[-1] animate-slideInLeft"
+      className="absolute right-[25vh] top-[-30vh] z-[-1] max-h-[100vh] w-auto max-w-full animate-slideInLeft"
     />
   );
 }

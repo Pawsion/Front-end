@@ -23,12 +23,12 @@ export default function LoginForm({ onClose }: any) {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-20">
-      <div className="bg-white p-8 rounded-lg w-full md:w-96">
-        <h2 className="text-center text-xl font-bold mb-4">Login Form</h2>
+    <div className="fixed left-0 top-0 z-20 flex h-full w-full items-center justify-center bg-black bg-opacity-50">
+      <div className="w-full rounded-lg bg-white p-8 md:w-96">
+        <h2 className="mb-4 text-center text-xl font-bold">Login Form</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
-            <label htmlFor="username" className="block mb-1">
+            <label htmlFor="username" className="mb-1 block">
               Username:
             </label>
             <input
@@ -37,12 +37,12 @@ export default function LoginForm({ onClose }: any) {
               name="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2"
+              className="w-full rounded-lg border border-gray-300 px-4 py-2"
               required
             />
           </div>
-          <div className="mb-6 relative">
-            <label htmlFor="password" className="block mb-1">
+          <div className="relative mb-6">
+            <label htmlFor="password" className="mb-1 block">
               Password:
             </label>
             <div className="flex items-center">
@@ -52,13 +52,13 @@ export default function LoginForm({ onClose }: any) {
                 name="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-4 py-2"
+                className="w-full rounded-lg border border-gray-300 px-4 py-2"
                 required
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-4 h-full flex items-center justify-center text-gray-500 cursor-pointer"
+                className="absolute right-4 flex h-full cursor-pointer items-center justify-center text-gray-500"
               >
                 {showPassword ? (
                   <EyeSlashIcon className="h-6 w-6" />
@@ -68,18 +68,18 @@ export default function LoginForm({ onClose }: any) {
               </button>
             </div>
           </div>
-          {error && <p className="text-red-500 mb-4">{error}</p>}
+          {error && <p className="mb-4 text-red-500">{error}</p>}
           <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-mainColorBlue text-mainColorWhite py-2 px-6 rounded-full font-Bogart hover:bg-indigo-500 duration-300"
+              className="rounded-full bg-mainColorBlue px-6 py-2 font-Bogart text-mainColorWhite duration-300 hover:bg-indigo-500"
             >
               Login
             </button>
             <button
               type="button"
               onClick={onClose}
-              className="ml-4 bg-gray-300 text-gray-700 px-4 py-2 rounded-full hover:bg-gray-400"
+              className="ml-4 rounded-full bg-gray-300 px-4 py-2 text-gray-700 hover:bg-gray-400"
             >
               Cancel
             </button>
