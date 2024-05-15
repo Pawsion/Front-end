@@ -1,7 +1,7 @@
 export default function PansioniPage() {
-    return (
+  return (
     <div>
       <h1>Pansioni Page</h1>
     </div>
   );
-};
+}
