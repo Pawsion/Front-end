@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
-import logoImage from "@/assets/images/logoImage.png";
+import logoImage from "../../../public/assets/images/logoImage.png";
 import { useState } from "react";
 import LoginForm from "../Login/loginForm";
+import Image from "next/image";
 
 export default function MainHeader() {
   const [showLoginForm, setShowLoginForm] = useState(false);
@@ -16,13 +17,20 @@ export default function MainHeader() {
   };
 
   return (
-    <header className="bg-mainColorBlue py-4 px-8 flex justify-between items-center" style={{ padding: "28px 8px" }}>
-      <div className="flex items-center ml-56 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+    <header
+      className="flex items-center justify-between bg-mainColorBlue px-8 py-4"
+      style={{ padding: "28px 8px" }}
+    >
+      <div className="ml-56 flex items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
         <Link href="/">
-          <img src={logoImage.src} alt="Pethub image" className="h-5 md:h-6 lg:h-8 xl:h-9" />
+          <Image
+            src={logoImage}
+            alt="Pethub image"
+            className="h-5 md:h-6 lg:h-8 xl:h-9"
+          />
         </Link>
       </div>
-      <nav className="flex space-x-20 mr-16 text-mainColorWhite font-Bogart">
+      <nav className="mr-16 flex space-x-20 font-Bogart text-mainColorWhite">
         <Link href="/pansioni">Pansioni</Link>
         <Link href="/saloni">Saloni</Link>
         <Link href="/azili">Azili</Link>
@@ -31,7 +39,9 @@ export default function MainHeader() {
         <Link href="/dresura">Dresura</Link>
         <Link href="/parkici">Parkići</Link>
         <Link href="/blog">Blog</Link>
-        <a href="#" onClick={handleLoginClick}>Login</a>
+        <a href="#" onClick={handleLoginClick}>
+          Login
+        </a>
       </nav>
       {showLoginForm && <LoginForm onClose={handleCloseLoginForm} />}
     </header>
