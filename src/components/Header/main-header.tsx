@@ -18,26 +18,26 @@ export default function MainHeader() {
 
   return (
     <header
-      className="flex items-center justify-between bg-mainColorBlue px-8 py-4"
-      style={{ padding: "28px 8px" }}
+      className="flex items-center justify-between bg-mainColorBlue px-8 py-4 "
+      style={{
+        padding: "28px 8px",
+        position: "sticky",
+        top: 0,
+      }}
     >
       <div className="ml-56 flex items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-        <Link href="/">
+      <Link href="/">
           <Image
             src={logoImage}
             alt="Pethub image"
-            className="h-5 md:h-6 lg:h-8 xl:h-9"
+            className="h-14 w-56 md:h-10 lg:h-14 xl:h-16"
           />
         </Link>
       </div>
-      <nav className="mr-16 flex space-x-20 font-Bogart text-mainColorWhite">
+      <nav className="mr-56 flex space-x-24 font-semibold OpenSans text-mainColorWhite">
         <Link href="/pansioni">Pansioni</Link>
         <Link href="/saloni">Saloni</Link>
-        <Link href="/azili">Azili</Link>
-        <Link href="/imena">Imena</Link>
-        <Link href="/perionice">Perionice</Link>
-        <Link href="/dresura">Dresura</Link>
-        <Link href="/parkici">Parkići</Link>
+        <Link href="/aplikacija">Aplikacija</Link>
         <Link href="/blog">Blog</Link>
         <a href="#" onClick={handleLoginClick}>
           Login

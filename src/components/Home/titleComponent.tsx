@@ -1,13 +1,19 @@
-import React from "react";
+import Image from "next/image";
+import homeTitle from "../../../public/assets/images/homeTitle.png";
+import purplePaw from "../../../public/assets/images/purplePaw.png";
 
 export default function TitleComponent() {
   return (
-    <h1
-      className="ml-56 mt-48 flex animate-slideInRight items-center text-balance font-Bogart text-7xl md:text-8xl lg:text-9xl"
-      style={{ fontSize: "4.625rem" }}
-    >
-      Lorem ipsum dolor sit <br></br> amet, consectetuer <br></br> adipiscing
-      elit
-    </h1>
+    <div className="ml-56 mt-56 flex items-center relative">
+      <div>
+        <Image
+          src={homeTitle}
+          alt="Pethub Title Image"
+          width={760.4}
+          height={260.53}
+          priority
+        />
+      </div>
+    </div>
   );
 }
