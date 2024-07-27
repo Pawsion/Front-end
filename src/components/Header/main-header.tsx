@@ -18,15 +18,16 @@ export default function MainHeader() {
 
   return (
     <header
-      className="flex items-center justify-between bg-mainColorBlue px-8 py-4 "
+      className="flex items-center justify-between bg-mainColorBlue px-8 py-4"
       style={{
         padding: "28px 8px",
         position: "sticky",
         top: 0,
+        zIndex: 9999, // Set high z-index to ensure it's on top
       }}
     >
       <div className="ml-56 flex items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-      <Link href="/">
+        <Link href="/">
           <Image
             src={logoImage}
             alt="Pethub image"
