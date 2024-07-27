@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         mainColorBlue: "#575FCC",
         mainColorWhite: "#FEF9F3",
-        pageColorWhite: "#F2F2F2",
+        pageColorWhite: "#E1E1E1",
       },
       keyframes: {
         slideInRight: {

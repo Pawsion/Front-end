@@ -1,6 +1,5 @@
 import Image from "next/image";
-import homeTitle from "../../../public/assets/images/homeTitle.png";
-import purplePaw from "../../../public/assets/images/purplePaw.png";
+import homeTitle from "../../../public/assets/images/Homescreen1/homeTitle.png";
 
 export default function TitleComponent() {
   return (
