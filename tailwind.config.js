@@ -13,7 +13,9 @@ module.exports = {
         pageColorWhite: "#E1E1E1",
         pageColorTan: '#E8E3DD',
         fontColorPurple: "#575FC8",
+        mainColorPurple: "#575FC8",
         fontColorGray: "#4D4D4D",
+        linkColorRed: "#FF5B52",
       },
       keyframes: {
         slideInRight: {
@@ -42,6 +44,7 @@ module.exports = {
         OpenSans: ["Open Sans", "sans-serif"],
       },
       fontWeight: {
+        regular: 400,
         medium: 500,
         semibold: 600,
       },
@@ -76,4 +79,3 @@ module.exports = {
   }
 ],
 };
-
