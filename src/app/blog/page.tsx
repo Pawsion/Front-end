@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import SearchBar from "@/components/SearchBar/search-bar";
 import Hrana from "@/components/Blog/hrana";
 import Perionice from "@/components/Blog/perionice";
@@ -15,13 +16,13 @@ import Kafici from "@/components/Blog/kafici";
 export default function BlogPage() {
   const [visibleCount, setVisibleCount] = useState(3);
   const [items, setItems] = useState([
-    { id: 1, component: <Citati /> },
-    { id: 2, component: <Perionice /> },
-    { id: 3, component: <Hrana /> },
-    { id: 4, component: <Azili /> },
-    { id: 5, component: <Parkovi /> },
-    { id: 6, component: <Imena /> },
-    { id: 7, component: <Kafici /> },
+    { id: 1, component: <Citati />, route: "/blog/citati" },
+    { id: 2, component: <Perionice />, route: "/blog/perionice" },
+    { id: 3, component: <Hrana />, route: "/blog/hrana" },
+    { id: 4, component: <Azili />, route: "/blog/azili" },
+    { id: 5, component: <Parkovi />, route: "/blog/parkovi" },
+    { id: 6, component: <Imena />, route: "/blog/imena" },
+    { id: 7, component: <Kafici />, route: "/blog/kafici" },
   ]);
 
   const loadMoreItems = () => {
@@ -36,7 +37,11 @@ export default function BlogPage() {
       <main className="flex-grow flex flex-col">
         <div className="flex-grow">
           {items.slice(0, visibleCount).map((item) => (
-            <div key={item.id}>{item.component}</div>
+            <Link key={item.id} href={item.route}>
+              <div className="cursor-pointer">
+                {item.component}
+              </div>
+            </Link>
           ))}
         </div>
         {visibleCount < items.length && (
