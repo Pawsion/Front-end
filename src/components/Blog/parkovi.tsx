@@ -1,16 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import blogImage from "../../../public/assets/images/Blog/101Citat.png";
+import blogImage from "../../../public/assets/images/Blog/Parkovi.png";
 
-export default function Citat() {
+export default function Parkovi() {
   return (
     <div className="flex justify-center py-4 mt-8">
       <div className="flex w-[76vw] max-w-[76vw]">
-        <div className="relative w-[33.25vw] max-w-[33.25vw] h-[512px] overflow-hidden">
-          <Image
+      <div className="relative w-[33.25vw] max-w-[33.25vw] h-[512px] overflow-hidden rounded-l-[50px]">
+      <Image
             src={blogImage}
             alt="Citati Image"
-            layout="fill"
+            fill
             objectFit="cover"
             objectPosition="left center"
           />
@@ -20,7 +20,7 @@ export default function Citat() {
             11.07.2024 - 5 minuta čitanja
           </div>
           <h2 className="text-[40px] font-semibold text-fontColorGray leading-tight mb-16">
-            101 citat o psima koji će<br className="mb-0" />dotaći srce svakog vlasnika
+            Parkovi sa brojem telefona
           </h2>
           <p className="mt-4 text-lg text-gray-700 leading-relaxed mb-16">
             Psi su postali neizostavan deo naših domova, ali i naših srca.<br />Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu<br />koju delimo s našim ljubimcima i zato uvek volimo da ih čita-<br />mo. Oni nas podsećaju na važnost saosećanja, vernosti i<br />prijateljstva, svega onog što psi simbolizuju.

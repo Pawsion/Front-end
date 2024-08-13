@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import hranaImage from "../../../public/assets/images/Blog/Hrana.png";
 
-const Hrana = () => {
+export default function Hrana() {
   return (
     <div className="flex justify-center py-4 mt-8">
       <div className="flex w-[76vw] max-w-[76vw]">
@@ -30,5 +30,3 @@ const Hrana = () => {
     </div>
   );
 };
-
-export default Hrana;

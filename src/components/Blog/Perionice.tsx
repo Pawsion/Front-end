@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import perioniceImage from "../../../public/assets/images/Blog/Perionice.png";
 
-const Perionice = () => {
+export default function Perionice() {
   return (
     <div className="flex justify-center py-4 mt-8">
       <div className="flex w-[76vw] max-w-[76vw]">
@@ -10,7 +10,7 @@ const Perionice = () => {
           <Image
             src={perioniceImage}
             alt="Perionice Image"
-            layout="fill"
+            fill
             objectFit="cover"
             objectPosition="left center"
           />
@@ -30,5 +30,3 @@ const Perionice = () => {
     </div>
   );
 };
-
-export default Perionice;
