@@ -1,11 +1,11 @@
 export default function Footer() {
-    return (
-      <footer
-        className="bg-mainColorBlue py-16 mt-[-60px] relative"
-        style={{
-          width: "100%",
-        }}
-      >
-      </footer>
-    );
-  }
+  return (
+    <footer
+      className="bg-mainColorBlue py-16 relative z-[9999]"
+      style={{
+        width: "100%",
+      }}
+    >
+    </footer>
+  );
+}

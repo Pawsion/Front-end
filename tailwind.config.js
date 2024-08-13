@@ -16,6 +16,8 @@ module.exports = {
         mainColorPurple: "#575FC8",
         fontColorGray: "#4D4D4D",
         linkColorRed: "#FF5B52",
+        activeLinkGold: '#E4A949',
+        mainColorTan:'#E8E3DD',
       },
       keyframes: {
         slideInRight: {

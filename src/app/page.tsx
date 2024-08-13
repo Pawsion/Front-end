@@ -32,7 +32,7 @@ export default async function Home() {
           <SubtitleComponentSecond />
         </div>
       </section>
-      <section className="h-screen flex flex-col items-center pt-8">
+      <section className="h-[calc(100vh-60px)] flex flex-col items-center pt-8">
         <div className="flex flex-col items-center w-full mt-8">
           <TitleComponentThird />
           <SubtitleComponentThird />
