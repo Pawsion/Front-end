@@ -1,5 +1,5 @@
 import Image from "next/image";
-import orangePaw from "../../../public/assets/images/orangePaw.png";
+import orangePaw from "../../../public/assets/images/Homescreen1/orangePaw.png";
 
 export default function OrangePawComponent() {
     return (

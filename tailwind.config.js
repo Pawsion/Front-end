@@ -10,7 +10,15 @@ module.exports = {
       colors: {
         mainColorBlue: "#575FCC",
         mainColorWhite: "#FEF9F3",
-        pageColorWhite: "#F2F2F2",
+        pageColorWhite: "#E1E1E1",
+        pageColorTan: '#E8E3DD',
+        fontColorPurple: "#575FC8",
+        mainColorPurple: "#575FC8",
+        fontColorGray: "#4D4D4D",
+        linkColorRed: "#FF5B52",
+        activeLinkGold: '#E4A949',
+        mainColorTan:'#E8E3DD',
+        fontColorBlack: '#000000',
       },
       keyframes: {
         slideInRight: {
@@ -38,8 +46,40 @@ module.exports = {
         Bogart: ["Bogart", "sans-serif"],
         OpenSans: ["Open Sans", "sans-serif"],
       },
+      fontWeight: {
+        regular: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 650,
+      },
+      fontSize: {
+        '6xl': '64px', 
+        'custom-sm': '20px',
+      },
+      textShadow: {
+        'default': '2px 2px 4px rgba(0, 0, 0, 0.3)',
+        'md': '3px 3px 6px rgba(0, 0, 0, 0.4)',
+        'lg': '4px 4px 8px rgba(0, 0, 0, 0.5)',
+      },
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [ 
+    function ({ addUtilities }) {
+    addUtilities(
+      {
+        '.text-shadow': {
+          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
+        },
+        '.text-shadow-md': {
+          textShadow: '3px 3px 6px rgba(0, 0, 0, 0.4)',
+        },
+        '.text-shadow-lg': {
+          textShadow: '4px 4px 8px rgba(0, 0, 0, 0.5)',
+        },
+      },
+      ['responsive', 'hover']
+    )
+  }
+],
 };

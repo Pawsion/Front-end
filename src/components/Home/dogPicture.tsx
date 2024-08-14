@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import dogImage from "../../../public/assets/images/homeDogImage.png";
-import dogShadow from "../../../public/assets/images/homeDogShadow.png";
+import dogImage from "../../../public/assets/images/Homescreen1/homeDogImage.png";
+import dogShadow from "../../../public/assets/images/Homescreen1/homeDogShadow.png";
 
 export default function DogImage() {
   return (

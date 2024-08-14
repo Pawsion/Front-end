@@ -1,5 +1,5 @@
 import Image from "next/image";
-import purplePaw from "../../../public/assets/images/purplePaw.png";
+import purplePaw from "../../../public/assets/images/Homescreen1/purplePaw.png";
 
 export default function PurplePawComponent() {
     return (
