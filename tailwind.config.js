@@ -18,6 +18,7 @@ module.exports = {
         linkColorRed: "#FF5B52",
         activeLinkGold: '#E4A949',
         mainColorTan:'#E8E3DD',
+        fontColorBlack: '#000000',
       },
       keyframes: {
         slideInRight: {
@@ -49,6 +50,7 @@ module.exports = {
         regular: 400,
         medium: 500,
         semibold: 600,
+        bold: 650,
       },
       fontSize: {
         '6xl': '64px', 
