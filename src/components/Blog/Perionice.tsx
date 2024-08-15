@@ -19,10 +19,10 @@ export default function Perionice() {
           <div className="text-gray-500 mb-2 text-[18px]">
             12.07.2024 - 6 minuta čitanja
           </div>
-          <h2 className="text-[40px] font-semibold text-fontColorGray leading-tight mb-16">
+          <h2 className="text-[55px] font-semibold text-fontColorGray leading-tight mb-16">
             Perionice za pse koje morate<br className="mb-0" />posetiti u 2024. godini
           </h2>
-          <p className="mt-4 text-lg text-gray-700 leading-relaxed mb-16">
+          <p className="mt-4 text-[24px] text-gray-700 leading-relaxed mb-8">
             U današnje vreme, perionice za pse nude širok spektar usluga koje<br />mogu poboljšati zdravlje i izgled vašeg ljubimca. Od osnovnog pranja<br />do luksuznih tretmana, istražujemo najbolje perionice koje možete<br />posetiti ove godine. Ova lista će vam pomoći da pronađete savršenog<br />partnera za vašu četvoronožnu ljubimicu.
           </p>
         </div>

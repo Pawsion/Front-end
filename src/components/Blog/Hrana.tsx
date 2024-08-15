@@ -19,10 +19,10 @@ export default function Hrana() {
           <div className="text-gray-500 mb-2 text-[18px]">
             13.07.2024 - 4 minuta čitanja
           </div>
-          <h2 className="text-[40px] font-semibold text-fontColorGray leading-tight mb-16">
+          <h2 className="text-[55px] font-semibold text-fontColorGray leading-tight mb-16">
             Najbolja hrana za pse u 2024.<br className="mb-0" />preporuke i recenzije
           </h2>
-          <p className="mt-4 text-lg text-gray-700 leading-relaxed mb-16">
+          <p className="mt-4 text-[24px] text-gray-700 leading-relaxed mb-8">
             Kvalitetna hrana za pse je ključna za zdravlje i vitalnost vašeg<br />ljubimca. Ova godina donosi nove brendove i proizvode koji obećavaju<br />da će poboljšati ishranu vašeg psa. U ovom članku, pregledavamo najbolje<br />opcije na tržištu, uključujući preporuke od veterinaraca i recenzije<br />korisnika.
           </p>
         </div>
