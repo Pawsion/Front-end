@@ -20,9 +20,9 @@ export default function BlogPost({
         <Image alt="Citati image" src={image} className="object-cover" fill />
       </div>
       <div
-        className="flex flex-col justify-start space-y-20 
-       p-4 text-lg text-gray-600
-       lg:w-1/2"
+        className="flex flex-col justify-start space-y-6 p-4
+       text-lg text-gray-600 lg:w-1/2
+       lg:space-y-20"
       >
         <h4 className="text-xl ">{timeToRead}</h4>
         <h1 className="text-4xl font-bold lg:text-5xl">{title}</h1>
