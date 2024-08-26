@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import SearchBar from "@/components/SearchBar/search-bar";
-import Hrana from "@/components/Blog/hrana";
-import Perionice from "@/components/Blog/perionice";
-import Citati from "@/components/Blog/citat";
 import Footer from "@/components/Footer/footer";
+import Hrana from "@/components/Blog/Hrana";
+import Perionice from "@/components/Blog/Perionice";
+import Citati from "@/components/Blog/Citat";
 import ButtonBlog from "@/components/Blog/button";
 import Azili from "@/components/Blog/azili";
 import Parkovi from "@/components/Blog/parkovi";
@@ -30,22 +30,20 @@ export default function BlogPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col">
       <header className="py-4">
         <SearchBar />
       </header>
-      <main className="flex-grow flex flex-col">
+      <main className="flex flex-grow flex-col">
         <div className="flex-grow">
           {items.slice(0, visibleCount).map((item) => (
             <Link key={item.id} href={item.route}>
-              <div className="cursor-pointer">
-                {item.component}
-              </div>
+              <div className="cursor-pointer">{item.component}</div>
             </Link>
           ))}
         </div>
         {visibleCount < items.length && (
-          <div className="flex justify-center items-center mt-8 mb-8">
+          <div className="mb-8 mt-8 flex items-center justify-center">
             <ButtonBlog onClick={loadMoreItems} />
           </div>
         )}
