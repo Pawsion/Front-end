@@ -19,6 +19,7 @@ module.exports = {
         activeLinkGold: '#E4A949',
         mainColorTan:'#E8E3DD',
         fontColorBlack: '#000000',
+        quotesPageOpacity: 'rgba(246, 187, 73, 0.13)'
       },
       keyframes: {
         slideInRight: {
