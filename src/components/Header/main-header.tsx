@@ -4,7 +4,7 @@ import logoImage from "../../../public/assets/images/logoImage.png";
 import { useState } from "react";
 import LoginForm from "../Login/loginForm";
 import Image from "next/image";
-import { usePathname } from 'next/navigation'; // Updated import
+import { usePathname } from "next/navigation"; // Updated import
 
 export default function MainHeader() {
   const [showLoginForm, setShowLoginForm] = useState(false);
@@ -37,17 +37,26 @@ export default function MainHeader() {
           />
         </Link>
       </div>
-      <nav className="mr-56 flex space-x-24 font-semibold OpenSans text-mainColorWhite">
-        <Link href="/pansioni" className={pathname === '/pansioni' ? 'text-activeLinkGold' : ''}>
+      <nav className="OpenSans mr-56 flex space-x-24 font-semibold text-mainColorWhite">
+        <Link
+          href="/pansioni"
+          className={pathname === "/pansioni" ? "text-activeLinkGold" : ""}
+        >
           Pansioni
         </Link>
-        <Link href="/saloni" className={pathname === '/saloni' ? 'text-activeLinkGold' : ''}>
+        <Link
+          href="/saloni"
+          className={pathname === "/saloni" ? "text-activeLinkGold" : ""}
+        >
           Saloni
         </Link>
-        <Link href="/aplikacija" className={pathname === '/aplikacija' ? 'text-activeLinkGold' : ''}>
+        {/* <Link href="/aplikacija" className={pathname === '/aplikacija' ? 'text-activeLinkGold' : ''}>
           Aplikacija
-        </Link>
-        <Link href="/blog" className={pathname === '/blog' ? 'text-activeLinkGold' : ''}>
+        </Link> */}
+        <Link
+          href="/blog"
+          className={pathname === "/blog" ? "text-activeLinkGold" : ""}
+        >
           Blog
         </Link>
         <a href="#" onClick={handleLoginClick}>
