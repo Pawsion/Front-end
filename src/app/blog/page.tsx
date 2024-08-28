@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import SearchBar from "@/components/SearchBar/search-bar";
-import Hrana from "@/components/Blog/hrana";
-import Perionice from "@/components/Blog/perionice";
-import Citati from "@/components/Blog/citat";
+import Hrana from "@/components/Blog/Hrana";
+import Perionice from "@/components/Blog/Perionice";
+import Citati from "@/components/Blog/Citat";
 import Footer from "@/components/Footer/footer";
 import ButtonBlog from "@/components/Blog/button";
 import Azili from "@/components/Blog/azili";
