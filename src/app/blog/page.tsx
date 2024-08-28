@@ -17,7 +17,7 @@ export default function BlogPage() {
   const [visibleCount, setVisibleCount] = useState(3);
   const [items, setItems] = useState([
     { id: 1, component: <Citati />, route: "/blog/citati" },
-    { id: 2, component: <Perionice />, route: "/blog/perionice" },
+    { id: 2, component: <Perionice />, route: "/blog/wash" },
     { id: 3, component: <Hrana />, route: "/blog/hrana" },
     { id: 4, component: <Azili />, route: "/blog/azili" },
     { id: 5, component: <Parkovi />, route: "/blog/parkovi" },
