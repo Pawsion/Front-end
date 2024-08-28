@@ -4,23 +4,16 @@ import searchIcon from "../../../public/assets/images/SearchBar/searchIcon.png";
 
 export default function SearchBar() {
   return (
-    <div className="relative flex justify-center py-4">
+    <div className="relative hidden py-4 text-center md:flex">
       <input
         type="text"
         placeholder="Tražite određenu temu?"
-        className="w-[75vw] max-w-[75vw] px-4 py-3 pr-12 bg-mainColorTan border border-mainColorTan rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-mainColorBlue"
+        className="m-auto w-3/4 rounded-full border border-mainColorTan bg-mainColorTan
+        px-4 py-3 pr-12 shadow-sm focus:outline-none focus:ring-2 focus:ring-mainColorBlue"
       />
-      <button
-        type="button"
-        className="absolute right-72 top-1/2 transform -translate-y-1/2 bg-transparent border-none cursor-pointer"
-      >
-        <Image
-          src={searchIcon}
-          alt="Search Icon"
-          width={30}
-          height={30}
-        />
-      </button>
+      <div className="absolute inset-y-0 right-0 mr-[14%] flex items-center">
+        <Image src={searchIcon} alt="Search Icon" width={30} height={30} />
+      </div>
     </div>
   );
 }

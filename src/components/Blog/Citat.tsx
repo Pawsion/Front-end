@@ -10,23 +10,23 @@ export default function Citat() {
           <Image
             src={blogImage}
             alt="Citati Image"
-            layout="fill"
+            fill
             objectFit="cover"
             objectPosition="left center"
           />
         </div>
-        <div className="flex flex-col justify-between ml-6 h-[512px]">
+        <div className="flex flex-col justify-between ml-12 h-[512px] w-[42.75vw]">
           <div className="text-gray-500 mb-2 text-[18px]">
             11.07.2024 - 5 minuta čitanja
           </div>
-          <h2 className="text-[40px] font-semibold text-fontColorGray leading-tight mb-16">
+          <h2 className="text-[55px] font-semibold text-fontColorGray leading-tight mb-16">
             101 citat o psima koji će<br className="mb-0" />dotaći srce svakog vlasnika
           </h2>
-          <p className="mt-4 text-lg text-gray-700 leading-relaxed mb-16">
+          <p className="mt-4 text-[24px] text-gray-700 leading-relaxed mb-8">
             Psi su postali neizostavan deo naših domova, ali i naših srca.<br />Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu<br />koju delimo s našim ljubimcima i zato uvek volimo da ih čita-<br />mo. Oni nas podsećaju na važnost saosećanja, vernosti i<br />prijateljstva, svega onog što psi simbolizuju.
           </p>
         </div>
       </div>
     </div>
   );
-};
+}
