@@ -1,35 +1,29 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 import blogImage from "../../../public/assets/images/Citat/citatDog.png";
-import QuotesDisplay from './citati'; // Import the QuotesDisplay component
+import QuotesDisplay from "./citati"; // Import the QuotesDisplay component
 
 export default function CitatiHeader() {
   return (
-    <div className="relative flex flex-col items-start p-4">
-      <div className="mb-4 ml-64">
-        <h1 className="text-[100px] font-regular text-fontColorBlack text-left mt-16 leading-none">
-          <span>101 </span>
-          <span className="font-Bogart leading-tight">citat o psima koji će dotaći<br />srce svakog vlasnika</span>
+    <div className="relative flex flex-col items-start">
+      <div className="m-auto mt-20 flex flex-col justify-center space-y-8 p-4 lg:w-3/4">
+        <h1 className="text-3xl font-semibold lg:text-6xl xl:text-8xl">
+          101 citat o psima koji ce dotaći srce svakog vlasnika
         </h1>
-        <div className="text-gray-500 mt-8 text-[24px]">
-          11.07.2024 - 5 minuta čitanja
-        </div>
-      </div>
-
-      <div className="relative w-[1440px] mt-2 ml-64">
-        <div className="relative h-[512px] w-full">
-          <Image
-            src={blogImage}
-            alt="Citat Dog Image"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-          />
-        </div>
-      </div>
-
-      <div className="mb-32 ml-64 mt-16 text-[28px] font-openSans font-regular">
-        <p>Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, nera-<br />skidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas <b>podsećaju na važnost<br /> saosećanja, vernosti i prijateljstva,</b> svega onog što psi simbolizuju.<br /><br />Neka vas čitanje inspiriše da cenite svaki trenutak proveden sa čupavim vragolanima. Uživajte!</p>
+        <h4 className="text-2xl">DATE AND TIME</h4>
+        <Image alt="dog image" src={blogImage} />
+        <p>
+          Psi su postali neizostavan deo naših domova, ali i naših srca. Citati
+          o psima nas podsećaju na tu snažnu, nera-skidivu vezu koju delimo s
+          našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas
+          <span className="font-bold">
+            {" "}
+            podsećaju na važnost saosećanja, vernosti i prijateljstva
+          </span>
+          , svega onog što psi simbolizuju. <br></br> <br></br>Neka vas čitanje
+          inspiriše da cenite svaki trenutak proveden sa čupavim vragolanima.
+          Uživajte!
+        </p>
       </div>
 
       <div>
