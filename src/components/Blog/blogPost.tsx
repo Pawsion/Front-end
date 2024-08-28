@@ -12,8 +12,8 @@ export default function BlogPost({
   return (
     <Link
       href={link}
-      className="flex flex-col rounded-3xl border
-      bg-slate-200 lg:flex-row lg:bg-white xl:w-3/4"
+      className="flex flex-col rounded-3xl border bg-slate-200
+      lg:flex-row lg:border-none lg:bg-white xl:w-3/4"
     >
       <div
         className="relative h-[300px]  
