@@ -11,15 +11,16 @@ module.exports = {
         mainColorBlue: "#575FCC",
         mainColorWhite: "#FEF9F3",
         pageColorWhite: "#E1E1E1",
-        pageColorTan: '#E8E3DD',
+        pageColorTan: "#E8E3DD",
         fontColorPurple: "#575FC8",
         mainColorPurple: "#575FC8",
         fontColorGray: "#4D4D4D",
         linkColorRed: "#FF5B52",
-        activeLinkGold: '#E4A949',
-        mainColorTan:'#E8E3DD',
-        fontColorBlack: '#000000',
-        quotesPageOpacity: 'rgba(246, 187, 73, 0.13)'
+        activeLinkGold: "#E4A949",
+        mainColorTan: "#E8E3DD",
+        fontColorBlack: "#000000",
+        fontYellow: "#E4A949",
+        quotesPageOpacity: "rgba(246, 187, 73, 0.13)",
       },
       keyframes: {
         slideInRight: {
@@ -54,33 +55,33 @@ module.exports = {
         bold: 650,
       },
       fontSize: {
-        '6xl': '64px', 
-        'custom-sm': '20px',
+        "6xl": "64px",
+        "custom-sm": "20px",
       },
       textShadow: {
-        'default': '2px 2px 4px rgba(0, 0, 0, 0.3)',
-        'md': '3px 3px 6px rgba(0, 0, 0, 0.4)',
-        'lg': '4px 4px 8px rgba(0, 0, 0, 0.5)',
+        default: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+        md: "3px 3px 6px rgba(0, 0, 0, 0.4)",
+        lg: "4px 4px 8px rgba(0, 0, 0, 0.5)",
       },
     },
   },
   variants: {},
-  plugins: [ 
+  plugins: [
     function ({ addUtilities }) {
-    addUtilities(
-      {
-        '.text-shadow': {
-          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
+      addUtilities(
+        {
+          ".text-shadow": {
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+          },
+          ".text-shadow-md": {
+            textShadow: "3px 3px 6px rgba(0, 0, 0, 0.4)",
+          },
+          ".text-shadow-lg": {
+            textShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)",
+          },
         },
-        '.text-shadow-md': {
-          textShadow: '3px 3px 6px rgba(0, 0, 0, 0.4)',
-        },
-        '.text-shadow-lg': {
-          textShadow: '4px 4px 8px rgba(0, 0, 0, 0.5)',
-        },
-      },
-      ['responsive', 'hover']
-    )
-  }
-],
+        ["responsive", "hover"],
+      );
+    },
+  ],
 };
