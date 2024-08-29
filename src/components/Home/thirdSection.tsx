@@ -1,5 +1,5 @@
 import React from "react";
-import dogImage from "@/../public/assets/images/Homescreen3/dog.png";
+import dogImage from "@/../public/assets/images/Homescreen3/LastDogHomePage.png";
 import Image from "next/image";
 
 export default function ThirdSection() {
@@ -24,7 +24,7 @@ export default function ThirdSection() {
       </button>
 
       {/* // ! TODO -> this should be 1 image TOGETHER with shadow  */}
-      <Image src={dogImage} alt="Dog" className="mb-0 pb-0" />
+      <Image src={dogImage} alt="Dog" className="mb-[-20px] pb-[-20px]" />
     </div>
   );
 }
