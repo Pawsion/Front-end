@@ -10,8 +10,8 @@ export default function SecondSection() {
           Naš sajt pokriva najveće gradove Srbije i ovde možete pronaći :
         </h2>
         <ul
-          className="custom-list list-inside font-OpenSans 
-        text-custom-sm font-semibold text-fontColorGray text-shadow-md"
+          className="custom-list m-auto mt-6 list-inside text-start font-OpenSans text-custom-sm
+        font-semibold text-fontColorGray text-shadow-md lg:mx-0"
         >
           <li>Gde se nalaze pansioni i hoteli za pse</li>
           <li>Koje salone i frizere za pse možete da posetite</li>
