@@ -9,11 +9,20 @@ export default function FirstSection() {
         <Paws />
         <h1
           className=" text-6xl font-semibold text-fontColorPurple 
-        lg:mt-40 lg:w-1/2"
+        lg:mt-20 lg:w-1/2 xl:mt-32"
         >
           Ljubitelji i vlasnici pasa, dobro došli u
           <span className="text-fontYellow"> PetHub</span>
         </h1>
+        <p className="lg:w-1/2">
+          Bilo da ste vlasnik psa ili planirate to da postanete, na našem sajtu
+          možete pronaći gomilu informacija koje vam umnogome mogu olakšati
+          život.
+          <br />
+          <br />
+          Ne gubite vreme istražujući internet već ga kvalitetno provedite sa
+          svojim mezimcem.
+        </p>
         <DogWithShadow />
       </div>
     </div>
