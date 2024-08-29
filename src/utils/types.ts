@@ -7,3 +7,17 @@ export type BlogData = {
   image: StaticImageData;
   timeToRead: string;
 };
+
+export type SaloniData = {
+  image: StaticImageData;
+  title: string;
+  description: string;
+  description2: string;
+};
+
+export type SaloniCardType = {
+  name: string;
+  site: string;
+  address: string;
+  phone: string;
+};

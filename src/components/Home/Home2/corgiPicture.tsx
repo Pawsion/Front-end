@@ -5,20 +5,12 @@ import dogShadow from "../../../../public/assets/images/Homescreen2/corgiShadow.
 
 export default function CorgiImage() {
   return (
-    <div className="relative h-full w-full flex items-center justify-start">
+    <div className="relative z-[-1] hidden h-full w-full items-center justify-start lg:flex">
       <div className="absolute left-8 top-16">
-        <Image
-          src={dogShadow}
-          alt="Dog Shadow"
-          layout="intrinsic"
-        />
+        <Image src={dogShadow} alt="Dog Shadow" layout="intrinsic" />
       </div>
       <div className="absolute left-8 top-16">
-        <Image
-          src={dogImage}
-          alt="Dog"
-          layout="intrinsic"
-        />
+        <Image src={dogImage} alt="Dog" layout="intrinsic" />
       </div>
     </div>
   );
