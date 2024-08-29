@@ -5,17 +5,25 @@ import SaloniCard from "@/components/Saloni/saloniCard";
 import SaloniSection from "@/components/Saloni/saloniSection";
 import { SALONI_CARDS } from "@/utils/saloni-cards";
 import { SALONI_DATA } from "@/utils/saloni-data";
+import Image from "next/image";
 import { useState } from "react";
+import bgImage from "@/../public/assets/images/Saloni/Background.png";
 
 export default function Saloni() {
   const [saloniSections] = useState(SALONI_DATA);
   const [saloniCards] = useState(SALONI_CARDS);
 
   return (
-    <div className=" flex-col space-y-20 pt-20">
-      <h1 className="m-auto flex w-3/4 justify-center text-center text-5xl">
-        Saloni i frizeri za pse - najveća lista za gradove Srbije
-      </h1>
+    <div className="flex-col space-y-20">
+      <div className="flex bg-[#F5F5F7] pl-10 lg:pl-20">
+        <h1
+          className="m-auto w-3/4 text-center text-5xl 
+        font-semibold  text-mainColorBlue lg:text-start"
+        >
+          Saloni i frizeri za pse - najveća lista za gradove Srbije
+        </h1>
+        <Image src={bgImage} alt="Background dog" />
+      </div>
       <Description />
       <div>
         {saloniSections.map((el, index) => (
