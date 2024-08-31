@@ -8,15 +8,19 @@ export default function PagesFirstSection({
   bgImage: StaticImageData;
 }) {
   return (
-    <div className="flex bg-[#F5F5F7] pl-10 lg:pl-20">
+    <div className="relative flex min-h-[70vh] bg-[#F5F5F7] pl-10 lg:pl-20">
       <h1
-        className="my-auto w-3/4 min-w-[50%] text-center text-5xl font-semibold 
-        text-mainColorBlue  lg:w-3/4 lg:text-start"
+        className="z-[1] my-auto w-3/4 text-center text-5xl font-semibold 
+        text-mainColorBlue  md:w-1/2 md:max-w-[50%] lg:w-3/4 lg:text-start"
       >
         {title}
       </h1>
-      {/* //! TODO -> maybe put it absolute and text over it on SM and MD  */}
-      <Image src={bgImage} alt="Background dog" />
+      {/* //! TODO -> Put it absolute and text over it on SM and MD  */}
+      <Image
+        src={bgImage}
+        alt="Background dog"
+        className="absolute right-0 hidden max-h-[70vh] md:block"
+      />
     </div>
   );
 }
