@@ -4,7 +4,7 @@ import descImg from "@/../public/assets/images/Pansioni/PansioniDescription.png"
 
 export default function Description() {
   return (
-    <div className="my-20 flex flex-col items-center justify-between md:flex-row">
+    <div className="my-20 flex flex-col items-center justify-between space-y-10 md:flex-row md:space-y-0">
       <Image src={descImg} alt="description image" />
       <div className="space-y-10 md:w-1/2">
         <p>
@@ -21,14 +21,6 @@ export default function Description() {
           <li>veterinarsku negu (po potrebi)</li>
           <li>praćenje ljubimaca (video nadzor u pojedinim pansionima)</li>
         </ul>
-        <p>
-          Ovi objekti mogu
-          <span className="font-bold">
-            varirati u svojim uslugama, sadržajima i cenama
-          </span>
-          , ali osnovna svrha im je briga o psima dok su razdvojeni od svojih
-          vlasnika.
-        </p>
       </div>
     </div>
   );
