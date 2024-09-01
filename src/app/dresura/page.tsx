@@ -2,6 +2,8 @@ import PagesFirstSection from "@/components/Reusable/pages-first-section";
 import bgImage from "@/../public/assets/images/Saloni/Background.png";
 import React from "react";
 import Description from "@/components/Dresura/description";
+import Gray from "@/components/Dresura/gray";
+import BelowGray from "@/components/Dresura/below-gray";
 
 export default function DresuraPage() {
   return (
@@ -11,6 +13,8 @@ export default function DresuraPage() {
         bgImage={bgImage}
       />
       <Description />
+      <Gray />
+      <BelowGray />
     </div>
   );
 }
