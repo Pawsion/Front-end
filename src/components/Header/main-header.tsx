@@ -23,7 +23,7 @@ export default function MainHeader() {
       className="flex items-center justify-between bg-mainColorBlue px-8 py-4"
       style={{
         padding: "28px 8px",
-        position: "sticky",
+        // position: "sticky",
         top: 0,
         zIndex: 9999,
       }}
@@ -37,12 +37,12 @@ export default function MainHeader() {
           />
         </Link>
       </div>
-      <nav className="OpenSans mr-56 flex space-x-24 font-semibold text-mainColorWhite">
+      <nav className="OpenSans mr-56 flex space-x-12 font-semibold text-mainColorWhite">
         <Link
-          href="/pansioni"
-          className={pathname === "/pansioni" ? "text-activeLinkGold" : ""}
+          href="/pocetna"
+          className={pathname === "/" ? "text-activeLinkGold" : ""}
         >
-          Pansioni
+          Početna
         </Link>
         <Link
           href="/saloni"
@@ -50,9 +50,25 @@ export default function MainHeader() {
         >
           Saloni
         </Link>
-        {/* <Link href="/aplikacija" className={pathname === '/aplikacija' ? 'text-activeLinkGold' : ''}>
-          Aplikacija
-        </Link> */}
+        <Link
+          href="/pansioni"
+          className={pathname === "/pansioni" ? "text-activeLinkGold" : ""}
+        >
+          Pansioni
+        </Link>
+        <Link
+          href="/veterinari"
+          className={pathname === "/veterinari" ? "text-activeLinkGold" : ""}
+        >
+          Veterinari
+        </Link>
+        <Link
+          href="/dresura"
+          className={pathname === "/dresura" ? "text-activeLinkGold" : ""}
+        >
+          Dresura
+        </Link>
+
         <Link
           href="/blog"
           className={pathname === "/blog" ? "text-activeLinkGold" : ""}
