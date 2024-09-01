@@ -39,10 +39,10 @@ export default function MainHeader() {
       </div>
       <nav className="OpenSans mr-56 flex space-x-12 font-semibold text-mainColorWhite">
         <Link
-          href="/pansioni"
-          className={pathname === "/pansioni" ? "text-activeLinkGold" : ""}
+          href="/pocetna"
+          className={pathname === "/" ? "text-activeLinkGold" : ""}
         >
-          Pansioni
+          Početna
         </Link>
         <Link
           href="/saloni"
