@@ -21,7 +21,7 @@ export const BLOG_DATA: BlogData[] = [
     description:
       "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
     image: azili,
-    link: "/blog/citati",
+    link: "/blog/shelters",
     timeToRead: "11.07.2024 - 5 minuta citanja",
   },
   {
