@@ -3,6 +3,7 @@ import BlogHeader from '@/components/Blog/blogHeader';
 import blogImage from "../../../public/assets/images/Shelters/sheltersHeader.png";
 import SheltersTips from './sheltersTips';
 import SheltersContent from './sheltersContent';
+import SheltersLocations from './sheltersLocations';
 
 const SheltersHeader: React.FC = () => {
   const title = "Azili i prihvatilišta za pse u gradovima Srbije";
@@ -29,6 +30,9 @@ const SheltersHeader: React.FC = () => {
       </div>
       <div>
         <SheltersContent />
+      </div>
+      <div>
+        <SheltersLocations />
       </div>
     </div>
   );
