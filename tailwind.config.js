@@ -20,6 +20,10 @@ module.exports = {
         mainColorTan: "#E8E3DD",
         fontColorBlack: "#000000",
         fontYellow: "#E4A949",
+        namesPink: "rgba(234, 135, 177, 0.12)",
+        namesGreen: "rgba(0, 169, 157, 0.12)",
+        namesFontPink: "#AE0E51",
+        namesFontGreen: "#08514C",
         quotesPageOpacity: "rgba(246, 187, 73, 0.13)",
       },
       keyframes: {
