@@ -4,11 +4,10 @@ import logoImage from "../../../public/assets/images/logoImage.png";
 import { useState } from "react";
 import LoginForm from "../Login/loginForm";
 import Image from "next/image";
-import { usePathname } from "next/navigation"; // Updated import
+import NavbarLinks from "./navbar-links";
 
 export default function MainHeader() {
   const [showLoginForm, setShowLoginForm] = useState(false);
-  const pathname = usePathname(); // Get the current pathname
 
   const handleLoginClick = () => {
     setShowLoginForm(true);
@@ -38,43 +37,7 @@ export default function MainHeader() {
         </Link>
       </div>
       <nav className="OpenSans mr-56 flex space-x-12 font-semibold text-mainColorWhite">
-        <Link
-          href="/pocetna"
-          className={pathname === "/" ? "text-activeLinkGold" : ""}
-        >
-          Početna
-        </Link>
-        <Link
-          href="/saloni"
-          className={pathname === "/saloni" ? "text-activeLinkGold" : ""}
-        >
-          Saloni
-        </Link>
-        <Link
-          href="/pansioni"
-          className={pathname === "/pansioni" ? "text-activeLinkGold" : ""}
-        >
-          Pansioni
-        </Link>
-        <Link
-          href="/veterinari"
-          className={pathname === "/veterinari" ? "text-activeLinkGold" : ""}
-        >
-          Veterinari
-        </Link>
-        <Link
-          href="/dresura"
-          className={pathname === "/dresura" ? "text-activeLinkGold" : ""}
-        >
-          Dresura
-        </Link>
-
-        <Link
-          href="/blog"
-          className={pathname === "/blog" ? "text-activeLinkGold" : ""}
-        >
-          Blog
-        </Link>
+        <NavbarLinks />
         <a href="#" onClick={handleLoginClick}>
           Login
         </a>
