@@ -1,5 +1,5 @@
 "use client";
-
+import { FaInstagram } from "react-icons/fa";
 import NavbarLinks from "../Header/navbar-links";
 
 export default function Footer() {
@@ -9,9 +9,9 @@ export default function Footer() {
         <NavbarLinks />
       </div>
       <div className="flex items-center justify-center space-x-10">
-        <button>INSTAGRAM</button>
-        <button>INSTAGRAM</button>
-        <button>INSTAGRAM</button>
+        <a href="www.instagram.com/petsion">
+          <FaInstagram className="size-10" />
+        </a>
       </div>
     </footer>
   );
