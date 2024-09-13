@@ -16,8 +16,8 @@ export default async function Home() {
         />
       </div>
       <FirstSection />
-      {/* <SecondSection />
-      <ThirdSection /> */}
+      <SecondSection />
+      {/* <ThirdSection /> */}
     </main>
   );
 }
