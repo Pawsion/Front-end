@@ -1,9 +1,9 @@
 import React from "react";
 import FirstSection from "@/components/Home/firstSection";
 import SecondSection from "@/components/Home/secondSection";
-import ThirdSection from "@/components/Home/thirdSection";
 import PagesFirstSection from "@/components/Reusable/pages-first-section";
 import bgImage from "@/../public/assets/images/Saloni/Background.png";
+import VideoSection from "@/components/Home/thirdSection";
 
 export default async function Home() {
   await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -17,7 +17,7 @@ export default async function Home() {
       </div>
       <FirstSection />
       <SecondSection />
-      {/* <ThirdSection /> */}
+      <VideoSection />
     </main>
   );
 }
