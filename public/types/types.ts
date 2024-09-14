@@ -3,3 +3,6 @@ export interface Quote {
     quote: string;
   }
   
+export interface Location {
+  location: string;
+}  

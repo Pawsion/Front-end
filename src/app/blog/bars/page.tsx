@@ -1,10 +1,11 @@
+import BarsHeader from '@/components/Bars/barsHeader';
 import Footer from '@/components/Footer/footer';
 import React from 'react';
-import FoodHeader from '@/components/Food/foodHeader';
 
-export default function WashPage() {
+export default function BarsPage() {
   return (
-    <><FoodHeader />
+    <>
+    <BarsHeader />
     <Footer />
     </>
   );
