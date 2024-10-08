@@ -39,6 +39,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({ title, date, readingTime, image
         ))}
       </div>
     </div>
+    // Uros 17/09
   );
 };
 
