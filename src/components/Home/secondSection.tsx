@@ -1,26 +1,55 @@
 import React from "react";
-import CorgiImage from "./Home2/corgiPicture";
+import HoveringCard from "./hoveringCard";
+import img1L from "@/../public/assets/images/Home/svg/1l.png";
+import img1D from "@/../public/assets/images/Home/svg/1d.png";
+import img2L from "@/../public/assets/images/Home/svg/2l.png";
+import img2D from "@/../public/assets/images/Home/svg/2d.png";
+import img3L from "@/../public/assets/images/Home/svg/3l.png";
+import img3D from "@/../public/assets/images/Home/svg/3d.png";
+import img4L from "@/../public/assets/images/Home/svg/4l.png";
+import img4D from "@/../public/assets/images/Home/svg/4d.png";
+import img5L from "@/../public/assets/images/Home/svg/5l.png";
+import img5D from "@/../public/assets/images/Home/svg/5d.png";
+import img6L from "@/../public/assets/images/Home/svg/6l.png";
+import img6D from "@/../public/assets/images/Home/svg/6d.png";
 
 export default function SecondSection() {
   return (
-    <div className="flex min-h-[80vh]">
-      <CorgiImage />
-      <div className="flex flex-col justify-center p-4 lg:p-0">
-        <h2 className="mt-30 text-6xl font-semibold text-fontColorPurple">
-          Naš sajt pokriva najveće gradove Srbije i ovde možete pronaći :
-        </h2>
-        <ul
-          className="custom-list m-auto mt-6 list-inside text-start font-OpenSans text-custom-sm
-        font-semibold text-fontColorGray text-shadow-md lg:mx-0"
-        >
-          <li>Gde se nalaze pansioni i hoteli za pse</li>
-          <li>Koje salone i frizere za pse možete da posetite</li>
-          <li>Kome se obratiti za dresuru</li>
-          <li>Gde se nalaze azili i prihvatilišta</li>
-          <li>Raspored gradskih parkova</li>
-          <li>Zanimljiva i cool imena za pse</li>
-          <li>Razne savete vezano za ishranu i zdravlje ljubimaca</li>
-        </ul>
+    <div className="mx-auto my-32 flex w-2/3 flex-col justify-center space-y-20 text-center">
+      <h2 className="mt-30 text-6xl font-semibold text-fontColorPurple">
+        Naš sajt pokriva najveće gradove Srbije i ovde možete pronaći:
+      </h2>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <HoveringCard
+          title="Gde se nalaze pansioni i hoteli za pse"
+          imgL={img1L}
+          imgD={img1D}
+        />
+        <HoveringCard
+          title="Koje salone i frizere za pse možete da posetite"
+          imgL={img2L}
+          imgD={img2D}
+        />
+        <HoveringCard
+          title="Gde se nalaze azili i prihvatilišta"
+          imgL={img3L}
+          imgD={img3D}
+        />
+        <HoveringCard
+          title="Raspored gradskih parkova"
+          imgL={img4L}
+          imgD={img4D}
+        />
+        <HoveringCard
+          title="Zanimljiva i cool imena za pse"
+          imgL={img5L}
+          imgD={img5D}
+        />
+        <HoveringCard
+          title="Razne savete vezano za ishranu i zdravlje ljubimaca"
+          imgL={img6L}
+          imgD={img6D}
+        />
       </div>
     </div>
   );

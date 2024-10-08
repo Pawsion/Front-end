@@ -30,5 +30,6 @@ export default function PansioniPage() {
       <PansioniPoGradu city="Subotica" data={PANSIONI_BEOGRAD} />
       <PansioniPoGradu city="Niš" data={PANSIONI_BEOGRAD} />
     </div>
+    //Uroš 9/13
   );
 }

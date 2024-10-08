@@ -1,30 +1,12 @@
-import React from "react";
-import dogImage from "@/../public/assets/images/Homescreen3/LastDogHomePage.png";
-import Image from "next/image";
-
-export default function ThirdSection() {
+export default function VideoSection() {
   return (
-    <div className="mt-20 flex flex-col items-center justify-center space-y-10 px-4 ">
-      <h3 className="text-6xl font-bold text-mainColorBlue">
-        Želite da rezervišete pansion online?
-      </h3>
-      <p>
-        Ulogujte se i uz nekoliko klikova pronađite odgovarajući smeštaj za svog
-        mezimca!
-      </p>
-      <p>
-        Uskoro aplikacija za Android i iOS! Saznajte više o aplikaciji
-        <a href=""> ovde.</a>
-      </p>
-      <button
-        className="mt-12 rounded-[50px] bg-mainColorPurple px-14 py-4
-      text-[24px] font-semibold text-white"
-      >
-        ULOGUJ SE!
-      </button>
-
-      {/* // ! TODO -> this should be 1 image TOGETHER with shadow  */}
-      <Image src={dogImage} alt="Dog" className="mb-[-20px] pb-[-20px]" />
+    <div className="m-auto p-4 md:w-[90%] lg:w-3/4">
+      <video
+        className="m-auto"
+        controls
+        preload="auto"
+        src="/assets/videos/sft2.mov"
+      />
     </div>
   );
 }
