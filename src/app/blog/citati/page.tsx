@@ -6,7 +6,6 @@ export default function CitatiPage() {
   return (
     <>
     <CitatiHeader />
-    <Footer />
     </>
   );
 }

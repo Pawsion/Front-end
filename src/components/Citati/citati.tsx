@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import quotesData from "./quotes.json";
 import { Quote } from "../../../public/types/types";
+import quotesBullet from "../../../public/assets/images/Citat/quotesBullet.png";
 
 const QuotesDisplay: React.FC = () => {
   const [quotes, setQuotes] = useState<Quote[]>([]);
@@ -26,15 +27,19 @@ const QuotesDisplay: React.FC = () => {
     const addHighlightedQuote = () => {
       if (quotes[index]) {
         quoteBlocks.push(
-          <blockquote
-            key={`highlighted-${index}`}
-            className="bg-quotesPageOpacity p-4 text-[24px]  font-regular md:text-center"
-          >
-            <p>{quotes[index].quote}</p>
-            <footer className="mt-2 text-gray-700">
-              — {quotes[index].author}
-            </footer>
-          </blockquote>,
+          <div key={`highlighted-${index}`} className="text-center mb-4 mt-4">
+            <blockquote className="bg-quotesPageOpacity p-4 text-[24px] font-medium font-RobotoSlab md:text-center relative">
+              <img
+                src={quotesBullet.src}
+                alt="Quote Bullet"
+                className="mx-auto mb-2"
+              />
+              <p className="font-medium">{quotes[index].quote}</p>
+              <footer className="mt-2 text-gray-700 font-medium">
+                — {quotes[index].author}
+              </footer>
+            </blockquote>
+          </div>
         );
         index++;
       }
@@ -46,18 +51,22 @@ const QuotesDisplay: React.FC = () => {
         quoteBlocks.push(
           <div
             key={`grid-${index}`}
-            className="m-auto mt-8 grid gap-8  px-8 text-start md:grid-cols-2 lg:w-3/4"
+            className="m-auto mt-8 grid gap-8 px-8 text-start md:grid-cols-2 lg:w-3/4 font-RobotoSlab font-medium"
           >
             {gridQuotes.map((quote, idx) => (
-              <blockquote
-                key={`grid-item-${index + idx}`}
-                className="text-[20px] font-regular md:text-center"
-              >
-                <p>{quote.quote}</p>
-                <footer className="mt-2 text-gray-700">— {quote.author}</footer>
-              </blockquote>
+              <div key={`grid-item-${index + idx}`} className="text-center">
+                <img
+                  src={quotesBullet.src}
+                  alt="Quote Bullet"
+                  className="mx-auto mb-2"
+                />
+                <blockquote className="text-[20px] font-medium md:text-center">
+                  <p className="font-medium">{quote.quote}</p>
+                  <footer className="mt-2 text-gray-700 font-medium">— {quote.author}</footer>
+                </blockquote>
+              </div>
             ))}
-          </div>,
+          </div>
         );
         index += 4;
       }
@@ -71,7 +80,7 @@ const QuotesDisplay: React.FC = () => {
             alt="Decorative"
             className="w-full"
           />
-        </div>,
+        </div>
       );
       imageIndex = (imageIndex + 1) % imagePaths.length;
     };
@@ -96,6 +105,13 @@ const QuotesDisplay: React.FC = () => {
       if (index < quotes.length) {
         addImage();
       }
+    }
+
+    if (quoteBlocks.length > 0) {
+      const lastQuoteBlock = quoteBlocks[quoteBlocks.length - 1];
+      quoteBlocks[quoteBlocks.length - 1] = React.cloneElement(lastQuoteBlock, {
+        className: lastQuoteBlock.props.className.replace(' mb-4', ''),
+      });
     }
 
     return quoteBlocks;
