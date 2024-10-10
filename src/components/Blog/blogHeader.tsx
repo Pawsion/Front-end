@@ -16,7 +16,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({ title, date, readingTime, image
         <h1 className="text-[112px] font-regular text-fontColorBlack text-left mt-16 leading-none font-RobotoSlab">
           <span>{title}</span>
         </h1>
-        <div className="text-gray-500 mt-8 text-[24px]">
+        <div className="text-gray-500 mt-8 text-2xl">
           {date} - {readingTime}
         </div>
       </div>
