@@ -49,9 +49,10 @@ module.exports = {
         "custom-gray": "#F2F2F2",
       },
       fontFamily: {
-        Bogart: ["Bogart", "sans-serif"],
         OpenSans: ["Open Sans", "sans-serif"],
-      },
+        Roboto: ['Roboto', 'sans-serif'],
+        RobotoSlab: ['"Roboto Slab"', 'serif'],
+      },      
       fontWeight: {
         regular: 400,
         medium: 500,
@@ -69,7 +70,6 @@ module.exports = {
       },
     },
   },
-  variants: {},
   plugins: [
     function ({ addUtilities }) {
       addUtilities(

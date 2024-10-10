@@ -32,7 +32,7 @@ export default function BlogPost({
         text-gray-600 lg:w-1/2 lg:space-y-20"
       >
         <h4 className="hidden text-xl lg:flex ">{timeToRead}</h4>
-        <h1 className="text-4xl font-bold text-black lg:text-5xl">{title}</h1>
+        <h1 className="text-4xl font-bold text-black lg:text-5xl font-RobotoSlab">{title}</h1>
         <p className="text-xl">{description}</p>
       </div>
     </Link>

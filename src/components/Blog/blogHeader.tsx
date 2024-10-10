@@ -2,18 +2,18 @@ import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 
 interface BlogHeaderProps {
-  title: string;
+  title: React.ReactNode;
   date: string;
   readingTime: string;
   imageSrc: StaticImageData; // Type for Next.js static images
-  content: string[];
+  content: React.ReactNode[];
 }
 
 const BlogHeader: React.FC<BlogHeaderProps> = ({ title, date, readingTime, imageSrc, content }) => {
   return (
     <div className="relative flex flex-col items-start p-4">
       <div className="mb-4 ml-64">
-        <h1 className="text-[100px] font-regular text-fontColorBlack text-left mt-16 leading-none">
+        <h1 className="text-[112px] font-regular text-fontColorBlack text-left mt-16 leading-none font-RobotoSlab">
           <span>{title}</span>
         </h1>
         <div className="text-gray-500 mt-8 text-[24px]">
@@ -39,7 +39,6 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({ title, date, readingTime, image
         ))}
       </div>
     </div>
-    // Uros 17/09
   );
 };
 

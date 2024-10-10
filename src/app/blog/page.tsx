@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import SearchBar from "@/components/SearchBar/search-bar";
-import Footer from "@/components/Footer/footer";
 import ButtonBlog from "@/components/Blog/button";
 import { BLOG_DATA } from "@/utils/blog-data";
 import BlogPost from "@/components/Blog/blogPost";
@@ -41,7 +40,6 @@ export default function BlogPage() {
           <ButtonBlog onClick={loadMoreItems} />
         </div>
       )}
-      <Footer />
     </div>
   );
 }
