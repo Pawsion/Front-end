@@ -11,10 +11,11 @@ export const BLOG_DATA: BlogData[] = [
   {
     title: "101 citat o psima koji ce dotaci srce svakog vlasnika",
     description:
-      "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
+      "Pas ti je omiljeni prijatelj, ali želiš da saznaš šta drugi imaju da kažu o svojim čupavim prijateljima?! Spremili smo ti 101 bezvremenski citat poznatih načnika, muzičara i drugih cool ljudi. Uživaj!",
     image: citati,
     link: "/blog/citati",
     timeToRead: "11.07.2024 - 5 minuta citanja",
+    meta: "Citati i statusi  o psima poznatih književnika, glumaca i drugih javnih ličnosti koji će vas navesti da ih još više zavolite.",
   },
   {
     title: "Azili",
@@ -23,6 +24,7 @@ export const BLOG_DATA: BlogData[] = [
     image: azili,
     link: "/blog/shelters",
     timeToRead: "11.07.2024 - 5 minuta citanja",
+    meta: "Some data",
   },
   {
     title: "Hrana",
@@ -31,6 +33,7 @@ export const BLOG_DATA: BlogData[] = [
     image: hrana,
     link: "/blog/food",
     timeToRead: "11.07.2024 - 5 minuta citanja",
+    meta: "Some data",
   },
   {
     title: "Imena",
@@ -39,6 +42,7 @@ export const BLOG_DATA: BlogData[] = [
     image: imena,
     link: "/blog/names",
     timeToRead: "11.07.2024 - 5 minuta citanja",
+    meta: "Some data",
   },
   {
     title: "Kafici",
@@ -47,6 +51,7 @@ export const BLOG_DATA: BlogData[] = [
     image: kafici,
     link: "/blog/bars",
     timeToRead: "11.07.2024 - 5 minuta citanja",
+    meta: "Some data",
   },
   {
     title: "Parkovi",
@@ -55,13 +60,15 @@ export const BLOG_DATA: BlogData[] = [
     image: parkovi,
     link: "/blog/parks",
     timeToRead: "11.07.2024 - 5 minuta citanja",
+    meta: "Some data",
   },
   {
-    title: "Perionice",
+    title: "Samouslužne perionice za pse - gde i kako okupati psa",
     description:
-      "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
+      "Imaš prljavog psa, ali ne želiš kući da napraviš haos? Spremili smo ti savete kako da ga lako i jednostavno okupaš u uslužnoj perionici, kao i gde da ih nađeš u većim gradovima Srbije. Srećno kupanje!",
     image: perionice,
     link: "/blog/wash",
     timeToRead: "11.07.2024 - 5 minuta citanja",
+    meta: "Saznajte šta su samouslužne perionice za pse i koliko košta usluga kupanja pasa | Lista perionica za 2024. - Beograd, Novi Sad, Subotica, Niš, Kragujevac.",
   },
 ];

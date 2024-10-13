@@ -32,6 +32,7 @@ export default function BlogPage() {
             title={item.title}
             image={item.image}
             timeToRead={item.timeToRead}
+            meta={item.meta}
           />
         ))}
       </main>

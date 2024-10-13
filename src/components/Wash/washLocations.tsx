@@ -7,24 +7,24 @@ export default function WashLocations() {
       <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Samouslužne perionice</h2>
       <ol className="list-decimal ml-8 text-mainColorBlue">
         <li className="mb-4">
-          <a href="#beograd" className="hover:underline">Beograd</a>
+          <a href="#beograd" className="hover:underline">Samouslužne perionice za pse Beograd</a>
         </li>
         <li className="mb-4">
-          <a href="#novi-sad" className="hover:underline">Novi Sad</a>
+          <a href="#novi-sad" className="hover:underline">Samouslužne perionice za pse Novi Sad</a>
         </li>
         <li className="mb-4">
-          <a href="#nis" className="hover:underline">Niš</a>
+          <a href="#nis" className="hover:underline">Samouslužne perionice za pse Niš</a>
         </li>
         <li className="mb-4">
-          <a href="#subotica" className="hover:underline">Subotica</a>
+          <a href="#subotica" className="hover:underline">Samouslužne perionice za pse Subotica</a>
         </li>
         <li>
-          <a href="#kragujevac" className="hover:underline">Kragujevac</a>
+          <a href="#kragujevac" className="hover:underline">Samouslužne perionice za pse Kragujevac</a>
         </li>
       </ol>
 
       <div id="beograd" className="mt-16">
-        <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Beograd</h2>
+        <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Samouslužne perionice za pse Beograd</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <WashLocationCard
             name="Repionica"
@@ -40,7 +40,7 @@ export default function WashLocations() {
           />
           <WashLocationCard
             name="WetPet"
-            address="Španskih boraca 22, lokal br. 2"
+            address="Španskih boraca 22, između broja e i d lokal br. 2"
             phone="065 8988098"
             website="http://www.wetpetconcept.com"
           />
@@ -54,7 +54,7 @@ export default function WashLocations() {
       </div>
 
       <div id="novi-sad" className="mt-16">
-        <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Novi Sad</h2>
+        <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Samouslužne perionice za pse Novi Sad</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <WashLocationCard
             name="Dog Wash Bubble"
@@ -72,7 +72,7 @@ export default function WashLocations() {
       </div>
 
       <div id="nis" className="mt-16">
-        <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Niš</h2>
+        <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Samouslužne perionice za pse Niš</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <WashLocationCard
             name="Dog spa Nais"
@@ -84,7 +84,7 @@ export default function WashLocations() {
       </div>
 
       <div id="subotica" className="mt-16">
-        <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Subotica</h2>
+        <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Samouslužne perionice za pse Subotica</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <WashLocationCard
             name="Samouslužno kupanje pasa Subotica"
@@ -96,7 +96,7 @@ export default function WashLocations() {
       </div>
 
       <div id="kragujevac" className="mt-16">
-        <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Kragujevac</h2>
+        <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">Samouslužne perionice za pse Kragujevac</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <WashLocationCard
             name="Samouslužna perionica za pse Snoopy"

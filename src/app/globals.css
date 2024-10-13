@@ -4,6 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
+h1 {
+  @apply text-9xl font-regular text-fontColorBlack text-left mt-16 leading-none font-RobotoSlab;
+}
+
+h2 {
+  @apply text-6xl font-regular font-RobotoSlab text-fontColorBlack text-left leading-none;
+}
+
+
 @font-face {
   font-family: 'Roboto Slab';
   src: url('/fonts/RobotoSlab-Regular.ttf') format('truetype');

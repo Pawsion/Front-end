@@ -6,6 +6,7 @@ export type BlogData = {
   link: string;
   image: StaticImageData;
   timeToRead: string;
+  meta: string;
 };
 
 export type SaloniData = {
