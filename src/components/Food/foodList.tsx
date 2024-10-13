@@ -39,7 +39,7 @@ export default function FoodList() {
         mišljenja našeg veterinara.
       </p>
       <div className="text-gray-700">
-        <h3>
+        <h3 className="mb-24 mt-24 text-2xl font-regular italic">
           1. Acana
         </h3>
         <p className="mb-4">
@@ -54,7 +54,7 @@ export default function FoodList() {
           nalazi u njoj.
         </p>
 
-        <h3>
+        <h3 className="mb-24 mt-24 text-2xl font-regular italic">
           2. Royal Canin
         </h3>
         <p className="mb-4">
@@ -70,7 +70,7 @@ export default function FoodList() {
           učinkovitom.
         </p>
 
-        <h3>
+        <h3 className="mb-24 mt-24 text-2xl font-regular italic">
           3. Hills
         </h3>
         <p className="mb-4">
@@ -101,7 +101,7 @@ export default function FoodList() {
           zavisnosti od uzrasta i veličine psa.</b>
         </p>
 
-        <h3>
+        <h3 className="mb-24 mt-24 text-2xl font-regular italic">
           5. Farmina Cibau
         </h3>
         <p className="mb-4">
@@ -110,7 +110,7 @@ export default function FoodList() {
           osetljivim digestivnim traktom.
         </p>
 
-        <h3>
+        <h3 className="mb-24 mt-24 text-2xl font-regular italic">
           6. Brit Care
         </h3>
         <p className="mb-4">
@@ -120,7 +120,7 @@ export default function FoodList() {
           preporučujemo <b>&quot;Weight loss&quot;</b> i <b>&quot;Endurance&quot;</b>.
         </p>
 
-        <h3>
+        <h3 className="mb-24 mt-24 text-2xl font-regular italic">
           7. Trovet
         </h3>
         <p className="mb-4">
@@ -133,7 +133,7 @@ export default function FoodList() {
           od mnogih težkih oboljenja.
         </p>
 
-        <h3>
+        <h3 className="mb-24 mt-24 text-2xl font-regular italic">
           8. Specific
         </h3>
         <p className="mb-4">
@@ -144,7 +144,7 @@ export default function FoodList() {
           problemima.
         </p>
 
-        <h3>
+        <h3 className="mb-24 mt-24 text-2xl font-regular italic">
           9. Alleva
         </h3>
         <p className="mb-4">
@@ -153,7 +153,7 @@ export default function FoodList() {
           monoproteinima.
         </p>
 
-        <h3>
+        <h3 className="mb-24 mt-24 text-2xl font-regular italic">
           10. Trainer
         </h3>
         <p className="mb-4">
