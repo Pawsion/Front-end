@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer/footer";
 import Header from "@/components/Header/header";
 
-const inter = Inter({ subsets: ["latin"] });
+const open = Open_Sans({subsets: ["latin"]});
 
 export const metadata = {
   title: "Pethub",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={open.className}>
         <Header />
         {children}
         <Footer />

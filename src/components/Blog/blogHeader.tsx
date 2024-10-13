@@ -13,10 +13,10 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({ title, date, readingTime, image
   return (
     <div className="relative flex flex-col items-start p-4">
       <div className="mb-4 ml-64">
-        <h1 className="text-[112px] font-regular text-fontColorBlack text-left mt-16 leading-none font-RobotoSlab">
+        <h1 className="text-9xl font-medium text-fontColorBlack text-left mt-16 leading-none font-RobotoSlab">
           <span>{title}</span>
         </h1>
-        <div className="text-gray-500 mt-8 text-[24px]">
+        <div className="text-gray-500 mt-8 text-2xl">
           {date} - {readingTime}
         </div>
       </div>
@@ -33,7 +33,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({ title, date, readingTime, image
         </div>
       </div>
 
-      <div className="mb-16 ml-64 mt-8 text-[28px] font-openSans font-regular">
+      <div className="mb-16 ml-64 mt-8 text-2xl font-openSans font-regular">
         {content.map((paragraph, index) => (
           <p key={index} className="mb-16">{paragraph}</p>
         ))}

@@ -3,7 +3,7 @@ import pawBullet from "../../../public/assets/images/Wash/pawBullet.png";
 
 export default function WashPros() {
   return (
-    <div className="mb-32 ml-64 mt-16 text-[28px] font-openSans font-regular">
+    <div className="mb-32 ml-64 mt-16 text-2xl font-openSans font-regular">
       <ul className="space-y-6">
         <li className="flex items-start">
           <img src={pawBullet.src} alt="Paw Bullet" className="w-6 h-6 mr-4 mt-1" />

@@ -28,7 +28,7 @@ const QuotesDisplay: React.FC = () => {
       if (quotes[index]) {
         quoteBlocks.push(
           <div key={`highlighted-${index}`} className="text-center mb-4 mt-4">
-            <blockquote className="bg-quotesPageOpacity p-4 text-[24px] font-medium font-RobotoSlab md:text-center relative">
+            <blockquote className="bg-quotesPageOpacity p-4 text-2xl font-medium font-RobotoSlab md:text-center relative">
               <img
                 src={quotesBullet.src}
                 alt="Quote Bullet"

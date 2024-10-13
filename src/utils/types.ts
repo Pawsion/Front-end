@@ -6,6 +6,7 @@ export type BlogData = {
   link: string;
   image: StaticImageData;
   timeToRead: string;
+  meta: string;
 };
 
 export type SaloniData = {
@@ -21,3 +22,10 @@ export type SaloniCardType = {
   address: string;
   phone: string;
 };
+
+export type WashCards = {
+  name: string;
+  address: string;
+  phone: string;
+  website: string;
+}
