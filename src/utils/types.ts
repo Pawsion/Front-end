@@ -22,3 +22,10 @@ export type SaloniCardType = {
   address: string;
   phone: string;
 };
+
+export type WashCards = {
+  name: string;
+  address: string;
+  phone: string;
+  website: string;
+}

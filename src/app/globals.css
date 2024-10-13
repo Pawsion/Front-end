@@ -12,6 +12,9 @@ h2 {
   @apply text-6xl font-regular font-RobotoSlab text-fontColorBlack text-left leading-none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 @font-face {
   font-family: 'Roboto Slab';
