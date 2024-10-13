@@ -12,6 +12,10 @@ h2 {
   @apply text-6xl font-regular font-RobotoSlab text-fontColorBlack text-left leading-none;
 }
 
+h3 {
+  @apply mb-24 mt-24 text-2xl font-regular italic;
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -13,7 +13,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({ title, date, readingTime, image
   return (
     <div className="relative flex flex-col items-start p-4">
       <div className="mb-4 ml-64">
-        <h1 className="text-[112px] font-regular text-fontColorBlack text-left mt-16 leading-none font-RobotoSlab">
+        <h1 className="text-9xl font-medium text-fontColorBlack text-left mt-16 leading-none font-RobotoSlab">
           <span>{title}</span>
         </h1>
         <div className="text-gray-500 mt-8 text-2xl">

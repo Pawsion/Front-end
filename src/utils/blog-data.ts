@@ -27,13 +27,13 @@ export const BLOG_DATA: BlogData[] = [
     meta: "Some data",
   },
   {
-    title: "Hrana",
+    title: "Kako izabrati najbolju hranu za pse - Lista brendova za 2024.",
     description:
-      "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
+      "Voliš da ti pas fino i zdravo ručka, ali ne možeš da se odlučiš za određenog proizvođača?! Ne brini, spremili smo analize i liste proizvoda koje će ti pomoći da odabereš pravu hranu za svog ljubimca.",
     image: hrana,
     link: "/blog/food",
     timeToRead: "11.07.2024 - 5 minuta citanja",
-    meta: "Some data",
+    meta: " Kakvu vrstu hrane dati ljubimcu? Koju marku kvalitetnih granula odabrati? | Lista saveta koja će olakšati život vama i vašem psu | Top 10 brendova za 2024.",
   },
   {
     title: "Imena",

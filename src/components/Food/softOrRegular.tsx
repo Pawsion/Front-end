@@ -4,15 +4,15 @@ import Negative from "../../../public/assets/images/Food/Negative.png";
 
 export default function SoftOrRegular() {
   return (
-    <div id="vlažna-hrana-vs-granule" className="mb-16 ml-64 text-[28px] font-openSans font-regular">
-      <h2 className="text-[64px] font-regular text-fontColorBlack text-left mb-16">
+    <div id="vlažna-hrana-vs-granule" className="mb-16 ml-64 text-2xl font-regular">
+      <h2 className="mb-16 mt-32">
         Da li je za pse bolja vlažna hrana ili granule?
       </h2>
       <p className="mb-8">
         Jedna od najčeščih nedoumica vlasnika – u kojoj formi da dajem mom ljubimcu hranu? Pre no što vam<br />odgovorimo na ovo pitanje, osvrnućemo se na to šta koja vrsta hrane predstavlja i za šta se koristi.
       </p>
       <p className="mb-8">
-        Vlažna, kao što joj i sam naziv kaže, nalazi se u tečnijem, odnosno mekšem obliku. Sastav joj zavisi od vrste, ali<br />i od proizvođača. Takođe, veliku ulogu igra i činjenica da li je u pitanju komercijalni, ili medicinski proizvod.
+        <b>Vlažna,</b> kao što joj i sam naziv kaže, nalazi se u tečnijem, odnosno mekšem obliku. Sastav joj zavisi od vrste, ali<br />i od proizvođača. Takođe, veliku ulogu igra i činjenica da li je u pitanju komercijalni, ili medicinski proizvod.
       </p>
       <p className="mb-8">
         Istraživanja su pokazala negativne i pozitivne strane komercijalne, vlažne hrane za pse:
@@ -33,7 +33,7 @@ export default function SoftOrRegular() {
         </ul>
       </div>
       <div className="mb-8">
-        <h3 className="text-[28px] font-regular text-fontColorBlack mb-4">
+        <h3 className="text-2xl font-regular text-fontColorBlack mb-4">
           Pozitivna strana:
         </h3>
         <ul className="list-none ml-32 mt-16 mb-16 text-gray-700">
@@ -81,7 +81,7 @@ export default function SoftOrRegular() {
         </ul>
       </div>
       <p>
-        Budući da je izbor kvalitetne vlažne hrane limitiran, a mnogi komercijalni vlažni proizvodi sadrže pojačivače ukusa i druge štetne aditive, radije se opredeljujemo za granule.
+        Budući da je izbor kvalitetne vlažne hrane limitiran, a <i>mnogi komercijalni vlažni proizvodi sadrže pojačivače ukusa<br />i druge štetne aditive, </i>radije se opredeljujemo za granule.
       </p>
     </div>
   );
