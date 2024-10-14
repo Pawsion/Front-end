@@ -34,10 +34,10 @@ const BarsList: React.FC = () => {
 
   return (
     <div>
-      <div className="mb-4">
-        <h1 className="text-[64px] ml-4 font-regular text-fontColorBlack text-left leading-none mb-24">
-          Lista “pet friendly” restorana u Beogradu za 2024. godinu:
-        </h1>
+      <div className="mb-16 mt-16 tracking-tightest">
+        <h2>
+          Lista “pet friendly” restorana u Beogradu za<br /> 2024. godinu:
+        </h2>
       </div>
       <div className="grid grid-cols-3 gap-4 mb-8">
         {LOCATIONS.map((location, index) => (
@@ -51,7 +51,7 @@ const BarsList: React.FC = () => {
       </div>
 
       <div className="ml-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 transition-all duration-300 ease-in-out ${activeLocation ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'}`}>
           {filteredBars.length > 0 ? (
             filteredBars.map((item: BarData, index: number) => (
               <Card

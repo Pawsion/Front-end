@@ -45,13 +45,13 @@ export const BLOG_DATA: BlogData[] = [
     meta: "Some data",
   },
   {
-    title: "Kafici",
+    title: "Koji restorani i kafići su pet friendly u Beogradu?",
     description:
-      "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
+      "Nalaziš se u Beogradu i tražiš kafić ili restoran u kom ćeš udobno da se osećaš sa svojim psom.  Pogledaj listu PET friendly lokala koje smo ti pripremili kao i smernice za ponašanje ljubimaca.",
     image: kafici,
     link: "/blog/bars",
     timeToRead: "11.07.2024 - 5 minuta citanja",
-    meta: "Some data",
+    meta: "Živiš u Beogradu, imaš psa i želiš da ti pravi društvo u kafiću ili restoranu? Spremili smo ti listu pet friendly lokala kao i savete za ponašanje ljubimca",
   },
   {
     title: "Parkovi",

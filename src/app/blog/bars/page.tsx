@@ -6,7 +6,6 @@ export default function BarsPage() {
   return (
     <>
     <BarsHeader />
-    <Footer />
     </>
   );
 }
