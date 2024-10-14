@@ -54,13 +54,13 @@ export const BLOG_DATA: BlogData[] = [
     meta: "Živiš u Beogradu, imaš psa i želiš da ti pravi društvo u kafiću ili restoranu? Spremili smo ti listu pet friendly lokala kao i savete za ponašanje ljubimca",
   },
   {
-    title: "Parkovi",
+    title: " Parkovi za pse - gde se nalaze u Novom Sadu i Beogradu",
     description:
-      "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
+      "Kada živiš u gradu neophodno je poznavati parkove u kojima psi mogu slobodno da se igraju i socijalizuju. Pripremili smo liste po gradovima da bi ti imao više vremena da se igraš sa svojim ljubimcem.",
     image: parkovi,
     link: "/blog/parks",
     timeToRead: "11.07.2024 - 5 minuta citanja",
-    meta: "Some data",
+    meta: "Treba ti park gde možeš slobodno da pustiš psa da se igra? Napravili smo ti listu parkova u Novom Sadu i Beogradu gde možeš da uživaš sa svojim ljubimcem.",
   },
   {
     title: "Samouslužne perionice za pse - gde i kako okupati psa",
