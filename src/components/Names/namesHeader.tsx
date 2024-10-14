@@ -11,9 +11,20 @@ const NamesHeader: React.FC = () => {
   const date = 'DD.MM.YY';
   const readingTime = 'x min čitanja';
   const content = [
-    'Došlo je vreme da dovedete kući svoje novo štene. Nabavili ste hranu za pse, izabrali savršeni povodac i ogrlicu. Šta još preostaje? Izabrati savršeno ime za psa. Svako ko je ikada morao da da ime ljubimcu može vam reći da to i nije baš lako. Postoji beskonačno mnogo opcija.',
-    'Izbor imena za vašeg psa možda se neće desiti preko noći. Ne očajavate, uvek se setite da će ga to ime pratiti kroz ceo život i zato ne žurite sa odlukom. Nije na odmet ni da provedete nekoliko dana sa štenetom i da ga bolje upoznate. Možda će neka njegova osobina ili karakteristika upravo biti inspiracija za novo ime.',
-    'Bez obzira da li tražite zabavno ime za psa inspirisano njegovom veselom ličnošću ili jedinstveno koje će ga izdvojiti od drugih, potrudili smo se da na našoj listi pronađete ono pravo, baš za njega.'
+    <>
+    Došlo je vreme da dovedete kući svoje novo štene. Nabavili ste hranu za pse, izabrali savršeni povodac i<br />
+    ogrlicu. Šta još preostaje? Izabrati savršeno ime za psa. Svako ko je ikada morao da da ime ljubimcu može vam<br />
+    reći da to i nije baš lako. Postoji beskonačno mnogo opcija.
+    </>,
+    <>
+    Izbor imena za vašeg psa možda se neće desiti preko noći. Ne očajavate, uvek se setite da će ga to ime pratiti<br />
+    kroz ceo život i zato <b>ne žurite sa odlukom.</b> Nije na odmet ni da provedete nekoliko dana sa štenetom i da ga<br />
+    bolje upoznate. Možda će neka njegova <b>osobina ili karakteristika upravo biti inspiracija za novo ime.</b>
+    </>,
+    <>
+    Bez obzira da li tražite zabavno ime za psa inspirisano njegovom veselom ličnošću ili jedinstveno koje će ga<br />
+    izdvojiti od drugih, potrudili smo se da na našoj listi pronađete ono pravo, baš za njega.
+    </>
   ];
 
   return (

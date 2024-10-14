@@ -27,7 +27,7 @@ const NamesList: React.FC = () => {
             nameColor = 'text-black',
             maleNames = [],
             femaleNames = [],
-          } = data as NameListData; // Cast to handle optional properties
+          } = data as NameListData;
 
           return (
             <div key={index} className={`mb-8 ${backgroundColor}`}>

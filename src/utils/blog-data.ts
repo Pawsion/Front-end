@@ -36,13 +36,13 @@ export const BLOG_DATA: BlogData[] = [
     meta: " Kakvu vrstu hrane dati ljubimcu? Koju marku kvalitetnih granula odabrati? | Lista saveta koja će olakšati život vama i vašem psu | Top 10 brendova za 2024.",
   },
   {
-    title: "Imena",
+    title: "Imena za pse koja \"kidaju\" po komšiluku, a i šire",
     description:
-      "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
+      " Odabrali smo preko 250 muških i ženskih imena inspirisanih superherojima, planetama, crtanim i filmskim likovima. Ne gubi vreme već pronađi zanimljivo, smešno, možda čak i neobično ime za psa. Srećno!",
     image: imena,
     link: "/blog/names",
     timeToRead: "11.07.2024 - 5 minuta citanja",
-    meta: "Some data",
+    meta: " Treba ti inspiracija za ime psa? Preko 250 muških, ženskih, slatkih, cool, neobičnih, moćnih, ma kakvih poželiš imena! Srećan izbor!",
   },
   {
     title: "Koji restorani i kafići su pet friendly u Beogradu?",
