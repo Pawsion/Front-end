@@ -26,6 +26,9 @@ module.exports = {
         namesFontGreen: "#08514C",
         quotesPageOpacity: "rgba(246, 187, 73, 0.13)",
       },
+      letterSpacing: {
+        tightest: '0.25em',
+      },
       keyframes: {
         slideInRight: {
           "0%": { transform: "translateX(-20%)", opacity: 0 },

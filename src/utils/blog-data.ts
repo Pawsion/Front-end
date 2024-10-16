@@ -36,31 +36,31 @@ export const BLOG_DATA: BlogData[] = [
     meta: " Kakvu vrstu hrane dati ljubimcu? Koju marku kvalitetnih granula odabrati? | Lista saveta koja će olakšati život vama i vašem psu | Top 10 brendova za 2024.",
   },
   {
-    title: "Imena",
+    title: "Imena za pse koja \"kidaju\" po komšiluku, a i šire",
     description:
-      "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
+      " Odabrali smo preko 250 muških i ženskih imena inspirisanih superherojima, planetama, crtanim i filmskim likovima. Ne gubi vreme već pronađi zanimljivo, smešno, možda čak i neobično ime za psa. Srećno!",
     image: imena,
     link: "/blog/names",
     timeToRead: "11.07.2024 - 5 minuta citanja",
-    meta: "Some data",
+    meta: " Treba ti inspiracija za ime psa? Preko 250 muških, ženskih, slatkih, cool, neobičnih, moćnih, ma kakvih poželiš imena! Srećan izbor!",
   },
   {
-    title: "Kafici",
+    title: "Koji restorani i kafići su pet friendly u Beogradu?",
     description:
-      "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
+      "Nalaziš se u Beogradu i tražiš kafić ili restoran u kom ćeš udobno da se osećaš sa svojim psom.  Pogledaj listu PET friendly lokala koje smo ti pripremili kao i smernice za ponašanje ljubimaca.",
     image: kafici,
     link: "/blog/bars",
     timeToRead: "11.07.2024 - 5 minuta citanja",
-    meta: "Some data",
+    meta: "Živiš u Beogradu, imaš psa i želiš da ti pravi društvo u kafiću ili restoranu? Spremili smo ti listu pet friendly lokala kao i savete za ponašanje ljubimca",
   },
   {
-    title: "Parkovi",
+    title: " Parkovi za pse - gde se nalaze u Novom Sadu i Beogradu",
     description:
-      "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
+      "Kada živiš u gradu neophodno je poznavati parkove u kojima psi mogu slobodno da se igraju i socijalizuju. Pripremili smo liste po gradovima da bi ti imao više vremena da se igraš sa svojim ljubimcem.",
     image: parkovi,
     link: "/blog/parks",
     timeToRead: "11.07.2024 - 5 minuta citanja",
-    meta: "Some data",
+    meta: "Treba ti park gde možeš slobodno da pustiš psa da se igra? Napravili smo ti listu parkova u Novom Sadu i Beogradu gde možeš da uživaš sa svojim ljubimcem.",
   },
   {
     title: "Samouslužne perionice za pse - gde i kako okupati psa",
