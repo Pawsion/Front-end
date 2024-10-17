@@ -18,13 +18,13 @@ export const BLOG_DATA: BlogData[] = [
     meta: "Citati i statusi  o psima poznatih književnika, glumaca i drugih javnih ličnosti koji će vas navesti da ih još više zavolite.",
   },
   {
-    title: "Azili",
+    title: "Azili i prihvatilišta za pse u gradovima Srbije",
     description:
-      "Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, neraskidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo. Oni nas podsećaju na važnost saosećanja, vernosti i prijateljstva, svega onog što psi simbolizuju.",
+      "Ako tražiš psa za udomljavanje, azili mogu biti pravo mesto za tebe. Takođe, ako si izgubio psa, možda se baš tamo nalazi. Pripremili smo ti spisak azila po gradovima – na tebi je da ih kontaktiraš.",
     image: azili,
     link: "/blog/shelters",
     timeToRead: "11.07.2024 - 5 minuta citanja",
-    meta: "Some data",
+    meta: "Želite da udomite psa? Izgubili ste ljubimca, ali ne znate gde da ga potražite? Možda vam azili mogu pomoći. Pogledajte listu azila za sve veće gradove Srbije.",
   },
   {
     title: "Kako izabrati najbolju hranu za pse - Lista brendova za 2024.",

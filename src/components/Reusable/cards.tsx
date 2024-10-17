@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ name, website, address, phone }) => {
       </div>
 
       <div className="mt-8">
-        <h2 className="text-xl font-bold mb-2 text-mainColorBlue">{name}</h2>
+        <h2 className="text-xl font-OpenSans font-bold mb-2 text-mainColorBlue">{name}</h2>
         <p className="text-gray-600 mb-1">
           Sajt: {website ? (
             <a

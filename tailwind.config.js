@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mainColorBlue: "#575FCC",
+        mainColorBlue: "#575FC8",
         mainColorWhite: "#FEF9F3",
         pageColorWhite: "#E1E1E1",
         pageColorTan: "#E8E3DD",
@@ -25,6 +25,8 @@ module.exports = {
         namesFontPink: "#AE0E51",
         namesFontGreen: "#08514C",
         quotesPageOpacity: "rgba(246, 187, 73, 0.13)",
+        inactiveLink: "#FFFFFF",
+        activeLink: "#E4A949",
       },
       letterSpacing: {
         tightest: '0.25em',

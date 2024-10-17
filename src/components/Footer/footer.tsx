@@ -10,7 +10,7 @@ export default function Footer() {
       </div>
       <div className="flex items-center justify-center space-x-10">
         <a href="www.instagram.com/petsion">
-          <FaInstagram className="size-10" />
+          <FaInstagram className="size-10 text-inactiveLink" />
         </a>
       </div>
     </footer>
