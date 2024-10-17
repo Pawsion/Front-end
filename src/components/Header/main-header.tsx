@@ -38,11 +38,7 @@ export default function MainHeader() {
       </div>
       <nav className="OpenSans mr-56 flex space-x-12 font-semibold text-mainColorWhite">
         <NavbarLinks />
-        <a href="#" onClick={handleLoginClick}>
-          Login
-        </a>
       </nav>
-      {showLoginForm && <LoginForm onClose={handleCloseLoginForm} />}
     </header>
   );
 }
