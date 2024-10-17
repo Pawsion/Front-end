@@ -10,7 +10,9 @@ export default function NavbarLinks() {
       <Link
         href="/"
         className={
-          pathname === "/" ? "text-activeLinkGold" : "hover:text-activeLinkGold"
+          pathname === "/"
+            ? "text-activeLinkGold"
+            : "text-inactiveLink hover:text-activeLinkGold"
         }
       >
         Početna
@@ -20,7 +22,7 @@ export default function NavbarLinks() {
         className={
           pathname === "/saloni"
             ? "text-activeLinkGold"
-            : "hover:text-activeLinkGold"
+            : "text-inactiveLink hover:text-activeLinkGold"
         }
       >
         Saloni
@@ -30,7 +32,7 @@ export default function NavbarLinks() {
         className={
           pathname === "/pansioni"
             ? "text-activeLinkGold"
-            : "hover:text-activeLinkGold"
+            : "text-inactiveLink hover:text-activeLinkGold"
         }
       >
         Pansioni
@@ -40,7 +42,7 @@ export default function NavbarLinks() {
         className={
           pathname === "/veterinari"
             ? "text-activeLinkGold"
-            : "hover:text-activeLinkGold"
+            : "text-inactiveLink hover:text-activeLinkGold"
         }
       >
         Veterinari
@@ -50,7 +52,7 @@ export default function NavbarLinks() {
         className={
           pathname === "/dresura"
             ? "text-activeLinkGold"
-            : "hover:text-activeLinkGold"
+            : "text-inactiveLink hover:text-activeLinkGold"
         }
       >
         Dresura
@@ -61,7 +63,7 @@ export default function NavbarLinks() {
         className={
           pathname === "/blog"
             ? "text-activeLinkGold"
-            : "hover:text-activeLinkGold"
+            : "text-inactiveLink hover:text-activeLinkGold"
         }
       >
         Blog

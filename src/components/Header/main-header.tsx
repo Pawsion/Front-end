@@ -1,28 +1,16 @@
 "use client";
 import Link from "next/link";
 import logoImage from "../../../public/assets/images/logoImage.png";
-import { useState } from "react";
-import LoginForm from "../Login/loginForm";
 import Image from "next/image";
 import NavbarLinks from "./navbar-links";
 
 export default function MainHeader() {
-  const [showLoginForm, setShowLoginForm] = useState(false);
-
-  const handleLoginClick = () => {
-    setShowLoginForm(true);
-  };
-
-  const handleCloseLoginForm = () => {
-    setShowLoginForm(false);
-  };
 
   return (
     <header
       className="flex items-center justify-between bg-mainColorBlue px-8 py-4"
       style={{
         padding: "28px 8px",
-        // position: "sticky",
         top: 0,
         zIndex: 9999,
       }}
@@ -36,7 +24,7 @@ export default function MainHeader() {
           />
         </Link>
       </div>
-      <nav className="OpenSans mr-56 flex space-x-12 font-semibold text-mainColorWhite">
+      <nav className="OpenSans mr-56 flex space-x-12 font-semibold text-inactiveLink">
         <NavbarLinks />
       </nav>
     </header>
