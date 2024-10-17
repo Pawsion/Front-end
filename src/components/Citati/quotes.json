@@ -36,12 +36,20 @@
     "quote": "Moji psi su razlog što se svakog dana budim sa osmehom na licu."
   },
   {
+    "author": "Charles Yu",
+    "quote": "Ako mogu da budem upola dobra osoba koliko je moj pas, onda bih bio duplo bolji čovek."
+  },
+  {
     "author": "Immanuel Kant",
     "quote": "Možemo suditi o srcu čoveka prema njegovom odnosu prema životinjama."
   },
   {
-    "author": "Charles Yu",
-    "quote": "Ako mogu da budem upola dobra osoba koliko je moj pas, onda bih bio duplo bolji čovek."
+    "author": "Jonathan Svift",
+    "quote": "Svaki pas mora imati svoj dan."
+  },
+  {
+    "author": "Ann Landers",
+    "quote": "Nemojte misliti da je naklonost psa prema vama dokaz da ste divna osoba."
   },
   {
     "author": "Bill Murray",
@@ -64,20 +72,8 @@
     "quote": "Svet bi bio lepše mesto ako bi svako imao sposobnost da voli bezuslovno kao pas."
   },
   {
-    "author": "Ann Landers",
-    "quote": "Nemojte misliti da je naklonost psa prema vama dokaz da ste divna osoba."
-  },
-  {
-    "author": "Jonathan Swift",
-    "quote": "Svaki pas mora imati svoj dan."
-  },
-  {
     "author": "Orhan Pamuk",
     "quote": "Psi govore, ali samo onima koji znaju da ih slušaju."
-  },
-  {
-   "author": "Charles M. Schulz",
-   "quote": "Sreća je topao pas."
   },
   {
     "author": "Judy Desmond",
@@ -88,20 +84,20 @@
     "quote": "Jedina stvorenja koja su dovoljno evoluirala da izraze čistu ljubav su psi i bebe."
   },
   {
-    "author": "Thom Jones",
-    "quote": "Psi imaju način da pronađu ljude koji ih trebaju i popune prazninu koju nismo ni znali da imamo."
-  },
-  {
     "author": "Agnes Sligh Turnbull",
     "quote": "Životi pasa su prekratki. To im je jedina mana."
   },
   {
-    "author": "Dean Koontz",
-    "quote": "Jednom kada imate divnog psa, život bez njega je osiromašen život."
+    "author": "Thom Jones",
+    "quote": "Psi imaju način da pronađu ljude koji ih trebaju i popune prazninu koju nismo ni znali da imamo."
   },
   {
     "author": "Susan Ariel Rainbow Kennedy",
     "quote": "Psi su čuda sa šapama."
+  },
+  {
+    "author": "Dean Koontz",
+    "quote": "Jednom kada imate divnog psa, život bez njega je osiromašen život."
   },
   {
     "author": "Andy Rooney",
@@ -118,6 +114,10 @@
   {
     "author": "Jennifer Scott",
     "quote": "Pseća ljubav je beskonačna; ona je jedina koja se nikada ne završava."
+  },
+  {
+    "author": "Gene Hill",
+    "quote": "Ko god da je rekao da se sreća ne može kupiti, zaboravio je na male psiće."
   },
   {
     "author": "Josh Billings",
@@ -144,16 +144,12 @@
     "quote": "Ako sa ulice pokupite gladnog psa i pomognete mu, neće vas ugristi. To je glavna razlika između psa i čoveka."
   },
   {
-    "author": "Marilyn Monroe",
-    "quote": "Psi me nikad nisu ujeli. Samo ljudi."
+    "author": "Josh Billings",
+    "quote": "Grešiti je ljudski, oprostiti je pseće."
   },
   {
     "author": "Charles de Gaulle",
     "quote": "Što više upoznajem ljude, to više cenim pse."
-  },
-  {
-    "author": "Gene Hill",
-    "quote": "Ko god da je rekao da se sreća ne može kupiti, zaboravio je na male psiće."
   },
   {
     "author": "Corey Ford",
@@ -172,44 +168,48 @@
     "quote": "Svako može držati kućnog ljubimca, ali samo pravi ljubitelj pasa zna kako vaspitati jednog."
   },
   {
+    "author": "Charles M. Schulz",
+    "quote": "Sreća je topao pas."
+   },
+  {
     "author": "Milo Gathema",
     "quote": "Psa nije briga da li si bogat ili siromašan, pametan ili glup. Daj mu svoje srce i on će ti dati svoje."
-  },
-  {
-    "author": "George Jean Nathan",
-    "quote": "Ljubav je emocija koju žena uvek oseća prema pudlici i ponekad prema muškarcu."
   },
   {
     "author": "Carrie Underwood",
     "quote": "Što više momaka upoznajem, to više volim svog psa."
   },
   {
-    "author": "Mary Ann Shaffer",
-    "quote": "Dobro postupajte s psom i on će vas dobro tretirati. Zadržaće vas u društvu, biće vam najbolji prijatelj i nikada vas neće ispitivati."
+    "author": "George Jean Nathan",
+    "quote": "Ljubav je emocija koju žena uvek oseća prema pudlici i ponekad prema muškarcu."
   },
   {
     "author": "Andy Rooney",
     "quote": "Prosečan pas je bolja osoba od prosečne osobe."
   },
   {
-    "author": "Dave Barry",
-    "quote": "Možete reći bilo koju glupost psu i pas će odgovoriti pogledom koji kaže: 'Wow, u pravu ste. Nikad ne bih tako mislio o tome!'"
-  },
-  {
-    "author": "Richard Dean Anderson",
-    "quote": "Psi su mi najdraži ljudi."
+    "author": "Mary Ann Shaffer",
+    "quote": "Dobro postupajte s psom i on će vas dobro tretirati. Zadržaće vas u društvu, biće vam najbolji prijatelj i nikada vas neće ispitivati."
   },
   {
     "author": "Nora Roberts",
     "quote": "Sve što znam, naučila sam od pasa."
   },
   {
-    "author": "MK Clinton",
-    "quote": "Svet bi bio bolje mesto kad bi svako imao sposobnost da bezuslovno voli poput psa."
+    "author": "Richard Dean Anderson",
+    "quote": "Psi su mi najdraži ljudi."
   },
   {
     "author": "Otto Von Bismarck",
     "quote": "Psi slede onoga ko ih hrani."
+  },
+  {
+    "author": "MK Clinton",
+    "quote": "Svet bi bio bolje mesto kad bi svako imao sposobnost da bezuslovno voli poput psa."
+  },
+  {
+    "author": "Dave Barry",
+    "quote": "Možete reći bilo koju glupost psu i pas će odgovoriti pogledom koji kaže: 'Wow, u pravu ste. Nikad ne bih tako mislio o tome!'"
   },
   {
     "author": "Emily Dickinson",
@@ -228,10 +228,6 @@
     "quote": "Za psa je svaki čovek Napoleon; odatle je stalna popularnost pasa."
   },
   {
-    "author": "Jack London",
-    "quote": "Kosti za psa nisu milostinja. Milostinja je kost koju deliš sa psom, kada si gladan kao pas."
-  },
-  {
     "author": "Barbara Kingsolver",
     "quote": "Pas ne razmišlja mnogo o onome što radi, samo radi ono što smatra da je ispravno."
   },
@@ -240,12 +236,16 @@
     "quote": "Nije me briga za religiju čoveka čiji pas i mačka njemu nisu najbolji."
   },
   {
-    "author": "Gilda Radner",
-    "quote": "Mislim da su psi najneverovatnija stvorenja, daju bezuslovnu ljubav. Za mene, oni su uzor za život."
+    "author": "Jack London",
+    "quote": "Kosti za psa nisu milostinja. Milostinja je kost koju deliš sa psom, kada si gladan kao pas."
   },
   {
     "author": "Cesar Millan",
     "quote": "Psi ne racionalizuju. Oni nemaju ništa protiv osobe. Oni ne vide spoljašnjost ljudskog bića, nego unutrašnjost."
+  },
+  {
+    "author": "Gilda Radner",
+    "quote": "Mislim da su psi najneverovatnija stvorenja, daju bezuslovnu ljubav. Za mene, oni su uzor za život."
   },
   {
     "author": "Robert Louis Stevenson",
@@ -256,24 +256,20 @@
     "quote": "Ako želite prijatelja u Vašingtonu, nabavite psa."
   },
   {
-    "author": "Max DePree",
-    "quote": "Sami smo, apsolutno sami, na ovoj slučajnoj planeti. Među svim oblicima života koji nas okružuju, niko osim psa, nije sklopio savez sa nama."
+    "author": "Lee Trevino",
+    "quote": "Gladan pas bolje lovi."
   },
   {
     "author": "Gabrielle Zevin",
     "quote": "Jeste li znali da na psećem jeziku postoji više od tri stotine reči za ljubav?"
   },
   {
-    "author": "Lee Trevino",
-    "quote": "Gladan pas bolje lovi."
+    "author": "Max DePree",
+    "quote": "Sami smo, apsolutno sami, na ovoj slučajnoj planeti. Među svim oblicima života koji nas okružuju, niko osim psa, nije sklopio savez sa nama."
   },
   {
     "author": "Karen Davison",
     "quote": "Pas se može više izrazit sa repom u nekoliko minuta, nego vlasnik svojim jezikom satima."
-  },
-  {
-    "author": "Bruce Cameron",
-    "quote": "Uopšteno se može reći da je čovek dobar ako ima psa koji ga voli."
   },
   {
     "author": "Mihail Bulgakov",
@@ -284,52 +280,52 @@
     "quote": "Psi su čarobnjaci svemira."
   },
   {
+    "author": "Bruce Cameron",
+    "quote": "Uopšteno se može reći da je čovek dobar ako ima psa koji ga voli."
+  },
+  {
     "author": "Ashly Lorenzana",
     "quote": "Psi su ono što bi ljudi bili kad bi brinuli samo o važnim stvarima."
+  },
+  {
+    "author": "Jose N. Harris",
+    "quote": "Ponekad mislim da više volim pse nego što volim ljudska bića. Jedini put kad me je pas izneverio, umirao je. "
   },
   {
     "author": "George Carlin",
     "quote": "Psi vode ugodan život. Nikad nećeš videti psa sa satom."
   },
   {
-    "author": "Jose N. Harris",
-    "quote": "Ponekad mislim da više volim pse nego što volim ljudska bića. Jedini put kad me je pas izneverio, umirao je. "
-  },
-  {
     "author": "Ammiel Josías Monterde",
     "quote": "Psi su najbolji primer bića koje ne mora lagati da bi zaštitilo nečiji ponos."
-  },
-  {
-    "author": "Jose N. Harris",
-    "quote": "Ponekad mislim da više volim pse nego što volim ljudska bića. Jedini put kad me je pas izneverio, umirao je. "
-  },
-  {
-    "author": "Jonathan Carroll",
-    "quote": "Psi su mali anđeli i ne govorim to podrugljivo. Vole bezuslovno, odmah opraštaju, pravi su prijatelji spremni učiniti sve što nas čini srećnima."
-  },
-  {
-    "author": "Mark Twain",
-    "quote": "Da je po zaslugama, ti bi ostao napolju, a tvoj pas bi ušao."
   },
   {
     "author": "Elizabeth Taylor",
     "quote": "Neki od mojih najboljih muškaraca su bili psi i konji."
   },
   {
-    "author": "Sigmund Freud",
-    "quote": "Moj cilj u životu je biti jednako dobar koliko moj pas misli da jesam."
+    "author": "Mark Twain",
+    "quote": "Da je po zaslugama, ti bi ostao napolju, a tvoj pas bi ušao."
+  },
+  {
+    "author": "Jonathan Carroll",
+    "quote": "Psi su mali anđeli i ne govorim to podrugljivo. Vole bezuslovno, odmah opraštaju, pravi su prijatelji spremni učiniti sve što nas čini srećnima."
   },
   {
     "author": "Jim Butcher",
     "quote": "Ljudi vole pse. Nikada ne možete pogrešiti ako dodate psa u priču."
   },
   {
-    "author": "Christopher Morley",
-    "quote": "Niko ne ceni posebnost vašeg razgovora kao što to ceni vaš pas."
+    "author": "Sigmund Freud",
+    "quote": "Moj cilj u životu je biti jednako dobar koliko moj pas misli da jesam."
   },
   {
     "author": "Ben Williams",
     "quote": "Ne postoji bolji psihijatar na svijetu od psa koji vam liže lice."
+  },
+  {
+    "author": "Christopher Morley",
+    "quote": "Niko ne ceni posebnost vašeg razgovora kao što to ceni vaš pas."
   },
   {
     "author": "Desmond Morris",
@@ -376,28 +372,33 @@
       "quote": "Ako nema pasa u raju, onda kad umrem želim da idem tamo gde su oni."
     },
     {
-      "author": "Harry Hill",
-      "quote": "Zašto psi uvek jure ka vratima kada se čuje zvono? Retko kad da njih neko traži."
-    },
-    {
       "author": "Derek Bruce",
       "quote": "Da bi sagledao svoju vrednost, svako bi trebalo da ima psa koji će ga obožavati i mačku koja će ga ignorisati."
     },
     {
-      "author": "Amy Hempel",
-      "quote": "Kažu da pametan pas sluša, a pametniji pas zna kad da ne posluša."
+      "author": "Harry Hill",
+      "quote": "Zašto psi uvek jure ka vratima kada se čuje zvono? Retko kad da njih neko traži."
     },
     {
       "author": "Gerald Durrell",
       "quote": "Kuća nije dom ukoliko nema psa."
     },
     {
-      "author": "Charlotte Gray",
-      "quote": "Pas traži pažnju više nego svoju večeru. Pa - skoro."
+      "author": "Amy Hempel",
+      "quote": "Kažu da pametan pas sluša, a pametniji pas zna kad da ne posluša."
     },
     {
       "author": "Angie Weiland-Crosby",
       "quote": "Pas je najčistija senka ljubavi."
+    },
+    {
+      "author": "Marilyn Monroe",
+      "quote": "Psi me nikad nisu ujeli. Samo ljudi."
+    },
+
+    {
+      "author": "Charlotte Gray",
+      "quote": "Pas traži pažnju više nego svoju večeru. Pa - skoro."
     },
     {
       "author": "Plato",
