@@ -4,7 +4,7 @@ import pawBullet from "../../../public/assets/images/Wash/pawBullet.png";
 
 export default function BarTips() {
   return (
-    <div className="relative mb-16 text-base font-openSans">
+    <div className="relative mb-16 -mt-16 text-base font-openSans">
       <ul className="space-y-10">
         {[
           { title: "Pronađite mirno mesto", content: <>Restoran može biti stimulativno okruženje sa mnogo distrakcija za psa. To može izazvati<br /> 
@@ -45,7 +45,7 @@ export default function BarTips() {
           </> },
         ].map((tip, index) => (
           <li key={index} className="flex flex-col">
-            <div className="flex items-center mb-16 mt-16">
+            <div className="flex items-center mb-16 mt-8">
               <Image src={pawBullet} alt="Paw Bullet" width={24} height={24} className="mr-6" />
             <p className="font-semibold text-2xl">{tip.title}</p>
             </div>

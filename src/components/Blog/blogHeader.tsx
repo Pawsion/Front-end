@@ -33,7 +33,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({ title, date, readingTime, image
         </div>
       </div>
 
-      <div className="mb-16 ml-64 mt-8 text-2xl font-openSans font-regular">
+      <div className="mb-10 ml-64 mt-8 text-2xl font-openSans font-regular">
         {content.map((paragraph, index) => (
           <p key={index} className="mb-16">{paragraph}</p>
         ))}

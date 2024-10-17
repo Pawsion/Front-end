@@ -1,10 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 
 export default function PagesFirstSection({
-  title,
   bgImage,
 }: {
-  title: string;
   bgImage: StaticImageData;
 }) {
   return (
