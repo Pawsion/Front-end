@@ -16,10 +16,10 @@ import img6D from "@/../public/assets/images/Home/svg/6d.png";
 export default function SecondSection() {
   return (
     <div className="mx-auto my-32 flex w-2/3 flex-col justify-center space-y-20 text-center">
-      <h2 className="mt-30 text-6xl font-semibold text-fontColorPurple">
+      <h2 className="mt-30 text-6xl font-semibold text-fontColorPurple text-center">
         Naš sajt pokriva najveće gradove Srbije i ovde možete pronaći:
       </h2>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 text-center text-[24px] font-bold">
         <HoveringCard
           title="Gde se nalaze pansioni i hoteli za pse"
           imgL={img1L}
@@ -31,22 +31,22 @@ export default function SecondSection() {
           imgD={img2D}
         />
         <HoveringCard
-          title="Gde se nalaze azili i prihvatilišta"
+          title="Kod kog veterinara možete da odvedete psa"
           imgL={img3L}
           imgD={img3D}
         />
         <HoveringCard
-          title="Raspored gradskih parkova"
+          title=" Kome se obratiti za dresuru"
           imgL={img4L}
           imgD={img4D}
         />
         <HoveringCard
-          title="Zanimljiva i cool imena za pse"
+          title="Gde se nalaze azili i prihvatilišta"
           imgL={img5L}
           imgD={img5D}
         />
         <HoveringCard
-          title="Razne savete vezano za ishranu i zdravlje ljubimaca"
+          title="Blog sa zanimljivim informacijama"
           imgL={img6L}
           imgD={img6D}
         />
