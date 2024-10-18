@@ -18,7 +18,7 @@ export default function HoveringCard({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="flex h-[200px] flex-col items-center justify-center space-y-6 rounded-xl bg-gray-200
+      className="flex h-[200px] flex-col items-center justify-center space-y-6 rounded-xl bg-cards
         p-4 hover:bg-mainColorPurple hover:text-white "
     >
       <Image src={hovered ? imgL : imgD} alt="image" />

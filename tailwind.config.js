@@ -27,6 +27,8 @@ module.exports = {
         quotesPageOpacity: "rgba(246, 187, 73, 0.13)",
         inactiveLink: "#FFFFFF",
         activeLink: "#E4A949",
+        secondSection: "#FFFAF1",
+        cards: "#F4F4FF",
       },
       letterSpacing: {
         tightest: '0.25em',
