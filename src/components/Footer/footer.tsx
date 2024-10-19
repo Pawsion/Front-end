@@ -4,7 +4,7 @@ import NavbarLinks from "../Header/navbar-links";
 
 export default function Footer() {
   return (
-    <footer className="z-[9999] w-full space-y-6 bg-mainColorBlue p-4">
+    <footer className="z-[9999] w-full space-y-6 bg-mainColorBlue p-4 mt-20">
       <div className="flex flex-col items-center justify-between px-4 text-xl md:flex-row">
         <NavbarLinks />
       </div>

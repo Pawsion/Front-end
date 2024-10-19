@@ -7,7 +7,7 @@ import kupanje from "@/../public/assets/images/Saloni/Kupanje.png";
 export const SALONI_DATA: SaloniData[] = [
   {
     image: scissors,
-    title: "Redovno cetkanje dlake i sisanje psa",
+    title: "Redovno četkanje dlake i šišanje psa",
     description:
       "Mnogi vlasnici pasa ne uspevaju pravilno da češljaju svoje pse, jer češljanje dlake može delovati kao pomalo nepotrebno opterećenje. Međutim, redovno češljanje je od ključnog značaja za održavanje zdrave i lepe dlake. Šišanje pasa podrazumeva skraćivanje dlake mašinicom, makazama ili trimerom.",
     description2:
