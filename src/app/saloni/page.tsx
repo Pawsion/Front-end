@@ -3,18 +3,17 @@
 import Description from "@/components/Saloni/description";
 import SaloniCard from "@/components/Saloni/saloniCard";
 import SaloniSection from "@/components/Saloni/saloniSection";
-import { SALONI_CARDS } from "@/utils/saloni-cards"; // Ensure this imports your SALONI_CARDS
+import { SALONI_CARDS } from "@/utils/saloni-cards";
 import { SALONI_DATA } from "@/utils/saloni-data";
 import { useState, useRef } from "react";
 import PagesFirstSection from "@/components/Reusable/pages-first-section";
-import saloniImage from "@/../public/assets/images/Saloni/Background.png";
+import saloniImage from "@/../public/assets/images/Saloni/saloni.png";
 import { SALONI_HEADER } from "@/utils/pages-headers";
 
 export default function Saloni() {
   const [saloniSections] = useState(SALONI_DATA);
   const [selectedCity, setSelectedCity] = useState<string | null>(null);
   
-  // Create a ref for the h2 element
   const cityHeaderRef = useRef<HTMLHeadingElement | null>(null);
 
   const LOCATIONS = [
