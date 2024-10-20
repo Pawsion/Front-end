@@ -4,13 +4,13 @@ import img from "@/../public/assets/images/Pansioni/PansioniSecond.png";
 
 export default function BelowPurple() {
   return (
-    <div className="space-y-10">
-      <h4 className="mb-20 text-4xl font-bold text-fontColorPurple">
+    <div className="space-y-10 text-2xl">
+      <h4 className="mb-20 text-5xl font-bold font-RobotoSlab">
         Cene pansiona i hotela za pse po gradovima
       </h4>
       <p>Cene pansiona i hotela variraju i najčešće zavise:</p>
       <div className="flex flex-col items-center justify-between md:flex-row">
-        <ul className="list-disc">
+        <ul className="list-disc ml-16 mt-8">
           <li>od grade gde se pansion ili hotel nalazi</li>
           <li>od kvaliteta smestaja</li>
           <li>
