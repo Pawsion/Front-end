@@ -12,11 +12,11 @@ export default function PansioniPoGradu({
   return (
     <div className="my-20 space-y-10">
       <div className="bg-fontColorPurple">
-        <h3 className=" m-auto w-3/4 p-6 text-3xl text-white">
+        <h3 className=" m-auto w-3/4 py-12 text-5xl text-white">
           Pansioni i hoteli za pse - čuvanje pasa {city}
         </h3>
       </div>
-      <div className="m-auto w-3/4 space-y-10">
+      <div className="m-auto w-3/4 space-y-10 text-2xl">
         <p>
           Beograd ima najveću i najraznovrsniju ponudu pansiona i hotela za pse,
           što je i logično ako se u obzir uzme broj stanovnika i njihovih
