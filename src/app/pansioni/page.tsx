@@ -5,7 +5,6 @@ import Description from "@/components/Pansioni/description";
 import PurpleList from "@/components/Pansioni/purple-list";
 import BelowPurple from "@/components/Pansioni/below-purple";
 import PansioniPoGradu from "@/components/Pansioni/pansioni-po-gradu";
-import { PANSIONI_BEOGRAD } from "@/utils/pansioni-data";
 
 export default function PansioniPage() {
   return (
@@ -25,10 +24,10 @@ export default function PansioniPage() {
         <PurpleList />
         <BelowPurple />
       </div>
-      <PansioniPoGradu city="Beograd" data={PANSIONI_BEOGRAD} />
-      <PansioniPoGradu city="Novi Sad" data={PANSIONI_BEOGRAD} />
-      <PansioniPoGradu city="Subotica" data={PANSIONI_BEOGRAD} />
-      <PansioniPoGradu city="Niš" data={PANSIONI_BEOGRAD} />
+      <PansioniPoGradu city={"Beograd"}  />
+      <PansioniPoGradu city="Novi Sad"  />
+      <PansioniPoGradu city="Subotica" />
+      <PansioniPoGradu city="Niš" />
     </div>
     //Uroš 9/13
   );

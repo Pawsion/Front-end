@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Gray() {
   return (
-    <div className="bg-pageColorTan py-20">
+    <div className="bg-pageColorTan py-20 xl:text-2xl">
       <div className="m-auto w-3/4 space-y-10">
         <h6 className="font-bold">Razlozi za pohađanje obuke sa psom: </h6>
-        <ul className="list-disc space-y-4">
+        <ul className="list-disc space-y-4 xl:ml-32">
           <li>
             Provođenje zajedničkog vremena povećava nivo poverenja i jača vezu
             psa i vlasnika

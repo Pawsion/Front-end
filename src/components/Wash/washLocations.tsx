@@ -16,7 +16,7 @@ export default function WashLocations() {
   };
 
   return (
-    <div className="mb-32 ml-64 text-[28px] font-openSans font-regular">
+    <div className="mb-32 ml-64 text-2xl font-openSans font-regular">
       <h2 className="mb-16">Samouslužne perionice</h2>
       <ol className="list-decimal ml-8 text-mainColorBlue">
         <li className="mb-4">

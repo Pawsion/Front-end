@@ -13,15 +13,15 @@ const WashLocationCard: React.FC<WashLocationCardProps> = ({ name, address, phon
         <div className="p-6">
           <div className="flex items-center mb-4">
             <img src={locationIcon.src} alt="Location" className="w-8 h-auto mr-8 ml-6 mt-4" />
-            <p className="text-[32px] font-semibold mt-4">{address}</p>
+            <p className="text-3xl font-semibold mt-4">{address}</p>
           </div>
           <div className="flex items-center mb-4">
             <img src={phoneIcon.src} alt="Phone" className="w-8 h-auto mr-8 ml-6 mt-4" />
-            <p className="text-[32px] font-semibold mt-4">{phone}</p>
+            <p className="text-3xl font-semibold mt-4">{phone}</p>
           </div>
           <div className="flex items-center">
             <img src={websiteIcon.src} alt="Website" className="w-8 h-auto mr-8 ml-6 mt-4" />
-            <a href={website} className="text-mainColorBlue text-[32px] font-semibold hover:underline mt-4">{website}</a>
+            <a href={website} className="text-mainColorBlue text-3xl font-semibold hover:underline mt-4">{website}</a>
           </div>
         </div>
       </div>
