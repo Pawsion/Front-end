@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ name, website, address, phone }) => {
 
       <div className="mt-8">
         <h2 className="text-xl font-OpenSans font-bold mb-2 text-mainColorBlue">{name}</h2>
-        <p className="text-gray-600 mb-1">
+        <p className="text-fontColorGray mb-1">
           Sajt: {website ? (
             <a
               href={`http://${website}`}
@@ -35,8 +35,8 @@ const Card: React.FC<CardProps> = ({ name, website, address, phone }) => {
             </a>
           ) : "N/A"}
         </p>
-        <p className="text-gray-600 mb-1">Adresa: {address}</p>
-        <p className="text-gray-600">Tel: {phone}</p>
+        <p className="text-fontColorGray mb-1">Adresa: {address}</p>
+        <p className="text-fontColorGray">Tel: {phone}</p>
       </div>
     </div>
   );
