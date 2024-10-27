@@ -9,12 +9,24 @@ export default function PurpleList() {
 
       <ul className="list-disc space-y-12 rounded-3xl bg-gray-200 px-32 py-16 font-semibold text-fontColorPurple text-4xl">
         <div className="ml-8">
-          <li className="mb-10">Cene pansiona i hotela za pse po gradovima</li>
-          <li className="mb-10">Pansioni i hoteli za pse - čuvanje pasa Beograd</li>
-          <li className="mb-10">Pansioni i hoteli za pse - čuvanje pasa Novi sad</li>
-          <li className="mb-10">Pansioni i hoteli za pse - čuvanje pasa Subotica</li>
-          <li className="mb-10">Pansioni i hoteli za pse - čuvanje pasa Niš</li>
-          <li className="mb-10">Vrtići za pse</li>
+          <li className="mb-10">
+            <a href="#cene" className="hover:underline">Cene pansiona i hotela za pse po gradovima</a>
+          </li>
+          <li className="mb-10">
+            <a href="#beograd" className="hover:underline">Pansioni i hoteli za pse - čuvanje pasa Beograd</a>
+          </li>
+          <li className="mb-10">
+            <a href="#novi-sad" className="hover:underline">Pansioni i hoteli za pse - čuvanje pasa Novi Sad</a>
+          </li>
+          <li className="mb-10">
+            <a href="#subotica" className="hover:underline">Pansioni i hoteli za pse - čuvanje pasa Subotica</a>
+          </li>
+          <li className="mb-10">
+            <a href="#nis" className="hover:underline">Pansioni i hoteli za pse - čuvanje pasa Niš</a>
+          </li>
+          <li className="mb-10">
+            <a href="#vrtici" className="hover:underline">Vrtići za pse</a>
+          </li>
         </div>
       </ul>
 
