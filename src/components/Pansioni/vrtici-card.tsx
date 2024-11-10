@@ -16,7 +16,7 @@ export default function VrticiPoGradu({
           {city}
         </h3>
       </div>
-      <div className="m-auto w-3/4 space-y-10 text-2xl">
+      <div className="m-auto w-3/4 space-y-10 text-2xl ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {data.length > 0 ? (
             data.map((el) => (
