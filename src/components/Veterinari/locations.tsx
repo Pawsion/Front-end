@@ -9,7 +9,7 @@ export default function Locations() {
   const [isCityDropdownOpen, setIsCityDropdownOpen] = useState(false);
   const [selectedCity, setSelectedCity] = useState<string | null>(null);
   const [selectedArea, setSelectedArea] = useState<string | null>(null);
-  const [expandedCity, setExpandedCity] = useState<string | null>(null); // Track expanded city
+  const [expandedCity, setExpandedCity] = useState<string | null>(null);
 
   const normalizeCityNames = (data: { [city: string]: any }) => {
     const normalizedData: { [city: string]: any } = {};
@@ -49,8 +49,12 @@ export default function Locations() {
     e.preventDefault();
     setSelectedCity(city);
     setSelectedArea(null);
-    setExpandedCity(expandedCity === city ? null : city); // Toggle city expansion only for Beograd
-    setIsCityDropdownOpen(false);
+
+    if (city === "beograd") {
+      setExpandedCity(expandedCity === city ? null : city);
+    } else {
+      setIsCityDropdownOpen(false); 
+    }
   };
 
   const handleAreaSelection = (e: React.MouseEvent, area: string) => {
@@ -94,20 +98,36 @@ export default function Locations() {
                 <div className="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10 max-h-60 overflow-y-auto">
                   <div className="py-2">
                     {sortedCities.map((city, index) => (
-                      <a
-                        key={index}
-                        onClick={(e) => handleCitySelection(e, city)}
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      >
-                        {city.charAt(0).toUpperCase() + city.slice(1)}
-                        {combinedVeterinariData[city] &&
-                          Object.keys(combinedVeterinariData[city]).length > 1 && (
-                            <span className="ml-2 text-mainColorBlue text-2xl">
-                              {expandedCity === city ? "▴" : "▾"}
-                            </span>
-                          )}
-                      </a>
+                      <div key={index}>
+                        <a
+                          onClick={(e) => handleCitySelection(e, city)}
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          {city.charAt(0).toUpperCase() + city.slice(1)}
+                          {combinedVeterinariData[city] &&
+                            Object.keys(combinedVeterinariData[city]).length > 1 && (
+                              <span className="ml-2 text-mainColorBlue text-2xl">
+                                {expandedCity === city ? "▴" : "▾"}
+                              </span>
+                            )}
+                        </a>
+
+                        {city === "beograd" && expandedCity === "beograd" && (
+                          <div className="ml-4">
+                            {Object.keys(combinedVeterinariData["beograd"]).map((area, idx) => (
+                              <a
+                                key={idx}
+                                onClick={(e) => handleAreaSelection(e, area)}
+                                href="#"
+                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                              >
+                                {area}
+                              </a>
+                            ))}
+                          </div>
+                        )}
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -128,19 +148,6 @@ export default function Locations() {
           {selectedCity && selectedCityData && selectedCity in veterinariData && (
             <div className="mt-2 ml-4">
               <div className="space-y-2">
-                {selectedCity === "beograd" && expandedCity === "beograd" && (
-                  Object.keys(selectedCityData).map((area, index) => (
-                    <a
-                      key={index}
-                      onClick={(e) => handleAreaSelection(e, area)}
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                      {area}
-                    </a>
-                  ))
-                )}
-
                 {selectedCity !== "beograd" && selectedCityData?.default && (
                   <div className="block px-4 py-2 text-sm text-gray-700">
                     {selectedCityData.default}
