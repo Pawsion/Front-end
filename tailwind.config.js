@@ -29,7 +29,8 @@ module.exports = {
         activeLink: "#E4A949",
         secondSection: "#FFFAF1",
         cards: "#F4F4FF",
-        hYellow: "#F6BB49"
+        hYellow: "#F6BB49",
+        inactive: "#A9A9A9"
       },
       letterSpacing: {
         tightest: '0.25em',
