@@ -84,25 +84,25 @@ export default function Locations() {
             <div className="relative inline-block text-left xl:w-[800px]">
               <button
                 onClick={toggleCityDropdown}
-                className={`inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 bg-white text-lg font-medium ${
+                className={`inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 text-fontColorGray bg-white text-lg font-medium ${
                   !isCityDropdownOpen ? "text-inactive" : "text-gray-700"
                 } hover:bg-gray-50`}
               >
-                <span>{selectedCity || "Izaberite grad"}</span>
+                <span className="text-2xl">{selectedCity || "Izaberite grad"}</span>
                 <span className="text-mainColorBlue text-2xl">
                   {isCityDropdownOpen ? "▴" : "▾"}
                 </span>
               </button>
 
               {isCityDropdownOpen && (
-                <div className="origin-top-right absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10 max-h-60 overflow-y-auto">
+                <div className="mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 max-h-60 text-fontColorGray overflow-y-auto">
                   <div className="py-2">
                     {sortedCities.map((city, index) => (
                       <div key={index}>
                         <a
                           onClick={(e) => handleCitySelection(e, city)}
                           href="#"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          className="block px-4 py-2 text-2xl text-fontColorGray text-gray-700 hover:bg-gray-100"
                         >
                           {city.charAt(0).toUpperCase() + city.slice(1)}
                           {combinedVeterinariData[city] &&
@@ -120,7 +120,7 @@ export default function Locations() {
                                 key={idx}
                                 onClick={(e) => handleAreaSelection(e, area)}
                                 href="#"
-                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                className="block px-4 py-2 text-2xl text-gray-700 hover:bg-gray-100"
                               >
                                 {area}
                               </a>
@@ -139,7 +139,7 @@ export default function Locations() {
                 onClick={() => {}}
                 className="inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 bg-white text-lg font-medium text-gray-700 hover:bg-gray-50"
               >
-                <span>Dežurni veterinari</span>
+                <span className="text-2xl">Dežurni veterinari</span>
                 <span className="text-mainColorBlue text-2xl"></span>
               </button>
             </div>
