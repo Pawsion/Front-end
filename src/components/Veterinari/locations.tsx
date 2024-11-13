@@ -2,15 +2,19 @@
 import { useState } from "react";
 import { veterinariData } from "@/utils/veterinari-data";
 import { veterinariDataRest } from "@/utils/veterinari-data-rest";
+import { veterinariDataDezurni } from "@/utils/veterinari-data-dezurni";
 import { Veterinarian } from "@/utils/veterinari-data";
 import SaloniCard from "../Saloni/saloniCard";
 
 export default function Locations() {
   const [isCityDropdownOpen, setIsCityDropdownOpen] = useState(false);
+  const [isDezurniDropdownOpen, setIsDezurniDropdownOpen] = useState(false); 
   const [selectedCity, setSelectedCity] = useState<string | null>(null);
+  const [selectedDezurniCity, setSelectedDezurniCity] = useState<string | null>(null);
   const [selectedAreas, setSelectedAreas] = useState<string[]>([]);
   const [expandedCity, setExpandedCity] = useState<string | null>(null);
   const [showVeterinarians, setShowVeterinarians] = useState(false);
+  const [showDezurniVeterinarians, setShowDezurniVeterinarians] = useState(false);
 
   const normalizeCityNames = (data: { [city: string]: any }) => {
     const normalizedData: { [city: string]: any } = {};
@@ -37,6 +41,7 @@ export default function Locations() {
 
   const normalizedVeterinariData = normalizeCityNames(veterinariData);
   const normalizedVeterinariDataRest = normalizeCityNames(veterinariDataRest);
+  const normalizedVeterinariDataDezurni = normalizeCityNames(veterinariDataDezurni);
   const updatedVeterinariDataRest = addDefaultArea(normalizedVeterinariDataRest);
 
   const combinedVeterinariData = {
@@ -44,7 +49,10 @@ export default function Locations() {
     ...normalizedVeterinariData,
   };
 
+  const combinedDezurniVeterinariData = normalizedVeterinariDataDezurni;
+
   const toggleCityDropdown = () => setIsCityDropdownOpen(!isCityDropdownOpen);
+  const toggleDezurniCityDropdown = () => setIsDezurniDropdownOpen(!isDezurniDropdownOpen);
 
   const handleCitySelection = (e: React.ChangeEvent<HTMLInputElement>, city: string) => {
     const isChecked = e.target.checked;
@@ -63,6 +71,15 @@ export default function Locations() {
     setSelectedAreas([]);
   };
 
+  const handleDezurniCitySelection = (e: React.ChangeEvent<HTMLInputElement>, city: string) => {
+    const isChecked = e.target.checked;
+    if (isChecked) {
+      setSelectedDezurniCity(city);
+    } else {
+      setSelectedDezurniCity(null);
+    }
+  };
+
   const handleAreaSelection = (e: React.ChangeEvent<HTMLInputElement>, area: string) => {
     const isChecked = e.target.checked;
     if (isChecked) {
@@ -78,8 +95,18 @@ export default function Locations() {
     return a.localeCompare(b);
   });
 
+  const sortedDezurniCities = Object.keys(combinedDezurniVeterinariData).sort((a, b) => {
+    if (a.toLowerCase() === "beograd") return -1;
+    if (b.toLowerCase() === "beograd") return 1;
+    return a.localeCompare(b);
+  });
+
   const handleShowVeterinarians = () => {
     setShowVeterinarians(true);
+  };
+
+  const handleShowDezurniVeterinarians = () => {
+    setShowDezurniVeterinarians(true);
   };
 
   return (
@@ -94,7 +121,7 @@ export default function Locations() {
                 onClick={toggleCityDropdown}
                 className={`inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 text-fontColorGray bg-white text-lg font-medium ${!isCityDropdownOpen ? "text-inactive" : "text-gray-700"} hover:bg-gray-50`}
               >
-                <span className="text-2xl">{selectedCity || "Izaberite grad"}</span>
+                <span className="text-2xl">Izaberite grad</span>
                 <span className="text-mainColorBlue text-2xl">
                   {isCityDropdownOpen ? "▴" : "▾"}
                 </span>
@@ -105,12 +132,27 @@ export default function Locations() {
                     {sortedCities.map((city, index) => (
                       <div key={index}>
                         <div className="flex items-center justify-between px-4 py-2 text-2xl text-fontColorGray">
-                          <span
+                          <div
                             onClick={() => handleCitySelection({ target: { checked: !selectedCity?.includes(city) } } as any, city)}
-                            className="cursor-pointer"
+                            className="cursor-pointer w-full flex items-center"
                           >
                             {city.charAt(0).toUpperCase() + city.slice(1)}
-                          </span>
+                            {city === "beograd" && (
+                              <span
+                                className={`ml-4 cursor-pointer transition-transform ${expandedCity === "beograd" ? "rotate-180" : "rotate-0"}`}
+                                onClick={() => setExpandedCity(expandedCity === "beograd" ? null : "beograd")}
+                                style={{
+                                  display: "inline-block",
+                                  width: "0px",
+                                  height: "0px",
+                                  borderLeft: "5px solid transparent",
+                                  borderRight: "5px solid transparent",
+                                  borderTop: "8px solid #000",
+                                  marginLeft: "10px"
+                                }}
+                              ></span>
+                            )}
+                          </div>
                           <input
                             type="checkbox"
                             checked={selectedCity?.includes(city)}
@@ -123,12 +165,12 @@ export default function Locations() {
                           <div className="ml-4">
                             {Object.keys(combinedVeterinariData["beograd"]).map((area, idx) => (
                               <div key={idx} className="flex items-center justify-between px-4 py-2 text-2xl text-fontColorGray">
-                                <span
+                                <div
                                   onClick={() => handleAreaSelection({ target: { checked: !selectedAreas.includes(area) } } as any, area)}
-                                  className="cursor-pointer"
+                                  className="cursor-pointer w-full"
                                 >
                                   {area}
-                                </span>
+                                </div>
                                 <input
                                   type="checkbox"
                                   checked={selectedAreas.includes(area)}
@@ -141,28 +183,66 @@ export default function Locations() {
                         )}
                       </div>
                     ))}
+
+
                   </div>
 
-                  <div className="w-full px-4 py-2 bg-white flex justify-end">
+                  <div className="w-full px-4 py-2 bg-white flex justify-end sticky bottom-0 bg-white z-10">
                     <button
                       onClick={handleShowVeterinarians}
                       className="w-[175px] py-2 px-4 rounded-2xl bg-mainColorBlue bg-opacity-20 text-fontColorGray text-lg font-medium"
                     >
-                      Prikazi
+                      Prikaži
+                    </button>
+                  </div>
+
+                </div>
+              )}
+            </div>
+
+            <div className="relative inline-block text-left xl:w-[400px]">
+              <button
+                onClick={toggleDezurniCityDropdown}
+                className={`inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 text-fontColorGray bg-white text-lg font-medium ${!isCityDropdownOpen ? "text-inactive" : "text-gray-700"} hover:bg-gray-50`}
+              >
+                <span className="text-2xl">Dežurni Veterinari</span>
+                <span className="text-mainColorBlue text-2xl">
+                  {isDezurniDropdownOpen ? "▴" : "▾"}
+                </span>
+              </button>
+              {isDezurniDropdownOpen && (
+                <div className="mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 max-h-96 text-fontColorGray flex flex-col">
+                  <div className="py-2 flex-1">
+                    {sortedDezurniCities.map((city, index) => (
+                      <div key={index}>
+                        <div className="flex items-center justify-between px-4 py-2 text-2xl text-fontColorGray">
+                          <span
+                            onClick={() => handleDezurniCitySelection({ target: { checked: !selectedDezurniCity } } as any, city)}
+                            className="cursor-pointer"
+                          >
+                            {city.charAt(0).toUpperCase() + city.slice(1)}
+                          </span>
+                          <input
+                            type="checkbox"
+                            checked={selectedDezurniCity === city}
+                            onChange={(e) => handleDezurniCitySelection(e, city)}
+                            className="ml-2 checkbox-custom"
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="w-full px-4 py-2 bg-white flex justify-end">
+                    <button
+                      onClick={handleShowDezurniVeterinarians}
+                      className="w-[175px] py-2 px-4 rounded-2xl bg-mainColorBlue bg-opacity-20 text-fontColorGray text-lg font-medium"
+                    >
+                      Prikaži
                     </button>
                   </div>
                 </div>
               )}
-
-            </div>
-
-            <div className="w-[400px]">
-              <button
-                onClick={() => { }}
-                className="inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 bg-white text-lg font-medium text-gray-700 hover:bg-gray-50"
-              >
-                <span className="text-2xl">Dežurni veterinari</span>
-              </button>
             </div>
           </div>
         </div>
@@ -191,6 +271,33 @@ export default function Locations() {
                       ))}
                   </div>
                 );
+              })}
+            </div>
+          </div>
+        )}
+
+        {showDezurniVeterinarians && selectedDezurniCity && (
+          <div className="mt-8">
+            <h3>Dežurni veterinari u {selectedDezurniCity}</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {sortedDezurniCities.map((city, idx) => {
+                if (city === selectedDezurniCity) {
+                  const cityData = combinedDezurniVeterinariData[city];
+                  return (
+                    <div key={idx}>
+                      {cityData &&
+                        cityData.map((vet: Veterinarian, index: number) => (
+                          <SaloniCard
+                            key={index}
+                            name={vet.name}
+                            site={vet.url}
+                            address={vet.address}
+                            phone={vet.phone}
+                          />
+                        ))}
+                    </div>
+                  );
+                }
               })}
             </div>
           </div>
