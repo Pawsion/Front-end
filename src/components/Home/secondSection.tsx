@@ -16,7 +16,7 @@ import img6D from "@/../public/assets/images/Home/svg/6d.png";
 export default function SecondSection() {
   return (
     <div className="mx-auto my-8 sm:my-16 lg:my-32 flex w-2/3 flex-col justify-center space-y-20 text-center">
-      <h2 className="mt-30 text-4xl sm:text-5xl lg:text-6xl font-semibold text-fontColorPurple text-center">
+      <h2 className="mt-30 text-4xl sm:text-5xl lg:text-6xl text-fontColorPurple text-center">
         Naš sajt pokriva najveće gradove Srbije i ovde možete pronaći:
       </h2>
 
