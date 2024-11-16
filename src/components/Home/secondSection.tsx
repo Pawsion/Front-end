@@ -24,31 +24,37 @@ export default function SecondSection() {
           title="Gde se nalaze pansioni i hoteli za pse"
           imgL={img1L}
           imgD={img1D}
+          link="/pansioni"
         />
         <HoveringCard
           title="Koje salone i frizere za pse možete da posetite"
           imgL={img2L}
           imgD={img2D}
+          link="/saloni"
         />
         <HoveringCard
           title="Kod kog veterinara možete da odvedete psa"
           imgL={img3L}
           imgD={img3D}
+          link="/veterinari"
         />
         <HoveringCard
-          title=" Kome se obratiti za dresuru"
+          title="Kome se obratiti za dresuru"
           imgL={img4L}
           imgD={img4D}
+          link="/dresura"
         />
         <HoveringCard
           title="Gde se nalaze azili i prihvatilišta"
           imgL={img5L}
           imgD={img5D}
+          link="/blog/shelters"
         />
         <HoveringCard
           title="Blog sa zanimljivim informacijama"
           imgL={img6L}
           imgD={img6D}
+          link="/blog"
         />
       </div>
     </div>
