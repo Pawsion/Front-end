@@ -25,7 +25,7 @@ export default function Description() {
         <Image alt="" src={img} height={400} />
       </div>
       <p className="xl:text-2xl my-20">
-        Jedan od najjačih motiva za pse je hrana. Ukoliko pravilno koristite
+        Jedan od <b>najjačih motiva za pse je hrana.</b> Ukoliko pravilno koristite
         hranu za trening, pas će izvršavati vaše komande, a hrana vam više neće
         biti potrebna. Naravno, uvek je poželjno da ga pohvalite posle uspešno
         obavljenog zadatka.

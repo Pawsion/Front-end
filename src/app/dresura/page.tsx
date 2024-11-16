@@ -5,6 +5,7 @@ import Description from "@/components/Dresura/description";
 import Gray from "@/components/Dresura/gray";
 import BelowGray from "@/components/Dresura/below-gray";
 import DresuraPoGradu from "@/components/Dresura/dresura-po-gradu";
+import { dogSchools } from "@/utils/dogSchools-data";
 
 export default function DresuraPage() {
   return (
@@ -20,8 +21,10 @@ export default function DresuraPage() {
       <Description />
       <Gray />
       <BelowGray />
-      <DresuraPoGradu city="Beogradu" data={[]}  />
-      <DresuraPoGradu city="Novom Sadu" data={[]}  />
+      
+      <DresuraPoGradu city="Beogradu" data={dogSchools["beograd"]} />
+      <DresuraPoGradu city="Novom Sadu" data={dogSchools["novi_sad"]} />
+      <DresuraPoGradu city="Niši" data={dogSchools["niš"]} />
     </div>
   );
 }
