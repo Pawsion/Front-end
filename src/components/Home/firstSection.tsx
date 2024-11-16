@@ -8,11 +8,10 @@ export default function FirstSection() {
         <Image
           src={home1}
           alt="home page pic"
-          className="h-[400px] w-auto xl:h-[600px]"
         />
       </div>
-      <div className="space-y-10 md:w-1/2 text-[24px]">
-        <h3 className="text-6xl text-fontYellow font-RobotoSlab font-medium">
+      <div className="space-y-10 md:w-1/2 sm:text-[18px] md:text-[24px]">
+        <h3 className="text-4xl sm:text-5xl md:text-6xl text-fontYellow font-RobotoSlab font-medium">
           Ljubitelji i vlasnici pasa<br /> dobro došli u PetHub!
         </h3>
         <p>
