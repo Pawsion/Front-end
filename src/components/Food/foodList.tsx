@@ -99,7 +99,7 @@ export default function FoodList() {
         </h3>
         <p className="mb-4">
           U pitanju je još jedan brend koji se pokazao učinkovitim kod alergičnih pasa. Pored <b>&quot;Sensitive&quot;</b> kategorije, preporučujemo još<br />
-          <b>&quot;Weight loss&quot;</b> i <b>"Endurance".</b> Takođe postoji i &quot;obična&quot; Brit linija, koja je srednjeg kvaliteta, ali je veoma popularna<br />
+          <b>&quot;Weight loss&quot;</b> i <b>&quot;Endurance&quot;.</b> Takođe postoji i &quot;obična&quot; Brit linija, koja je srednjeg kvaliteta, ali je veoma popularna<br />
           na našem tržištu. Sadrži <b>Sensitive Lamb</b> and <b>Rice</b> vrstu pakovanja pogodnu za osetljive pse.
         </p>
 
