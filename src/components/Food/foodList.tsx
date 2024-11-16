@@ -12,7 +12,7 @@ export default function FoodList() {
       <p className="mb-8">
         Različita su mišljenja po pitanju toga koji brend pseće hrane je najbolji. Mnogi sajtovi navode proizvođače koji su ili sponzori,<br />
         ili prodaju njihove proizvode. Iako ćemo vam nabrojati nekoliko brendova, želeli bismo vam da napomenemo <b>da sigurno<br />
-          ima još kvalitetnih brendova i da vam damo par smernica pri odabiru proizvoda. </b>
+        ima još kvalitetnih brendova i da vam damo par smernica pri odabiru proizvoda. </b>
       </p>
       <p className="mb-8">
         Ono što vam preporučujemo jeste da <b>uzimate hranu označenu kao premium
@@ -40,7 +40,7 @@ export default function FoodList() {
           Mnogi N&D hranu svrstavaju u hiperpremium hranu (osim Tropical linije<br />
           koja je superpremium).<br />
           Odlikuje se raznolikošću izbora vrste mesa,<b>od jagnjetine i piletine, do prepelice,<br />
-            pačetine i divlje svinje. </b>Takođe, većina linija je bez žitarica, dok one koje je sadrže imaju<br />
+          pačetine i divlje svinje. </b>Takođe, većina linija je bez žitarica, dok one koje je sadrže imaju<br />
           u sebi speltu i ovas. Postoji i  posebna hrana napravljena za pse sa belom dlakom, kao i za pse sa braon dlakom.
         </p>
 
@@ -73,7 +73,7 @@ export default function FoodList() {
         <p className="mb-4">
           Ovaj superpremium brend odlikuju <b>proizvodi podeljeni ne samo po starosnim kategorijama i veličini psa, već i po rasama.</b><br />
           Zamerka koju bismo imali jeste cena, koja nije proporcijalna kvalitetu, odnosno sastavu hrane. Takođe, brend je uveo novu oznaku<br />
-          na deklaraciji, a to je „nusproizvod“ (npr. piletine), što povlači sa sobom pitanje koji animalni delovi se zapravo nalaze u hrani.<br />
+          na deklaraciji, a to je &quot;nusproizvod&quot; (npr. piletine), što povlači sa sobom pitanje koji animalni delovi se zapravo nalaze u hrani.<br />
           Sa druge strane Royal canin je izuzetno ukusna hrana, te je psi rado jedu.
         </p>
 
@@ -91,7 +91,7 @@ export default function FoodList() {
         </h3>
         <p className="mb-4">
           Veoma popularan brend na našim prostorima zbog povoljne cene i dobrog kvaliteta. Pored pakovanja koje sadrže <b>piletinu,<br />
-            jagnjetinu i ribu,</b> Cibau izdvaja i <b>“sensitive” kategorija</b> koja je namenjena psima sa osetljivim digestivnim traktom.
+            jagnjetinu i ribu,</b> Cibau izdvaja i <b>&quot;sensitive” kategorija</b> koja je namenjena psima sa osetljivim digestivnim traktom.
         </p>
 
         <h3 className="mb-24 mt-24 text-2xl font-regular italic">
@@ -99,7 +99,7 @@ export default function FoodList() {
         </h3>
         <p className="mb-4">
           U pitanju je još jedan brend koji se pokazao učinkovitim kod alergičnih pasa. Pored <b>"Sensitive"</b> kategorije, preporučujemo još<br />
-          <b>Weight loss"</b>" i <b>"Endurance".</b> Takođe postoji i „obična“ Brit linija, koja je srednjeg kvaliteta, ali je veoma popularna<br />
+          <b>Weight loss"</b>" i <b>"Endurance".</b> Takođe postoji i &quot;obična&quot; Brit linija, koja je srednjeg kvaliteta, ali je veoma popularna<br />
           na našem tržištu. Sadrži <b>Sensitive Lamb</b> and <b>Rice</b> vrstu pakovanja pogodnu za osetljive pse.
         </p>
 
@@ -109,7 +109,7 @@ export default function FoodList() {
         <p className="mb-4">
           Ova medicinska hrana odlikuje se kako kvalitetnim sastojcima, tako i raznovrsnošću. Ono što bismo izdvojili je <b>hipoalergijska linija</b><br />
           koja sadrži ultrahypo proizvod namenjen inicijalnom čišćenju organizma od alergena,<br />
-          a zatim i <b>„obične“ hipoalergične proizvode</b> sa različitim izvorima proteina.
+          a zatim i <b>&quot;obične&quot; hipoalergične proizvode</b> sa različitim izvorima proteina.
         </p>
 
 
@@ -119,7 +119,7 @@ export default function FoodList() {
         <p className="mb-4">
           Trovetovi proizvodi pripadaju <b>medicinskoj kategoriji hrane</b> za pse. Ono
           što bismo izdvojili jeste <b>raznolikost u<br />
-            hipoalergijskim proizvodima</b> sačinjenim od različitih monoproteinskih
+          hipoalergijskim proizvodima</b> sačinjenim od različitih monoproteinskih
           izvora. Takođe, <b>Recovery liquid</b> se
           <br />
           pokazao veoma učinkovitim tokom oporavka životinja nakon operacija i
