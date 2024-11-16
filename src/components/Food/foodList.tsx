@@ -91,15 +91,15 @@ export default function FoodList() {
         </h3>
         <p className="mb-4">
           Veoma popularan brend na našim prostorima zbog povoljne cene i dobrog kvaliteta. Pored pakovanja koje sadrže <b>piletinu,<br />
-            jagnjetinu i ribu,</b> Cibau izdvaja i <b>&quot;sensitive” kategorija</b> koja je namenjena psima sa osetljivim digestivnim traktom.
+            jagnjetinu i ribu,</b> Cibau izdvaja i <b>&quot;sensitive&quot; kategorija</b> koja je namenjena psima sa osetljivim digestivnim traktom.
         </p>
 
         <h3 className="mb-24 mt-24 text-2xl font-regular italic">
           7. Brit care
         </h3>
         <p className="mb-4">
-          U pitanju je još jedan brend koji se pokazao učinkovitim kod alergičnih pasa. Pored <b>"Sensitive"</b> kategorije, preporučujemo još<br />
-          <b>Weight loss"</b>" i <b>"Endurance".</b> Takođe postoji i &quot;obična&quot; Brit linija, koja je srednjeg kvaliteta, ali je veoma popularna<br />
+          U pitanju je još jedan brend koji se pokazao učinkovitim kod alergičnih pasa. Pored <b>&quot;Sensitive&quot;</b> kategorije, preporučujemo još<br />
+          <b>&quot;Weight loss&quot;</b> i <b>"Endurance".</b> Takođe postoji i &quot;obična&quot; Brit linija, koja je srednjeg kvaliteta, ali je veoma popularna<br />
           na našem tržištu. Sadrži <b>Sensitive Lamb</b> and <b>Rice</b> vrstu pakovanja pogodnu za osetljive pse.
         </p>
 
