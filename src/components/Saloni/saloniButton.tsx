@@ -19,13 +19,13 @@ const SaloniButton: React.FC<SaloniButtonProps> = ({ locations, onButtonClick })
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-4">
       {locations.map((location) => (
         <button
           key={location}
-          className={`w-[359px] h-[48px] text-white text-2xl font-semibold rounded-[50px] transition duration-300 ${
+          className={`w-full h-[40px] text-white text-xl font-semibold rounded-[50px] transition duration-300 ${
             activeLocation === location ? "bg-mainColorBlue" : "bg-mainColorTan"
-          }`}
+          } sm:h-[48px] sm:text-2xl md:h-[48px] md:text-2xl`}
           onClick={() => handleButtonClick(location)}
         >
           {formatLocation(location)}
