@@ -47,19 +47,19 @@ export default function Description() {
       <nav className="rounded-3xl bg-gray-200 px-20 py-8">
         <ul className="list-disc space-y-6 text-base lg:text-2xl text-mainColorBlue">
           <li>
-            <Link href="#1">Redovno četkanje dlake i šišanje psa</Link>
+            <Link href="#redovno-četkanje-dlake-i-šišanje-psa">Redovno četkanje dlake i šišanje psa</Link>
           </li>
           <li>
-            <Link href="#2">Kupanje i čišćenje psa</Link>
+            <Link href="#kupanje-i-čišćenje-psa">Kupanje i čišćenje psa</Link>
           </li>
           <li>
-            <Link href="#3">Dobra oralna higijena</Link>
+            <Link href="#dobra-oralna-higijena">Dobra oralna higijena</Link>
           </li>
           <li>
-            <Link href="#4">Pronalaženje salona za pse</Link>
+            <Link href="#pronalaženje-salona-za-pse">Pronalaženje salona za pse</Link>
           </li>
           <li>
-            <Link href="#5">Saloni i frizeri za pse u gradovima Srbije</Link>
+            <Link href="#saloni-i-frizeri-za-pse-u-gradovima-srbije">Saloni i frizeri za pse u gradovima Srbije</Link>
           </li>
         </ul>
       </nav>

@@ -23,9 +23,10 @@ const SaloniButton: React.FC<SaloniButtonProps> = ({ locations, onButtonClick })
       {locations.map((location) => (
         <button
           key={location}
-          className={`w-full h-[40px] text-white text-xl font-semibold rounded-[50px] transition duration-300 ${
+          className={`w-full h-[40px] text-white text-xl font-semibold rounded-[50px] transition-colors duration-300 ease-in-out transform ${
             activeLocation === location ? "bg-mainColorBlue" : "bg-mainColorTan"
-          } sm:h-[48px] sm:text-2xl md:h-[48px] md:text-2xl`}
+          } sm:h-[48px] sm:text-2xl md:h-[48px] md:text-2xl 
+            hover:bg-mainColorBlue`}
           onClick={() => handleButtonClick(location)}
         >
           {formatLocation(location)}
