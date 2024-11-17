@@ -66,23 +66,23 @@ export default function Saloni() {
         </h2>
       )}
 
-{selectedCity && (
-  <div className="m-auto grid w-3/4 grid-cols-1 gap-10 md:grid-cols-2">
-    {SALONI_CARDS[selectedCity]?.saloni.map((el) => (
-      <div
-        className="flex justify-start md:justify-start sm:justify-start"
-        key={el.name}
-      >
-        <SaloniCard
-          name={el.name}
-          address={el.address}
-          phone={el.phone}
-          site={el.site}
-        />
-      </div>
-    ))}
-  </div>
-)}
+      {selectedCity && (
+        <div className="m-auto grid w-3/4 grid-cols-1 gap-10 md:grid-cols-2">
+          {SALONI_CARDS[selectedCity]?.saloni.map((el) => (
+            <div
+              className="flex justify-start md:justify-start sm:justify-start"
+              key={el.name}
+            >
+              <SaloniCard
+                name={el.name}
+                address={el.address}
+                phone={el.phone}
+                site={el.site}
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
     </div>
   );

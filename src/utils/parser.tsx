@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export const parseDescription = (description: string) => {
+const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -14,6 +14,12 @@ export const parseDescription = (description: string) => {
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  return isMobile;
+};
+
+export const parseDescription = (description: string) => {
+  const isMobile = useIsMobile();
 
   const parts = description.split(/(\[b\].*?\[\/b\]|\[i\].*?\[\/i\]|\[br\])/g);
 
