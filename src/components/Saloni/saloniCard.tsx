@@ -8,7 +8,7 @@ export default function SaloniCard({
   phone,
 }: SaloniCardType) {
   return (
-    <div className="w-1/2 border-t-8 border-t-mainColorBlue xl:text-2xl text-fontColorGray">
+    <div className="w-full md:w-1/2 border-t-8 border-t-mainColorBlue xl:text-2xl text-fontColorGray">
       <h5 className="font-bold text-mainColorPurple">{name}</h5>
       <h6>Sajt: {site}</h6>
       <h6>Adresa: {address}</h6>
