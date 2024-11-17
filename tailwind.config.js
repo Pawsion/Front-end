@@ -78,7 +78,6 @@ module.exports = {
         default: "2px 2px 4px rgba(0, 0, 0, 0.3)",
         md: "3px 3px 6px rgba(0, 0, 0, 0.4)",
         lg: "4px 4px 8px rgba(0, 0, 0, 0.5)",
-        
       },
     },
   },
