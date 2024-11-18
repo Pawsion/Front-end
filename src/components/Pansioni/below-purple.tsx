@@ -5,12 +5,15 @@ import img from "@/../public/assets/images/Pansioni/PansioniSecond.png";
 export default function BelowPurple() {
   return (
     <div className="space-y-10 text-2xl">
-      <h4 id="cene" className="mb-20 text-5xl font-bold font-RobotoSlab">
+      <h4 id="cene" className="lg:mb-20 text-4xl sm:text-5xl md:text-5xl font-bold font-RobotoSlab">
         Cene pansiona i hotela za pse po gradovima
       </h4>
-      <p>Cene pansiona i hotela variraju i najčešće zavise:</p>
+
+      <p className="text-base sm:text-lg md:text-2xl">
+        Cene pansiona i hotela variraju i najčešće zavise:
+      </p>
       <div className="flex flex-col items-center justify-between md:flex-row">
-        <ul className="list-disc ml-16 mt-8">
+        <ul className="list-disc ml-16 lg:mt-8 space-y-4 text-base sm:text-lg md:text-2xl mb-8">
           <li>od grade gde se pansion ili hotel nalazi</li>
           <li>od kvaliteta smestaja</li>
           <li>
@@ -31,8 +34,8 @@ export default function BelowPurple() {
         <Image alt="Dog image" src={img} height={300} />
       </div>
 
-      <p>
-        U <span className="font-bold">Beogradu</span> raspon cena kreće se od 15
+      <p className="text-base lg:text-2xl leading-relaxed">
+        U <span className="font-bold ">Beogradu</span> raspon cena kreće se od 15
         do 35e za dan, dok su cene u ostalim gradovima nešto niže:{" "}
         <span className="font-bold">Novi Sad</span> od 15 do 25e,{" "}
         <span className="font-bold">Subotica i Niš</span> od 10 do 20e.
