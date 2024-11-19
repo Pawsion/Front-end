@@ -18,8 +18,6 @@ export default function PagesFirstSection({
       >
         {title}
       </h1>
-
-      {/* Background image: hidden on mobile and tablet, only shown on larger screens */}
       <Image
         src={bgImage}
         alt="Background dog"

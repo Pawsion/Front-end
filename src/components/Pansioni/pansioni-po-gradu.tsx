@@ -11,12 +11,15 @@ export default function PansioniPoGradu({
 
   return (
     <div className="my-20 space-y-10">
+      {/* Section Header */}
       <div className="bg-fontColorPurple">
-        <h3 className="m-auto w-3/4 py-12 text-5xl text-white">
+        <h3 className="m-auto w-11/12 sm:w-3/4 py-8 sm:py-12 text-3xl sm:text-5xl text-white text-center sm:text-left">
           Pansioni i hoteli za pse - čuvanje pasa {city}
         </h3>
       </div>
-      <div className="m-auto w-3/4 space-y-10 text-2xl">
+
+      {/* City Description */}
+      <div className="m-auto w-11/12 sm:w-3/4 space-y-6 text-base sm:text-2xl leading-relaxed">
         {city.toLowerCase() === "beograd" && (
           <>
             <p>
@@ -31,40 +34,47 @@ export default function PansioniPoGradu({
             </p>
           </>
         )}
-        
+
         {city.toLowerCase() === "novi sad" && (
           <p>
             Novi Sad ima nekoliko pansiona i hotela koji nude kvalitetnu brigu o psima, a izbor varira od osnovnih do luksuznih usluga.
           </p>
         )}
-        
+
         {city.toLowerCase() === "subotica" && (
           <>
-            <h3 className="text-3xl">Subotica ima najskromniju ponudu pansiona za kućne ljubimce od pomenutih gradova.</h3>
+            <h3 className="text-xl sm:text-3xl">
+              Subotica ima najskromniju ponudu pansiona za kućne ljubimce od pomenutih gradova.
+            </h3>
           </>
         )}
 
         {city.toLowerCase() === "niš" && (
           <>
-            <h3 className="text-3xl">Niš ima skromnu ponudu kada je u pitanju broj pansiona za kućne ljubimce, ali s obzirom na veličinu grada, ova ponuda će u narednim godinama neosporno rasti.</h3>
+            <h3 className="text-xl sm:text-3xl">
+              Niš ima skromnu ponudu kada je u pitanju broj pansiona za kućne ljubimce, ali s obzirom na veličinu grada, ova ponuda će u narednim godinama neosporno rasti.
+            </h3>
           </>
         )}
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {data.length > 0 ? (
-            data.map((el) => (
-              <SaloniCard
-                key={el.name}
-                name={el.name}
-                address={el.address}
-                phone={el.phone}
-                site={el.site}
-              />
-            ))
-          ) : (
-            <p className="col-span-2 text-center">Nema dostupnih podataka za grad {city}.</p>
-          )}
-        </div>
+      {/* Grid for Cards */}
+      <div className="m-auto w-11/12 sm:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {data.length > 0 ? (
+          data.map((el) => (
+            <SaloniCard
+              key={el.name}
+              name={el.name}
+              address={el.address}
+              phone={el.phone}
+              site={el.site}
+            />
+          ))
+        ) : (
+          <p className="col-span-1 sm:col-span-2 text-center text-lg sm:text-xl">
+            Nema dostupnih podataka za grad {city}.
+          </p>
+        )}
       </div>
     </div>
   );
