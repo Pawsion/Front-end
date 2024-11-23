@@ -22,7 +22,6 @@ export default function SaloniCard({
         >
           {site}
         </span>
-        {/* Tooltip */}
         <div className="absolute hidden w-max max-w-xs px-2 py-1 text-sm text-white bg-black rounded shadow-lg group-hover:block">
           {site}
         </div>

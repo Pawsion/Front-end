@@ -30,16 +30,16 @@ export default function PansioniPage() {
         <BelowPurple />
       </div>
 
-      <div id="beograd" className="py-20">
+      <div id="beograd">
         <PansioniPoGradu city="Beograd" />
       </div>
-      <div id="novi-sad" className="py-20">
+      <div id="novi-sad">
         <PansioniPoGradu city="Novi Sad" />
       </div>
-      <div id="subotica" className="py-20">
+      <div id="subotica">
         <PansioniPoGradu city="Subotica" />
       </div>
-      <div id="nis" className="py-20">
+      <div id="nis">
         <PansioniPoGradu city="Niš" />
       </div>
 
@@ -54,7 +54,7 @@ export default function PansioniPage() {
             <b>mesečne pakete</b> koji vam omogućavaju dodatni
             <br /> popust.
           </p>
-          <p className="mt-16 mb-64 leading-relaxed">
+          <p className="mt-16 leading-relaxed">
             Da bi pas bio prihvaćen u pansion mora biti vakcinisan i
             socijalizovan.
           </p>
@@ -62,7 +62,7 @@ export default function PansioniPage() {
         <VrticiTwo />
         <Prednosti />
       </div>
-      <div className="m-auto w-3/4 space-y-20">
+      <div>
         <VrticiPoGradu city="Beograd" />
         <VrticiPoGradu city="Novi Sad" />
       </div>
