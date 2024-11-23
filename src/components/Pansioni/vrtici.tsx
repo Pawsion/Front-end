@@ -4,7 +4,7 @@ import descImg from "@/../public/assets/images/Pansioni/P3.png";
 
 export default function Vrtici() {
   return (
-    <div className="my-20 flex flex-col items-center justify-between space-y-10 md:flex-row md:space-y-0 mt-40">
+    <div className="lg:my-20 flex flex-col items-center justify-between space-y-10 md:flex-row md:space-y-0 lg:mt-40">
       <Image src={descImg} alt="description image" />
       <div className="space-y-10 md:w-1/2 xl:text-2xl">
       <h2 className="text-mainColorBlue text-5xl">Vrtići za pse</h2>

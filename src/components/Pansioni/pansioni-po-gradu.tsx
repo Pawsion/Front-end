@@ -11,14 +11,12 @@ export default function PansioniPoGradu({
 
   return (
     <div className="my-20 space-y-10">
-      {/* Section Header */}
       <div className="bg-fontColorPurple">
         <h3 className="m-auto w-11/12 sm:w-3/4 py-8 sm:py-12 text-3xl sm:text-5xl text-white text-center sm:text-left">
           Pansioni i hoteli za pse - čuvanje pasa {city}
         </h3>
       </div>
 
-      {/* City Description */}
       <div className="m-auto w-11/12 sm:w-3/4 space-y-6 text-base sm:text-2xl leading-relaxed">
         {city.toLowerCase() === "beograd" && (
           <>
@@ -58,7 +56,6 @@ export default function PansioniPoGradu({
         )}
       </div>
 
-      {/* Grid for Cards */}
       <div className="m-auto w-11/12 sm:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-6">
         {data.length > 0 ? (
           data.map((el) => (

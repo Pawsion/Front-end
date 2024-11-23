@@ -14,7 +14,7 @@ export default function Description() {
           <p>
             Imajte na umu da vaš <b>pas nikada neće prestati da uči,</b><br /> pa tako ni vi
             ne smete prestati da ga podučavate.<br /> Takođe, kada ga jednom nečemu
-            naučite, morate<br /> <b>nastaviti da ga podsećate na to ili će vremenom<br />
+            naučite,<b> morate<br />nastaviti da ga podsećate na to ili će vremenom<br />
             zaboraviti.</b>
           </p>
           <p>

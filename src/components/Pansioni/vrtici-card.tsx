@@ -1,6 +1,6 @@
 import React from "react";
-import SaloniCard from "../Saloni/saloniCard"; // Reusing the SaloniCard component
-import { vrticiData } from "@/utils/vrtici-data"; // Import your daycare data
+import SaloniCard from "../Saloni/saloniCard";
+import { vrticiData } from "@/utils/vrtici-data";
 
 export default function VrticiPoGradu({
   city,
