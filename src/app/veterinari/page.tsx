@@ -7,7 +7,7 @@ import Locations from "@/components/Veterinari/locations";
 
 export default async function Home() {
   return (
-    <main className="gradient text-center lg:text-start">
+    <main className="gradient lg:text-start">
       <div>
         <PagesFirstSection
           title={
@@ -19,7 +19,7 @@ export default async function Home() {
         />
         <Description />
         <Tips />
-        <Locations />
+        {/* <Locations /> */}
       </div>
     </main>
   );
