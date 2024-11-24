@@ -26,13 +26,15 @@ type Props = {
 
 const NameListComponent: React.FC<Props> = ({ listData }) => {
   return (
-    <div className="mb-32 ml-64 mt-16">
-      <div>
-        <h2 className="font-regular text-fontColorBlack text-left leading-none mb-24">
+    <div>
+      <div  className="mb-16 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular">
+        <h2 className="text-3xl sm:text-4xl lg:text-6xl font-regular text-fontColorBlack text-left mb-8 lg:mb-16">
           {listData.title}
         </h2>
-        <p className="mt-2 text-2xl">{parseDescription(listData.description)}</p>
-        <div className={`w-[1200px] h-[350px] overflow-auto flex items-center justify-center ml-32 mt-24 ${listData.backgroundColor}`}>
+        <p className="mb-6 lg:mb-8 leading-relaxed">{parseDescription(listData.description)}</p>
+
+      </div>
+      <div className={`w-[1200px] h-[350px] overflow-auto flex items-center justify-center ml-32 mt-24 ${listData.backgroundColor}`}>
           <ul className="grid grid-cols-5 mb-4 text-left relative">
             {listData.names.map((name, index) => (
               <li 
@@ -66,7 +68,6 @@ const NameListComponent: React.FC<Props> = ({ listData }) => {
             ))}
           </ul>
         </div>
-      </div>
     </div>
   );
 };

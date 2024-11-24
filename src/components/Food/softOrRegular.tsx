@@ -9,7 +9,7 @@ export default function SoftOrRegular() {
         Da li je za pse bolja vlažna hrana ili granule?
       </h2>
       <p className="mb-6 lg:mb-8 leading-relaxed">
-        Jedna od najčeščih nedoumica vlasnika – u kojoj formi da dajem mom ljubimcu hranu? Pre no što vam
+        Jedna od najčeščih nedoumica vlasnika u kojoj formi da dajem mom ljubimcu hranu? Pre no što vam
         <span className="hidden lg:inline"><br /></span> odgovorimo na ovo pitanje, osvrnućemo se na to šta koja vrsta hrane predstavlja i za šta se koristi.
       </p>
       <p className="mb-6 lg:mb-8 leading-relaxed">
