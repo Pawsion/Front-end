@@ -11,7 +11,7 @@ export default function SheltersTips() {
         </h2>
       </div>
 
-      <ul className="text-base sm:text-lg lg:text-2xl font-openSans font-regular mt-8 mx-4 lg:mx-64 space-y-6">
+      <ul className="text-base sm:text-lg lg:text-2xl font-openSans font-regular mt-8 mx-4 lg:mx-64 space-y-6 lg:pl-16">
         <li className="flex items-start mb-6">
           <Image src={pawBullet} alt="Paw Bullet" className="w-5 h-5 mr-8 mt-3" />
           <span className="leading-relaxed">
