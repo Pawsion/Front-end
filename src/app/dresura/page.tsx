@@ -24,7 +24,7 @@ export default function DresuraPage() {
       
       <DresuraPoGradu city="Beogradu" data={dogSchools["beograd"]} />
       <DresuraPoGradu city="Novom Sadu" data={dogSchools["novi_sad"]} />
-      <DresuraPoGradu city="Niši" data={dogSchools["niš"]} />
+      <DresuraPoGradu city="Nišu" data={dogSchools["niš"]} />
     </div>
   );
 }
