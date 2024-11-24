@@ -141,3 +141,14 @@ body {
   background-color: rgba(87, 95, 200, 0.2);
   border-radius: 6px;
 }
+
+.content-with-breaks br {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .content-with-breaks br {
+    display: none;
+  }
+}
+

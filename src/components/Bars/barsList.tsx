@@ -57,7 +57,7 @@ const BarsList: React.FC = () => {
               <Card
                 key={index}
                 name={item.name}
-                website={item.website}
+                site={item.website}
                 address={item.address}
                 phone={item.phone}
               />

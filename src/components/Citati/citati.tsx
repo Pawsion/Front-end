@@ -27,15 +27,17 @@ const QuotesDisplay: React.FC = () => {
     const addHighlightedQuote = () => {
       if (quotes[index]) {
         quoteBlocks.push(
-          <div key={`highlighted-${index}`} className="text-center mb-4 mt-4">
-            <blockquote className="bg-quotesPageOpacity p-4 text-2xl font-medium font-RobotoSlab md:text-center relative">
+          <div key={`highlighted-${index}`} className="mb-4 mt-4">
+            <blockquote className="bg-quotesPageOpacity p-4 font-medium font-RobotoSlab sm:text-left md:text-center relative">
               <img
                 src={quotesBullet.src}
                 alt="Quote Bullet"
-                className="mx-auto mb-2"
+                className="mx-auto mb-2 hidden sm:block"
               />
-              <p className="font-medium">{quotes[index].quote}</p>
-              <footer className="mt-2 text-gray-700 font-medium">
+              <p className="font-medium sm:text-[18px] text-[16px] md:text-[28px]">
+                {quotes[index].quote}
+              </p>
+              <footer className="mt-2 text-gray-700 font-medium sm:text-[18px] text-[16px] md:text-[28px]">
                 — {quotes[index].author}
               </footer>
             </blockquote>
@@ -54,14 +56,16 @@ const QuotesDisplay: React.FC = () => {
             className="m-auto mt-8 grid gap-8 px-8 text-start md:grid-cols-2 lg:w-3/4 font-RobotoSlab font-medium"
           >
             {gridQuotes.map((quote, idx) => (
-              <div key={`grid-item-${index + idx}`} className="text-center">
+              <div key={`grid-item-${index + idx}`} className="mb-4">
                 <img
                   src={quotesBullet.src}
                   alt="Quote Bullet"
-                  className="mx-auto mb-2"
+                  className="mx-auto mb-2 hidden sm:block"
                 />
-                <blockquote className="text-[20px] font-medium md:text-center">
-                  <p className="font-medium">{quote.quote}</p>
+                <blockquote className="text-[16px] sm:text-left md:text-[20px] md:text-center">
+                  <p className="text-[16px] sm:text-[18px] md:text-[20px]">
+                    {quote.quote}
+                  </p>
                   <footer className="mt-2 text-gray-700 font-medium">— {quote.author}</footer>
                 </blockquote>
               </div>

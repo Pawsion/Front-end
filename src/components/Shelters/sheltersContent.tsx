@@ -16,28 +16,33 @@ const content = [
 export default function SheltersContent() {
   return (
     <div className="relative flex flex-col items-start p-4">
-      <div className="mb-16 ml-64 mt-16">
-        <h2>
+      <div className="lg:mb-10 lg:mt-10 mx-4 lg:mx-64">
+        <h2 className="text-3xl sm:text-2xl lg:text-4xl font-bold leading-relaxed mb-8">
           Da li da udomim psa iz prihvatilišta?
         </h2>
       </div>
-      <div className="text-[28px] font-openSans font-regular mt-8 ml-64">
+
+      <div className="text-base sm:text-lg lg:text-2xl font-openSans font-regular mt-8 mx-4 lg:mx-64">
         {content.slice(0, 4).map((paragraph, index) => (
-          <p key={index} className="mb-16">{parseDescription(paragraph)}</p>
+          <p key={index} className="mb-8 leading-relaxed">{parseDescription(paragraph)}</p>
         ))}
-        <div className="relative w-[1440px] mt-2">
-          <div className="relative h-[740px]">
+
+        <div className="relative w-full sm:h-[400px] lg:h-[740px] mt-4 mb-4">
+          <div className="relative h-full">
             <Image
               src={contentImage}
               alt="Dog in box"
-              layout="fill"
+              layout="responsive"
+              width={1440}
+              height={740}
               objectFit="cover"
               objectPosition="center"
             />
           </div>
         </div>
+
         {content.slice(4).map((paragraph, index) => (
-          <p key={index} className="mb-16">{parseDescription(paragraph)}</p>
+          <p key={index} className="mb-8 leading-relaxed">{parseDescription(paragraph)}</p>
         ))}
       </div>
     </div>

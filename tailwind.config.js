@@ -71,8 +71,8 @@ module.exports = {
       fontSize: {
         "6xl": "64px",
         "custom-sm": "20px",
-        "2xl": "28px",
-        "9xl": "112px"
+        "2xl": "26px",
+        "9xl": "106px"
       },
       textShadow: {
         default: "2px 2px 4px rgba(0, 0, 0, 0.3)",
