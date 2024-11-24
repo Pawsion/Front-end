@@ -6,7 +6,9 @@ import QuotesDisplay from "./citati";
 const CitatiHeader: React.FC = () => {
   const title = (
     <>
-      101 citat o psima koji će dotaći<br />srce svakog vlasnika
+      101 citat o psima koji će dotaći
+      <span className="hidden sm:inline"><br /></span>
+      srce svakog vlasnika
     </>
   );
   
@@ -15,9 +17,12 @@ const CitatiHeader: React.FC = () => {
   
   const content = [
     <>
-      Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, nera-<br />
+      Psi su postali neizostavan deo naših domova, ali i naših srca. Citati o psima nas podsećaju na tu snažnu, nera<span className="hidden sm:inline">-</span>
+      <span className="hidden sm:inline"><br /></span>
       skidivu vezu koju delimo s našim ljubimcima i zato uvek volimo da ih čitamo.
-      Oni nas <b>podsećaju na važnost <br /> saosećanja, vernosti i prijateljstva,</b> svega onog što psi simbolizuju.
+      Oni nas <b>podsećaju na važnost 
+        <span className="hidden sm:inline"><br /></span>
+        saosećanja, vernosti i prijateljstva,</b> svega onog što psi simbolizuju.
     </>,
     <>
       Neka vas čitanje inspiriše da cenite svaki trenutak proveden sa čupavim vragolanima. Uživajte!

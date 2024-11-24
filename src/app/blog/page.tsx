@@ -18,7 +18,7 @@ export default function BlogPage() {
     <div className="flex flex-col">
       <header className="py-4">
         <SearchBar />
-        <h3 className="pl-4 text-4xl font-bold text-yellow-400 md:hidden">
+        <h3 className="pl-7 text-4xl font-bold text-yellow-400 md:hidden">
           BLOG
         </h3>
       </header>

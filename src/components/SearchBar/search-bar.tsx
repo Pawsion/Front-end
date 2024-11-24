@@ -4,7 +4,7 @@ import searchIcon from "../../../public/assets/images/SearchBar/searchIcon.png";
 
 export default function SearchBar() {
   return (
-    <div className="relative hidden py-4 text-center md:flex">
+    <div className="relative hidden py-4 pl-4 text-center md:flex">
       <input
         type="text"
         placeholder="Tražite određenu temu?"
