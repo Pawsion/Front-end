@@ -4,12 +4,12 @@ import img from "@/../public/assets/images/Pansioni/PansioniSecond.png";
 
 export default function BelowPurple() {
   return (
-    <div className="space-y-10 text-2xl">
-      <h4 id="cene" className="lg:mb-20 text-xl sm:text-large font-bold font-RobotoSlab">
+    <div className="space-y-10 lg:text-2xl">
+      <h4 id="cene" className="text-lg font-bold font-RobotoSlab lg:text-2xl mb-10">
         Cene pansiona i hotela za pse po gradovima
       </h4>
 
-      <p className="text-base sm:text-lg md:text-2xl">
+      <p>
         Cene pansiona i hotela variraju i najčešće zavise:
       </p>
       <div className="flex flex-col items-center justify-between md:flex-row">
