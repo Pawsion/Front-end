@@ -1,7 +1,7 @@
 export const SHELTERS_LOCATIONS = {
   beograd: [
     {
-      name: "Nada za životinje – Riska",
+      name: "Nada za životinje Riska",
       site: "https://www.animalhope.org.rs/",
       address: "Vranovačka 104 [Jurija Gagarina 229]",
       phone: "063 490805",
