@@ -4,12 +4,12 @@ import topBulletImage from "../../../public/assets/images/Shelters/topBullet.png
 
 interface CardProps {
   name: string;
-  website: string;
+  site: string;
   address: string;
   phone: string;
 }
 
-const Card: React.FC<CardProps> = ({ name, website, address, phone }) => {
+const Card: React.FC<CardProps> = ({ name, site, address, phone }) => {
   return (
     <div className="relative p-4 mb-4">
       <div className="absolute">
@@ -24,14 +24,14 @@ const Card: React.FC<CardProps> = ({ name, website, address, phone }) => {
       <div className="mt-8">
         <h2 className="text-xl font-OpenSans font-bold mb-2 text-mainColorBlue">{name}</h2>
         <p className="text-fontColorGray mb-1">
-          Sajt: {website ? (
+          Sajt: {site ? (
             <a
-              href={`http://${website}`}
+              href={`http://${site}`}
               className="text-blue-500"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {website}
+              {site}
             </a>
           ) : "N/A"}
         </p>

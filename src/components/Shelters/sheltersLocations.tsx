@@ -1,19 +1,19 @@
 import React from 'react';
-import Card from '../Reusable/cards';
 import { SHELTERS_LOCATIONS } from '@/utils/shelterLocations-data';
+import SaloniCard from '../Saloni/saloniCard';
 
 const SheltersLocations: React.FC = () => {
   const renderShelters = (city: string, data: any[]) => (
-    <div>
-      <h3 className="text-6xl font-RobotoSlab text-left leading-none mb-4">
+    <div className="mb-16">
+      <h3 className="text-3xl sm:text-4xl lg:text-6xl font-RobotoSlab text-left leading-none mb-4">
         Azili i prihvatilišta za pse u {city}
       </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-0 mt-16 mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
         {data.map((shelter, index) => (
-          <Card
+          <SaloniCard
             key={index}
             name={shelter.name}
-            website={shelter.website}
+            site={shelter.site}
             address={shelter.address}
             phone={shelter.phone}
           />
@@ -24,7 +24,7 @@ const SheltersLocations: React.FC = () => {
 
   return (
     <div className="relative flex flex-col items-start p-4">
-      <div className="ml-64">
+      <div className="mx-4 sm:mx-8 lg:mx-64">
         {renderShelters('Beogradu', SHELTERS_LOCATIONS.beograd)}
         {renderShelters('Novom Sadu', SHELTERS_LOCATIONS.noviSad)}
         {renderShelters('Nišu', SHELTERS_LOCATIONS.nis)}
