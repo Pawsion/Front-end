@@ -12,7 +12,7 @@ export default function DresuraPoGradu({
   return (
     <div className="my-20 space-y-10">
       <div className="bg-fontColorPurple">
-        <h3 className=" m-auto w-3/4 py-12 text-5xl text-white">
+        <h3 className="m-auto w-11/12 sm:w-3/4 py-8 sm:py-12 text-3xl sm:text-5xl text-white text-center sm:text-left">
         Škole za obuku pasa u {city}
         </h3>
       </div>

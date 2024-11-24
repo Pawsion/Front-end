@@ -7,7 +7,7 @@ export default function BelowGray() {
     <div className="m-auto my-20 flex w-3/4 flex-col items-start space-x-10 md:flex-row xl:text-2xl">
       <Image alt="Dog image" src={img} height={400} />
       <div className="space-y-6">
-        <h4 className="text-2xl font-bold">
+        <h4 className="font-bold sm:text:large">
           Vrste dresura za koje se možete opredeliti:
         </h4>
         <ul className="list-disc space-y-4 xl:ml-32">
