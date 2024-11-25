@@ -4,44 +4,46 @@ import pawBullet from "../../../public/assets/images/Wash/pawBullet.png";
 
 export default function NamesTips() {
   return (
-    <div className="font-openSans mb-16 ml-64 text-2xl font-regular">
-      <div>
-        <h2 className="mb-16 ml-4 text-left text-6xl font-regular leading-none text-fontColorBlack">
-          Saveti za davanje imena psima
-        </h2>
-      </div>
-      <ul className="ml-16">
-        <li className="mb-8 flex items-start">
+    <div className="mb-16 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular">
+      <h2 className="text-3xl sm:text-4xl lg:text-6xl font-regular text-fontColorBlack text-left mb-8 lg:mb-16">
+        Saveti za davanje imena psima
+      </h2>
+      <ul className="list-none ml-4 sm:ml-8 mb-8">
+        <li className="mb-6 lg:mb-8 flex items-start leading-relaxed">
           <Image
             src={pawBullet}
             alt="Paw Bullet"
-            className="mr-8 mt-3 h-6 w-6"
+            className="mr-4 sm:mr-6 mt-1 sm:mt-2 h-5 w-5 sm:h-6 sm:w-6"
           />
           <span>
-          Preporučljivo je da se ime <b>sastoji od jednog ili dva sloga</b> i da ne bude komplikovano za izgovor.<br />
-          Kraća imena su lakša za izgovor, a kada su u kombinaciji sa naredbom, omogućuju bržu<br />
-          komunikaciju sa psom.
+            Preporučljivo je da se ime <b>sastoji od jednog ili dva sloga</b> i da ne bude komplikovano za izgovor.
+            <span className="hidden lg:inline"> <br /></span>
+            Kraća imena su lakša za izgovor, a kada su u kombinaciji sa naredbom, omogućuju bržu
+            <span className="hidden lg:inline"> <br /></span>
+            komunikaciju sa psom.
           </span>
         </li>
-        <li className="mb-8 flex items-start">
+        <li className="mb-6 lg:mb-8 flex items-start leading-relaxed">
           <Image
             src={pawBullet}
             alt="Paw Bullet"
-            className="mr-8 mt-3 h-6 w-6"
+            className="mr-4 sm:mr-6 mt-1 sm:mt-2 h-5 w-5 sm:h-6 sm:w-6"
           />
           <span>
-            Ime <b>ne bi trebalo da zvuči previše slično bilo kojoj naredbi</b> koju planirate da koristite, jer će to<br />
-             zbuniti psa. Na primer &quot;Neo&quot; može zvučati kao &quot;Ne&quot;.
+            Ime <b>ne bi trebalo da zvuči previše slično bilo kojoj naredbi</b> koju planirate da koristite, jer će to
+            <span className="hidden lg:inline"> <br /></span>
+            zbuniti psa. Na primer, &quot;Neo&quot; može zvučati kao &quot;Ne&quot;.
           </span>
         </li>
-        <li className="mb-8 flex items-start">
+        <li className="mb-6 lg:mb-8 flex items-start leading-relaxed">
           <Image
             src={pawBullet}
             alt="Paw Bullet"
-            className="mr-8 mt-3 h-6 w-6"
+            className="mr-4 sm:mr-6 mt-1 sm:mt-2 h-5 w-5 sm:h-6 sm:w-6"
           />
           <span>
-            Izbegavajte imena koja imaju <b>negativne konotacije.</b> Uvek prvo zamislite kako biste se osećali dok<br />
+            Izbegavajte imena koja imaju <b>negativne konotacije.</b> Uvek prvo zamislite kako biste se osećali dok
+            <span className="hidden lg:inline"> <br /></span>
             dozivate vašeg psa na javnom prostoru pred drugim ljudima.
           </span>
         </li>
