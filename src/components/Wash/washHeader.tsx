@@ -7,13 +7,13 @@ import WashLocations from './washLocations';
 const WashHeader: React.FC = () => {
   const title =    
   <>
-  Samouslužne perionice za pse -<br />gde i kako okupati psa
+  Samouslužne perionice za pse -<span className="hidden sm:inline"><br /></span>gde i kako okupati psa
   </>
   const date = "11.07.2024";
   const readingTime = "5 minuta čitanja";
   const content = [
     <>
-    Samouslužne perionice su sve više popularne među vlasnicima pasa i nalaze se u svim većim gradovima Srbije.<br /> Uglavnom su slično opremljene, a ono što ih razlikuje je raspon cene i radnih sati.
+    Samouslužne perionice su sve više popularne među vlasnicima pasa i nalaze se u svim većim gradovima Srbije.<span className="hidden sm:inline"><br /></span> Uglavnom su slično opremljene, a ono što ih razlikuje je raspon cene i radnih sati.
     </>
   ];
 
@@ -26,9 +26,9 @@ const WashHeader: React.FC = () => {
         imageSrc={blogImage}
         content={content}
       />
-      <div className="mb-4 ml-64">
-        <h2>
-          Koje su prednosti samouslužne perionice?
+      <div className="mb-4 lg:ml-64">
+        <h2 className="text-3xl sm:text-2xl lg:text-4xl font-RobotSlab px-4">
+        Koje su prednosti samouslužne perionice?
         </h2>
       </div>
       <WashPros />
