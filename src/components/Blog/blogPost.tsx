@@ -13,7 +13,12 @@ export default function BlogPost({
 }: BlogData) {
   return (
     <>
+      {/* Set page-specific metadata */}
       <Head>
+        {/* Set title for this specific blog post */}
+        <title>{title} | PetHub</title>
+
+        {/* Set description for this specific blog post */}
         <meta name="description" content={meta} />
       </Head>
 
@@ -26,6 +31,7 @@ export default function BlogPost({
           className="relative h-[300px]  
           lg:h-[600px] lg:w-[50%]"
         >
+          {/* Blog post image */}
           <Image
             alt="Citati image"
             src={image}
