@@ -3,8 +3,12 @@ import Link from "next/link";
 import logoImage from "../../../public/assets/images/logoImage.png";
 import Image from "next/image";
 import NavbarLinks from "./navbar-links";
+import { useState } from "react";
 
 export default function MainHeader() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const closeMenu = () => setShowMenu(false);
 
   return (
     <header
@@ -25,7 +29,7 @@ export default function MainHeader() {
         </Link>
       </div>
       <nav className="OpenSans mr-56 flex space-x-12 font-semibold text-inactiveLink">
-        <NavbarLinks />
+        <NavbarLinks closeMenu={closeMenu} />
       </nav>
     </header>
   );

@@ -9,6 +9,7 @@ import { useState, useRef } from "react";
 import PagesFirstSection from "@/components/Reusable/pages-first-section";
 import saloniImage from "@/../public/assets/images/Saloni/saloni.png";
 import { SALONI_HEADER } from "@/utils/pages-headers";
+import { parseDescription } from "@/utils/parser";
 
 export default function Saloni() {
   const [saloniSections] = useState(SALONI_DATA);
@@ -39,8 +40,7 @@ export default function Saloni() {
 
   return (
     <div className="flex-col space-y-20">
-      <PagesFirstSection title={SALONI_HEADER} bgImage={saloniImage} />
-      <Description />
+    <PagesFirstSection title={parseDescription(SALONI_HEADER)} bgImage={saloniImage} />      <Description />
       <div>
         {saloniSections.map((el, index) => (
           <div key={el.title} className={index % 2 ? "" : "bg-pageColorTan"}>

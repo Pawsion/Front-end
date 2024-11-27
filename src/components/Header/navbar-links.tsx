@@ -2,7 +2,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-export default function NavbarLinks() {
+interface NavbarLinksProps {
+  closeMenu: () => void;
+}
+
+export default function NavbarLinks({ closeMenu }: NavbarLinksProps) {
   const pathname = usePathname();
 
   return (
@@ -14,6 +18,7 @@ export default function NavbarLinks() {
             ? "text-activeLinkGold"
             : "text-inactiveLink hover:text-activeLinkGold"
         }
+        onClick={closeMenu}
       >
         Početna
       </Link>
@@ -24,6 +29,7 @@ export default function NavbarLinks() {
             ? "text-activeLinkGold"
             : "text-inactiveLink hover:text-activeLinkGold"
         }
+        onClick={closeMenu}
       >
         Saloni
       </Link>
@@ -34,6 +40,7 @@ export default function NavbarLinks() {
             ? "text-activeLinkGold"
             : "text-inactiveLink hover:text-activeLinkGold"
         }
+        onClick={closeMenu}
       >
         Pansioni
       </Link>
@@ -44,6 +51,7 @@ export default function NavbarLinks() {
             ? "text-activeLinkGold"
             : "text-inactiveLink hover:text-activeLinkGold"
         }
+        onClick={closeMenu}
       >
         Veterinari
       </Link>
@@ -54,10 +62,10 @@ export default function NavbarLinks() {
             ? "text-activeLinkGold"
             : "text-inactiveLink hover:text-activeLinkGold"
         }
+        onClick={closeMenu}
       >
         Dresura
       </Link>
-
       <Link
         href="/blog"
         className={
@@ -65,6 +73,7 @@ export default function NavbarLinks() {
             ? "text-activeLinkGold"
             : "text-inactiveLink hover:text-activeLinkGold"
         }
+        onClick={closeMenu}
       >
         Blog
       </Link>
