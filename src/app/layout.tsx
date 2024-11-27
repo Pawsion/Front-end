@@ -3,7 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/footer";
 import Header from "@/components/Header/header";
 
-const open = Open_Sans({subsets: ["latin"]});
+const open = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Pethub",
@@ -17,6 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Link to favicon */}
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </head>
       <body className={open.className}>
         <Header />
         {children}
