@@ -25,7 +25,7 @@ export default function PhoneHeader() {
       </button>
 
       <div
-        className={`fixed top-20 z-[999] w-[90%] rounded-xl bg-mainColorBlue/90 p-8 transition-all duration-500 ease-in-out ${
+        className={`fixed top-20 z-[999] w-[90%] rounded-xl bg-mainColorBlue/90 p-8 transition-all duration-300 ease-in-out ${
           showMenu ? "translate-y-0 opacity-100" : "translate-y-[-100%] opacity-0"
         }`}
         style={{ pointerEvents: showMenu ? "auto" : "none" }}
