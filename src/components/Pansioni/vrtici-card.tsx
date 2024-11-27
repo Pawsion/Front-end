@@ -29,7 +29,7 @@ export default function VrticiPoGradu({
               />
             ))
           ) : (
-            <p className="col-span-2 text-center">Nema dostupnih podataka za grad {city}.</p>
+            <p className="col-span-2 text-left">Nema dostupnih podataka za grad {city}.</p>
           )}
         </div>
       </div>

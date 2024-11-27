@@ -12,7 +12,7 @@ export default async function Home() {
         <PagesFirstSection
           title={
             <>
-              <span>Veterinari i<br /> veterinarske<br /> ambulante u Srbiji</span>
+              <span>Veterinari i<span className="hidden sm:inline"><br /></span> veterinarske<span className="hidden sm:inline"><br /></span> ambulante u Srbiji</span>
             </>
           }
           bgImage={bgImage}

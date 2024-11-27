@@ -9,11 +9,12 @@ import Vrtici from "@/components/Pansioni/vrtici";
 import VrticiTwo from "@/components/Pansioni/vrtici-2";
 import Prednosti from "@/components/Pansioni/vrtici-prednosti";
 import VrticiPoGradu from "@/components/Pansioni/vrtici-card";
+import { parseDescription } from "@/utils/parser";
 
 export default function PansioniPage() {
   return (
     <div className="">
-      <PagesFirstSection title={PANSIONI_HEADER} bgImage={pansioniImage} />
+    <PagesFirstSection title={parseDescription(PANSIONI_HEADER)} bgImage={pansioniImage} /> 
 
       <div className="m-auto w-3/4 space-y-20">
         <Description />
@@ -23,7 +24,7 @@ export default function PansioniPage() {
             &nbsp;varirati u svojim uslugama, sadržajima i cenama
           </span>
           , ali osnovna svrha im je briga o psima
-          <br /> dok su razdvojeni od svojih vlasnika.
+          <span className="hidden sm:inline"><br /></span> dok su razdvojeni od svojih vlasnika.
         </p>
 
         <PurpleList />
@@ -49,10 +50,10 @@ export default function PansioniPage() {
           <p className="leading-relaxed">
             Radno vreme najčešće kreće od 7 ili 9 sati ujutru tako da je
             prilagođeno poslovnim obavezama vlasnika pasa.
-            <br />
+            <span className="hidden sm:inline"><br /></span>
             Cene su raznolike od grada do grada, a vrići često imaju{" "}
             <b>mesečne pakete</b> koji vam omogućavaju dodatni
-            <br /> popust.
+            <span className="hidden sm:inline"><br /></span> popust.
           </p>
           <p className="mt-16 leading-relaxed">
             Da bi pas bio prihvaćen u pansion mora biti vakcinisan i

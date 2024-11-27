@@ -19,7 +19,7 @@ export default function SaloniSection({
   const sectionId = title.toLowerCase().replace(/\s+/g, "-");
 
   return (
-    <div id={sectionId} className="m-auto w-3/4 space-y-10 py-20 text-center xl:text-left xl:text-2xl">
+    <div id={sectionId} className="m-auto w-3/4 space-y-10 py-20 text-left xl:text-left xl:text-2xl">
       <Image src={image} alt="Scissors image" className="m-auto" />
       <h2 className="xl:text-5xl text-2xl text-center">{title}</h2>
       <p>{parseDescription(description)}</p>

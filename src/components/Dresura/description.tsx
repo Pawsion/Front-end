@@ -6,7 +6,7 @@ export default function Description() {
   return (
     <div className="m-auto my-20  w-3/4">
       <div className="flex flex-col items-center justify-between md:flex-row xl:text-2xl">
-        <div className="xl:space-y-20 space-y-10">
+        <div className="space-y-10">
           <p>
             Dresura psa je proces u kojem motivišete psa da na vaš zahtev radi
             ono što želite, dok se zabavljate.

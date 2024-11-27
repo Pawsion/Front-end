@@ -3,7 +3,7 @@ import home1 from "@/../public/assets/images/Home/home1.png";
 
 export default function FirstSection() {
   return (
-    <div className="p-20 flex flex-col-reverse items-center bg-secondSection justify-center md:flex-row lg:space-x-6">
+    <div className="p-20 flex flex-col-reverse items-center bg-secondSection justify-center md:flex-row lg:space-x-6 text-left">
       <div className="flex items-center justify-center md:w-1/2">
         <Image
           src={home1}
