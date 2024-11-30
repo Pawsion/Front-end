@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Description() {
   return (
-    <div className="m-auto w-3/4 space-y-20">
+    <div className="m-auto w-3/4 xl:space-y-20">
       <div className="flex flex-col items-center justify-center space-y-12">
         <div
           className="flex flex-col items-center justify-center space-y-12 lg:flex-row 
@@ -16,7 +16,7 @@ export default function Description() {
             salonima za pse, stručni negovatelji, poznati kao groomeri,
             obavljaju različite usluge kako bi održali psa čistim, urednim i
             zdravim. Ove usluge uključuju <b>kupanje, šišanje, čišćenje ušiju,
-            sečenje kandži, četkanje i druge kozmetičke tretmane za pse.</b>
+              sečenje kandži, četkanje i druge kozmetičke tretmane za pse.</b>
           </p>
 
           <Image
@@ -32,8 +32,9 @@ export default function Description() {
           <Image
             src={washedDog}
             alt="Dog image"
-            className="max-w-1/2 h-[300px] w-[300px] object-contain"
+            className="max-w-1/2 h-[300px] w-[300px] object-contain hidden sm:block"
           />
+
           <p className="my-12 lg:w-1/2 text-base lg:text-2xl leading-relaxed">
             Redovno negovanje ne samo da čini da vaš pas izgleda dobro, nego
             <b> pomaže i u očuvanju zdravlja kože i dlake</b> uklanjanjem mrtve dlake i

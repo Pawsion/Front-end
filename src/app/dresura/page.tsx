@@ -13,7 +13,7 @@ export default function DresuraPage() {
       <PagesFirstSection
         title={
           <>
-            <span className="text-hYellow">Dresura pasa - škole<span className="hidden sm:inline"><br /></span> za obuku u Beogradu,<span className="hidden sm:inline"><br /></span> Novom Sadu i Nišu</span>
+            <span className="text-hYellow">Dresura pasa - škole za obuku u Beogradu, Novom Sadu i Nišu</span>
           </>
         }
         bgImage={bgImage}

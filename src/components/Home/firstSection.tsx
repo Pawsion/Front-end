@@ -11,11 +11,11 @@ export default function FirstSection() {
         />
       </div>
       <div className="space-y-10 md:w-1/2 sm:text-[18px] md:text-[24px]">
-        <h3 className="text-4xl sm:text-5xl md:text-6xl text-fontYellow font-RobotoSlab font-medium">
+        <p className="custom-text-size sm:text-5xl md:text-6xl text-fontYellow font-RobotoSlab font-medium">
           <span className="block sm:inline">Ljubitelji i vlasnici pasa</span>
           <span className="hidden sm:inline"> - </span>
           <span className="block sm:inline">dobro došli u PetHub!</span>
-        </h3>
+        </p>
         <p>
           Bilo da ste vlasnik psa ili planirate to da postanete, na našem
           <span className="hidden sm:inline"><br /></span>

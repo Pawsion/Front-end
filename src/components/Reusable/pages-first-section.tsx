@@ -8,7 +8,7 @@ export default function PagesFirstSection({
   bgImage: StaticImageData;
 }) {
   return (
-    <div className="relative flex min-h-[40vh] sm:min-h-[60vh] md:min-h-[70vh] bg-[#F5F5F7] pl-16 lg:pl-20">
+    <div className="relative flex min-h-[40vh] sm:min-h-[60vh] md:min-h-[70vh] bg-[#F5F5F7] pl-16 lg:pl-20 pt-8 lg:pt-0">
       <h1
         className="z-[1] lg:my-auto w-full max-w-[90%] sm:w-[80%] md:w-[70%] 
         text-left text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-semibold text-mainColorBlue 

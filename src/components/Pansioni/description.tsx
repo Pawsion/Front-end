@@ -13,7 +13,7 @@ export default function Description() {
         />
       </div>
       
-      <div className="space-y-10 px-4 md:px-0 md:w-1/2 text-base lg:text-2xl leading-relaxed">
+      <div className="xl:space-y-10 space-y-6 px-4 md:px-0 md:w-1/2 text-base lg:text-2xl leading-relaxed">
         <p>
           Pansioni i hoteli za pse pružaju siguran i udoban prostor<br /> za pse,
           mesto gde oni borave od nekoliko sati do<br /> meseci, u zavisnosti da li su
