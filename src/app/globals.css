@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 h1 {
-  @apply text-9xl font-regular text-fontColorBlack text-left mt-16 leading-none font-RobotoSlab;
+  @apply text-left mt-8 font-RobotoSlab;
 }
 
 h2 {
-  @apply text-6xl font-regular font-RobotoSlab text-fontColorBlack text-left leading-none;
+  @apply font-RobotoSlab text-left leading-none;
 }
 
 html {
@@ -43,6 +43,67 @@ html {
   font-weight: 700; 
   font-style: normal;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 16px !important; 
+  }
+
+  .custom-text-size {
+    font-size: 20px !important;
+  }
+
+  li {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 34px !important;
+  }
+
+  h2 {
+    font-size: 30px !important;
+  }
+
+  h3 {
+    font-size: 24px !important;
+  }
+
+  h4 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 20px !important;
+  }
+
+  .custom-text-size {
+    font-size: 30px !important;
+  }
+
+  li {
+    font-size: 20px;
+  }
+}
+
 
 
 .custom-list {

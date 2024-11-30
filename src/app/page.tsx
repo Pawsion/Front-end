@@ -14,9 +14,7 @@ export default async function Home() {
         <PagesFirstSection
           title={
             <>
-            <p>
-              <span className="text-fontYellow">PetHub</span> - usluge i<span className="hidden sm:inline"><br /></span> saveti za pse koji će<span className="hidden sm:inline"><br /></span> vam olakšati život
-            </p>
+              <span className="text-fontYellow">PetHub</span> - usluge i saveti za pse koji će vam olakšati život
             </>
           }
           bgImage={bgImage}

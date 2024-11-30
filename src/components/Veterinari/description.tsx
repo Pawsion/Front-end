@@ -1,7 +1,7 @@
 export default function Description() {
   return (
     <div className="m-auto w-3/4">
-      <div className="space-y-20">
+      <div className="space-y-10">
         <div className="lg:mt-32 mt-16 text-regular text-base lg:text-2xl leading-relaxed">
           <p>
             Veterinar je medicinski stručnjak specijalizovan za dijagnostiku, lečenje i prevenciju bolesti kod životinja.

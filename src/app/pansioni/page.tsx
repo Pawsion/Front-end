@@ -16,7 +16,7 @@ export default function PansioniPage() {
     <div className="">
     <PagesFirstSection title={parseDescription(PANSIONI_HEADER)} bgImage={pansioniImage} /> 
 
-      <div className="m-auto w-3/4 space-y-20">
+      <div className="m-auto w-3/4 xl:space-y-10 space-y-6">
         <Description />
         <p className="text-base lg:text-2xl leading-relaxed">
           Ovi objekti mogu
