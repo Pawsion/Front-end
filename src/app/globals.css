@@ -104,6 +104,21 @@ html {
   }
 }
 
+button:hover .chevron-beat {
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(0); /* Initial position */
+  }
+  50% {
+    transform: translateY(-8px); /* Moves up */
+  }
+  100% {
+    transform: translateY(0); /* Returns back down */
+  }
+}
 
 
 .custom-list {

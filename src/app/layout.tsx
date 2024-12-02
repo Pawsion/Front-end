@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 const open = Open_Sans({ subsets: ["latin"] });
 
 import { metadata as pageMetadata } from "../../public/metadata";
+import BackToTopButton from "@/components/Back/BackToTheTop";
 
 type MetadataKeys = "/" | "/blog/citati" | "/blog/shelters"; 
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <BackToTopButton />
       </body>
     </html>
   );
