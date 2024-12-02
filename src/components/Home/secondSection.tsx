@@ -15,12 +15,12 @@ import img6D from "@/../public/assets/images/Home/svg/6d.png";
 
 export default function SecondSection() {
   return (
-    <div className="mx-auto my-8 sm:my-16 lg:my-32 flex w-2/3 flex-col justify-center space-y-20 text-left">
-      <h2 className="mt-30 text-4xl sm:text-5xl lg:text-6xl text-fontColorPurple text-left">
+    <div className="mx-auto my-8 sm:my-16 lg:my-32 flex w-full md:w-2/3 flex-col justify-center space-y-10 sm:space-y-16 lg:space-y-20 text-left">
+      <h2 className="mt-30 mx-4 text-4xl sm:text-5xl lg:text-6xl text-fontColorPurple text-left font-bold">
         Naš sajt pokriva najveće gradove Srbije i ovde možete pronaći:
       </h2>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:text-center text:left text-[20px] sm:text-[22px] md:text-[24px] font-bold">
+      <div className="grid grid-cols-2 xl:gap-6 sm:gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 text-left text-[16px] sm:text-[16px] md:text-[20px] lg:text-[22px] xl:font-bold">
         <HoveringCard
           title="Gde se nalaze pansioni i hoteli za pse"
           imgL={img1L}
