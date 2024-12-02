@@ -17,16 +17,28 @@ export default function HoveringCard({
 }) {
   const [hovered, setHovered] = useState(false);
 
+  const handleTouchStart = () => {
+    setHovered(!hovered);
+  };
+
   return (
     <Link href={link}>
       <div
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="flex h-[280px] flex-col items-center justify-center space-y-6 rounded-3xl bg-cards
-          p-4 hover:bg-mainColorPurple hover:text-white m-2 cursor-pointer"
+        onTouchStart={handleTouchStart}
+        className="flex h-[280px] flex-col items-center space-y-6 rounded-3xl bg-cards p-4 hover:bg-mainColorPurple hover:text-white m-2 cursor-pointer"
       >
-        <Image src={hovered ? imgL : imgD} alt="image" />
-        <h6>{title}</h6>
+        <div className="relative h-[100px] w-full">
+          <Image
+            src={hovered ? imgL : imgD}
+            alt="image"
+            width={80}
+            height={80}
+            className="object-contain absolute top-6 left-1/2 transform -translate-x-1/2"
+          />
+        </div>
+        <p className="lg:pt-8 ml-4">{title}</p>
       </div>
     </Link>
   );
