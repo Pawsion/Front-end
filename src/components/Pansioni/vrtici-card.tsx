@@ -7,14 +7,14 @@ export default function VrticiPoGradu({
 }: {
   city: string;
 }) {
-  const data = vrticiData[city.toLowerCase().replace(' ', '_')] || []; 
+  const data = vrticiData[city.toLowerCase().replace(' ', '_')] || [];
 
   return (
-    <div className="my-20 space-y-10">
-      <div className="">
-        <h3 className="m-auto w-3/4 py-12 text-5xl font-RobotoSlab">
+    <div className="xl:my-20 space-y-10">
+      <div className="bg-fontColorPurple">
+        <h2 className="m-auto mt-4 w-3/4 py-12 font-RobotoSlab text-white">
           {city}
-        </h3>
+        </h2>
       </div>
       <div className="m-auto w-3/4 space-y-10 text-2xl ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

@@ -13,7 +13,7 @@ export default function BelowPurple() {
         Cene pansiona i hotela variraju i najčešće zavise:
       </p>
       <div className="flex flex-col items-center justify-between md:flex-row">
-        <ul className="list-disc ml-16 lg:mt-8 space-y-4 text-base sm:text-lg md:text-2xl mb-8">
+        <ul className="list-disc lg:ml-16 ml-8 lg:mt-8 space-y-4 text-base sm:text-lg md:text-2xl mb-8">
           <li>od grade gde se pansion ili hotel nalazi</li>
           <li>od kvaliteta smestaja</li>
           <li>
