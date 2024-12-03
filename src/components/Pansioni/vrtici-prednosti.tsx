@@ -4,7 +4,7 @@ import descImg from "@/../public/assets/images/Pansioni/P5.png";
 
 export default function Prednosti() {
   return (
-    <div className="my-20 flex flex-col items-center justify-between space-y-10 md:flex-row md:space-y-0">
+    <div className="flex flex-col items-center justify-between space-y-10 md:flex-row md:space-y-0">
       <Image src={descImg} alt="description image" className="w-full md:w-auto md:w-1/2" />
       <div className="space-y-10 md:w-1/2 text-base md:text-2xl leading-relaxed">
         <h3 className="text-3xl md:text-4xl font-RobotoSlab font-bold leading-tight">

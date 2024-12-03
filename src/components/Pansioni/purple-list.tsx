@@ -3,9 +3,9 @@ import React from "react";
 export default function PurpleList() {
   return (
     <div className="space-y-10">
-      <h3 className="font-bold text-xl lg:text-2xl mb-16">
+      <p className="font-bold text-xl lg:text-2xl mb-16">
         Ovo je najveća lista pansiona i hotela za pse u Srbiji za 2024. godinu.
-      </h3>
+      </p>
 
       <ul className="list-disc space-y-6 md:space-y-8 lg:space-y-12 rounded-3xl bg-gray-200 px-8 py-12 md:px-16 md:py-14 lg:px-32 lg:py-16 font-semibold text-fontColorPurple text-lg md:text-2xl lg:text-4xl">
         <div className="ml-4 md:ml-6 lg:ml-8">

@@ -1,8 +1,8 @@
 import { SaloniData } from "./types";
-import scissors from "@/../public/assets/images/Saloni/Section1.png";
-import higijena from "@/../public/assets/images/Saloni/Higijena.png";
-import saloni from "@/../public/assets/images/Saloni/SaloniZaPse.png";
-import kupanje from "@/../public/assets/images/Saloni/Kupanje.png";
+import scissors from "@/../public/assets/images/Saloni/Section1.svg";
+import higijena from "@/../public/assets/images/Saloni/Higijena.svg";
+import saloni from "@/../public/assets/images/Saloni/SaloniZaPse.svg";
+import kupanje from "@/../public/assets/images/Saloni/Kupanje.svg";
 
 export const SALONI_DATA: SaloniData[] = [
   {

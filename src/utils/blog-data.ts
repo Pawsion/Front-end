@@ -69,6 +69,6 @@ export const BLOG_DATA: BlogData[] = [
     image: perionice,
     link: "/blog/wash",
     timeToRead: "11.07.2024 - 5 minuta citanja",
-    meta: "Saznajte šta su samouslužne perionice za pse i koliko košta usluga kupanja pasa | Lista perionica za 2024. - Beograd, Novi Sad, Subotica, Niš, Kragujevac.",
+    meta: "Saznajte šta su samouslužne perionice za pse i koliko košta usluga kupanja pasa | Lista perionica za 2025. - Beograd, Novi Sad, Subotica, Niš, Kragujevac.",
   },
 ];
