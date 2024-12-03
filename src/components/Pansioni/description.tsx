@@ -4,16 +4,16 @@ import descImg from "@/../public/assets/images/Pansioni/PansioniDescription.png"
 
 export default function Description() {
   return (
-    <div className="my-20 flex flex-col items-center justify-between space-y-10 md:flex-row md:space-y-0">
-      <div className="w-full md:w-auto">
+    <div className="my-20 flex flex-col md:flex-row items-center justify-between">
+      <div className="w-full md:w-auto order-2 md:order-1">
         <Image
           src={descImg}
           alt="description image"
           className="w-full h-auto md:w-auto"
         />
       </div>
-      
-      <div className="xl:space-y-10 space-y-6 px-4 md:px-0 md:w-1/2 text-base lg:text-2xl leading-relaxed">
+
+      <div className="w-full md:w-1/2 px-4 md:px-0 order-1 md:order-2 xl:space-y-10 space-y-6 text-base lg:text-2xl leading-relaxed">
         <p>
           Pansioni i hoteli za pse pružaju siguran i udoban prostor<br /> za pse,
           mesto gde oni borave od nekoliko sati do<br /> meseci, u zavisnosti da li su

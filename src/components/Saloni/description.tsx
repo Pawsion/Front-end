@@ -16,7 +16,10 @@ export default function Description() {
             salonima za pse, stručni negovatelji, poznati kao groomeri,
             obavljaju različite usluge kako bi održali psa čistim, urednim i
             zdravim. Ove usluge uključuju <b>kupanje, šišanje, čišćenje ušiju,
-              sečenje kandži, četkanje i druge kozmetičke tretmane za pse.</b>
+            sečenje kandži, četkanje i druge kozmetičke tretmane za pse.</b>
+            <br />
+            <br />
+            <span>Salone i frizere za pse razvrstane po gradovima Srbije možete pronaći <Link href="#pronalaženje-salona-za-pse"><b>OVDE</b></Link>.</span>
           </p>
 
           <Image

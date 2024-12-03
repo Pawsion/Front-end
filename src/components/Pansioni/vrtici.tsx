@@ -4,10 +4,10 @@ import descImg from "@/../public/assets/images/Pansioni/P3.png";
 
 export default function Vrtici() {
   return (
-    <div className="lg:my-20 flex flex-col items-center justify-between space-y-10 md:flex-row md:space-y-0 lg:mt-40">
+    <div className="lg:my-20 flex flex-col items-center justify-between space-y-1 xl:space-y-10 md:flex-row md:space-y-0 lg:mt-40">
       <Image src={descImg} alt="description image" />
       <div className="space-y-10 md:w-1/2 xl:text-2xl">
-      <h2 className="text-mainColorBlue text-5xl">Vrtići za pse</h2>
+      <h2 className="text-mainColorBlue text-5xl mt-10">Vrtići za pse</h2>
         <p>
         Vrtići za pse su idealni za ljude koji su u radnom odnosu, a nemaju kome da ostave svoje mezimce ili
         jednostavno ne žele da ih ostave same kod kuće.  Mnogi od nas bi voleli da povedu svog psa na posao,

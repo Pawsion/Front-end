@@ -12,9 +12,9 @@ export default function PansioniPoGradu({
   return (
     <div className="my-20 space-y-10">
       <div className="bg-fontColorPurple">
-        <h3 className="m-auto w-11/12 sm:w-3/4 py-8 sm:py-12 text-3xl sm:text-5xl text-white text-left sm:text-left">
+        <h2 className="m-auto w-11/12 sm:w-3/4 py-8 sm:py-12 text-3xl sm:text-5xl text-white text-left sm:text-left">
           Pansioni i hoteli za pse - čuvanje pasa {city}
-        </h3>
+        </h2>
       </div>
 
       <div className="m-auto w-11/12 sm:w-3/4 space-y-6 text-base sm:text-2xl leading-relaxed">
@@ -41,17 +41,17 @@ export default function PansioniPoGradu({
 
         {city.toLowerCase() === "subotica" && (
           <>
-            <h3 className="text-xl sm:text-3xl">
+            <p>
               Subotica ima najskromniju ponudu pansiona za kućne ljubimce od pomenutih gradova.
-            </h3>
+            </p>
           </>
         )}
 
         {city.toLowerCase() === "niš" && (
           <>
-            <h3 className="text-xl sm:text-3xl">
+            <p>
               Niš ima skromnu ponudu kada je u pitanju broj pansiona za kućne ljubimce, ali s obzirom na veličinu grada, ova ponuda će u narednim godinama neosporno rasti.
-            </h3>
+            </p>
           </>
         )}
       </div>

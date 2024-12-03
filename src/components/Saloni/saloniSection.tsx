@@ -20,7 +20,13 @@ export default function SaloniSection({
 
   return (
     <div id={sectionId} className="m-auto w-3/4 xl:w-max space-y-10 py-20 text-left xl:text-left xl:text-2xl">
-      <Image src={image} alt="Scissors image" className="m-auto" />
+      <Image
+        src={image}
+        alt="Scissors image"
+        className="m-auto w-28 h-28 md:w-44 md:h-44"
+        width={181}
+        height={181}
+      />
       <h2 className="xl:text-5xl text-2xl text-center">{title}</h2>
       <p>{parseDescription(description)}</p>
       <p>{parseDescription(description2)}</p>

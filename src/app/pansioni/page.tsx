@@ -47,7 +47,7 @@ export default function PansioniPage() {
       <div id="vrtici" className="m-auto w-3/4 space-y-20">
         <Vrtici />
         <div className="xl:text-2xl">
-          <p className="leading-relaxed">
+          <p className="leading-relaxed -mt-8">
             Radno vreme najčešće kreće od 7 ili 9 sati ujutru tako da je
             prilagođeno poslovnim obavezama vlasnika pasa.
             <span className="hidden sm:inline"><br /></span>
@@ -55,7 +55,7 @@ export default function PansioniPage() {
             <b>mesečne pakete</b> koji vam omogućavaju dodatni
             <span className="hidden sm:inline"><br /></span> popust.
           </p>
-          <p className="mt-16 leading-relaxed">
+          <p className="xl:mt-16 mt-6 leading-relaxed">
             Da bi pas bio prihvaćen u pansion mora biti vakcinisan i
             socijalizovan.
           </p>
