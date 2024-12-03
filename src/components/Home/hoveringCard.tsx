@@ -17,16 +17,12 @@ export default function HoveringCard({
 }) {
   const [hovered, setHovered] = useState(false);
 
-  const handleTouchStart = () => {
-    setHovered(!hovered);
-  };
 
   return (
     <Link href={link}>
       <div
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        onTouchStart={handleTouchStart}
         className="flex h-[280px] flex-col items-center space-y-6 rounded-3xl bg-cards p-4 hover:bg-mainColorPurple hover:text-white m-2 cursor-pointer"
       >
         <div className="relative h-[100px] w-full">

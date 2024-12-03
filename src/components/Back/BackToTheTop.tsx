@@ -28,7 +28,7 @@ const BackToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-5 right-5 bg-mainColorBlue text-white p-3 rounded-full shadow-lg"
+      className="fixed bottom-5 right-5 bg-mainColorBlue text-white p-3 rounded-full shadow-lg border-2 border-white"
       aria-label="Back to top"
     >
       <FaChevronUp size={24} className="chevron-beat" />
