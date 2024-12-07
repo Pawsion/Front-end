@@ -32,7 +32,7 @@ const NamesHeader: React.FC = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center p-4">
+    <div>
       <BlogHeader
         title={title}
         date={date}

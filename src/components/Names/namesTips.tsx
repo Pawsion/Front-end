@@ -4,7 +4,7 @@ import pawBullet from "../../../public/assets/images/Wash/pawBullet.png";
 
 export default function NamesTips() {
   return (
-    <div className="mb-16 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular">
+    <div className="xl:mb-16 mb-4 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular">
       <h2 className="text-3xl sm:text-4xl lg:text-6xl font-regular text-fontColorBlack text-left mb-8 lg:mb-16">
         Saveti za davanje imena psima
       </h2>

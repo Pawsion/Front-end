@@ -28,29 +28,29 @@ const NamesList: React.FC = () => {
 
           return (
             <div key={index} className="mb-16 px-4 lg:ml-64">
-              <h2 className="text-3xl sm:text-4xl lg:text-6xl font-openSans font-regular text-fontColorBlack text-left mb-8 lg:mb-16">
+              <h2 className="font-openSans font-bold text-fontColorBlack text-left mb-4 lg:mb-16">
                 {title}
               </h2>
 
-              <p className="mb-6 lg:mb-8 text-base sm:text-lg lg:text-2xl font-openSans leading-[1.75]">
+              <p className="lg:mb-8 text-base sm:text-lg lg:text-2xl font-openSans leading-[1.75]">
                 {parseDescription(description)}
               </p>
 
-              <div className="flex justify-center flex-wrap">
-                <div className="w-full lg:w-1/2 mt-16 mb-16 lg:ml-64">
+              <div className="flex justify-center gap-4">
+                <div className="w-[48%] max-w-[460px] mt-16 mb-16">
                   {maleNames.length > 0 && (
-                    <div className="bg-namesGreen p-4 max-w-[460px] max-h-[430px] flex flex-col items-center">
-                      <h3 className="font-bold text-3xl lg:text-5xl mb-4 text-center text-namesFontGreen font-RobotoSlab">
+                    <div className="bg-namesGreen xl:p-4 p-2 max-h-[430px] flex flex-col items-center">
+                      <h3 className="font-bold mb-4 text-center text-namesFontGreen font-RobotoSlab">
                         Muška imena
                       </h3>
-                      <div className="overflow-auto h-[350px] flex flex-col items-center">
-                        <div className="grid grid-cols-2 gap-4">
+                      <div className="overflow-auto h-auto flex flex-col items-center">
+                        <div className="grid grid-cols-2 xl:gap-4 gap-2">
                           {maleNames.slice(0, 10).map((name, idx) => (
                             <div key={idx} className="flex items-center mb-2 justify-start">
-                              <span className="mr-2 text-namesFontGreen text-2xl">•</span>
-                              <span className="text-namesFontGreen text-3xl font-RobotoSlab font-bold">
+                              <p className="mr-2 text-namesFontGreen">•</p>
+                              <p className="text-namesFontGreen font-RobotoSlab font-bold">
                                 {name}
-                              </span>
+                              </p>
                             </div>
                           ))}
                         </div>
@@ -59,20 +59,20 @@ const NamesList: React.FC = () => {
                   )}
                 </div>
 
-                <div className="w-full lg:w-1/2 mt-16 mb-16 lg:-ml-96">
+                <div className="w-[48%] max-w-[460px] mt-16 mb-16">
                   {femaleNames.length > 0 && (
-                    <div className="bg-namesPink p-4 max-w-[460px] max-h-[430px] flex flex-col items-center">
-                      <h3 className="font-bold text-3xl lg:text-5xl mb-4 text-center text-namesFontPink font-RobotoSlab">
+                    <div className="bg-namesPink xl:p-4 p-2 max-h-[430px] flex flex-col items-center">
+                      <h3 className="font-bold mb-4 text-center text-namesFontPink font-RobotoSlab">
                         Ženska imena
                       </h3>
-                      <div className="overflow-auto h-[350px] flex flex-col items-center">
-                        <div className="grid grid-cols-2 gap-4">
+                      <div className="overflow-auto h-auto flex flex-col items-center">
+                        <div className="grid grid-cols-2 xl:gap-4 gap-2">
                           {femaleNames.slice(0, 10).map((name, idx) => (
                             <div key={idx} className="flex items-center mb-2 justify-start">
-                              <span className="mr-2 text-namesFontPink text-2xl">•</span>
-                              <span className="text-namesFontPink text-3xl font-RobotoSlab font-bold">
+                              <p className="xl:mr-2 mr-1 text-namesFontPink ">•</p>
+                              <p className="text-namesFontPink font-RobotoSlab font-bold">
                                 {name}
-                              </span>
+                              </p>
                             </div>
                           ))}
                         </div>
