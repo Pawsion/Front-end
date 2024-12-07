@@ -19,7 +19,7 @@ export default async function Home() {
         />
         <Description />
         <Tips />
-        {/* <Locations /> */}
+        <Locations />
       </div>
     </main>
   );
