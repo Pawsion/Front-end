@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FoodContent() {
   return (
-    <div className="mb-16 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular">
+    <div className="mb-16 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular lg:w-3/4">
       <h2 className="text-3xl sm:text-4xl lg:text-6xl font-regular text-fontColorBlack text-left mb-8 lg:mb-16">
         Sadržaj
       </h2>

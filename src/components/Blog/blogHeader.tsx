@@ -1,3 +1,4 @@
+
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
@@ -17,9 +18,9 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
   content,
 }) => {
   return (
-    <div className="relative flex flex-col items-start p-4 sm:ml-16 md:ml-32 lg:ml-48 lg:p-8">
-      <div className="mb-8 w-full max-w-[100%] lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[80%]">
-        <h1 className="text-3xl sm:text-5xl lg:text-7xl xl:text-9xl font-lg text-fontColorBlack text-left mt-8 font-RobotoSlab">
+    <div className="flex flex-col items-start p-4 lg:p-8 lg:w-3/4 lg:ml-52 lg:mr-auto">
+      <div className="mb-8 w-full">
+        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-lg text-fontColorBlack text-left mt-8 font-RobotoSlab">
           {title}
         </h1>
         <div className="text-gray-500 mt-4 sm:text-lg lg:text-2xl">
@@ -27,7 +28,7 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
         </div>
       </div>
 
-      <div className="relative w-full max-w-[100%] lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[80%] mt-6 lg:mt-8">
+      <div className="relative w-full mt-6 lg:mt-8">
         <div className="relative h-64 sm:h-96 lg:h-[512px] xl:h-[540px] w-full">
           <Image
             src={imageSrc}
@@ -40,9 +41,9 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
         </div>
       </div>
 
-      <div className="xl:mb-10 mb-0 mt-8 text-base sm:text-lg lg:text-2xl font-openSans leading-normal lg:leading-snug w-full max-w-[100%] lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[80%]">
+      <div className="mt-8 text-base sm:text-lg lg:text-2xl font-openSans leading-normal lg:leading-snug w-full">
         {content.map((paragraph, index) => (
-          <p key={index} className="mb-4 sm:mb-6 lg:mb-8 xl:mb-10">
+          <p key={index} className="mb-4 sm:mb-6 lg:mb-8">
             {paragraph}
           </p>
         ))}

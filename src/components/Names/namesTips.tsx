@@ -4,7 +4,7 @@ import pawBullet from "../../../public/assets/images/Wash/pawBullet.png";
 
 export default function NamesTips() {
   return (
-    <div className="xl:mb-16 mb-4 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular">
+    <div className="xl:mb-16 mb-4 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular lg:w-3/4">
       <h2 className="text-3xl sm:text-4xl lg:text-6xl font-regular text-fontColorBlack text-left mb-8 lg:mb-16">
         Saveti za davanje imena psima
       </h2>
@@ -17,9 +17,9 @@ export default function NamesTips() {
           />
           <span>
             Preporučljivo je da se ime <b>sastoji od jednog ili dva sloga</b> i da ne bude komplikovano za izgovor.
-            <span className="hidden lg:inline"> <br /></span>
+            
             Kraća imena su lakša za izgovor, a kada su u kombinaciji sa naredbom, omogućuju bržu
-            <span className="hidden lg:inline"> <br /></span>
+            
             komunikaciju sa psom.
           </span>
         </li>
@@ -31,7 +31,7 @@ export default function NamesTips() {
           />
           <span>
             Ime <b>ne bi trebalo da zvuči previše slično bilo kojoj naredbi</b> koju planirate da koristite, jer će to
-            <span className="hidden lg:inline"> <br /></span>
+            
             zbuniti psa. Na primer, &quot;Neo&quot; može zvučati kao &quot;Ne&quot;.
           </span>
         </li>
@@ -43,7 +43,7 @@ export default function NamesTips() {
           />
           <span>
             Izbegavajte imena koja imaju <b>negativne konotacije.</b> Uvek prvo zamislite kako biste se osećali dok
-            <span className="hidden lg:inline"> <br /></span>
+            
             dozivate vašeg psa na javnom prostoru pred drugim ljudima.
           </span>
         </li>

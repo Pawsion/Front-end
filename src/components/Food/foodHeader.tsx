@@ -9,8 +9,7 @@ import FoodList from './foodList';
 const FoodHeader: React.FC = () => {
   const title = (
     <>
-      Кako izabrati najbolju hranu za
-      <span className="hidden lg:inline"> <br /></span> pse - Lista brendova za 2024.
+      Кako izabrati najbolju hranu za pse - Lista brendova za 2024.
     </>
   );
 
@@ -19,16 +18,13 @@ const FoodHeader: React.FC = () => {
 
   const content = [
     <>
-      Ovo je vreme kada su psi, naši najbolji prijatelji postali članovi porodice, a samim tim se i njihova ishrana
-      <span className="hidden lg:inline"> <br /></span> popela za letvicu više.
+      Ovo je vreme kada su psi, naši najbolji prijatelji postali članovi porodice, a samim tim se i njihova ishrana popela za letvicu više.
     </>,
     <>
-      Promena u kvalitetu života dovela je do <b>nicanja mnoštva brendova i vrsta hrane za pse,</b> ostavivši vlasnike u
-      <span className="hidden lg:inline"> <br /></span> nedoumici koja je hrana najbolja za njihove krznene prijatelje.
+      Promena u kvalitetu života dovela je do <b>nicanja mnoštva brendova i vrsta hrane za pse,</b> ostavivši vlasnike u nedoumici koja je hrana najbolja za njihove krznene prijatelje.
     </>,
     <>
-      Budući da je sve veći broj vas koji želite sami da pravite hranu za svog ljubimca, potrudićemo se da vam
-      <span className="hidden lg:inline"> <br /></span> pružimo informacije i na tu temu.
+      Budući da je sve veći broj vas koji želite sami da pravite hranu za svog ljubimca, potrudićemo se da vam pružimo informacije i na tu temu.
     </>,
   ];
 

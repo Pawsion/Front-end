@@ -8,7 +8,7 @@ type Props = {
 
 const NameListComponent: React.FC<Props> = ({ listData }) => {
   return (
-    <div>
+    <div className="lg:w-3/4">
       <div className="xl:mb-8 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular">
         <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-fontColorBlack text-left mb-4 lg:mb-16">
           {listData.title}

@@ -4,8 +4,8 @@ import SaloniCard from '../Saloni/saloniCard';
 
 const SheltersLocations: React.FC = () => {
   const renderShelters = (city: string, data: any[]) => (
-    <div className="mb-16">
-      <h3 className="text-3xl sm:text-4xl lg:text-6xl font-RobotoSlab text-left leading-none mb-4">
+    <div className="mb-16 lg:mt-16 lg:w-3/4">
+      <h3 className="font-RobotoSlab text-left leading-none mb-4">
         Azili i prihvatilišta za pse u {city}
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">

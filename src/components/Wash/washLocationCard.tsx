@@ -6,7 +6,7 @@ import locationIcon from '../../../public/assets/images/Wash/Location.png';
 
 const WashLocationCard: React.FC<WashLocationCardProps> = ({ name, address, phone, website }) => {
   return (
-    <div className="border-2 border-mainColorBlue rounded-[20px] sm:rounded-[30px] overflow-hidden w-full max-w-[350px] sm:max-w-[700px] h-[300px] sm:h-[400px] mb-8">
+    <div className="border-2 border-mainColorBlue rounded-[20px] sm:rounded-[30px] overflow-hidden w-full max-w-[350px] sm:max-w-[700px] h-[300px] sm:h-[400px] mb-8 lg:w-3/4">
       <h3 className="text-[20px] sm:text-[30px] font-semibold bg-mainColorBlue text-white p-4 border-b border-gray-300">
         {name}
       </h3>

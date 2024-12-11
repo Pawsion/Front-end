@@ -16,7 +16,7 @@ export default function WashLocations() {
   };
 
   return (
-    <div className="relative mb-32 mt-16 text-base sm:text-lg lg:text-2xl font-openSans font-regular lg:ml-64 px-4">
+    <div className="relative mb-32 mt-16 text-base sm:text-lg lg:text-2xl font-openSans font-regular lg:ml-64 px-4 lg:w-3/4">
       <h2 className="text-3xl sm:text-2xl lg:text-4xl font-RobotSlab mb-8">
         Samouslužne perionice
       </h2>
