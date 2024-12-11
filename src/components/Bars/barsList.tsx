@@ -37,7 +37,7 @@ const BarsList: React.FC = () => {
     <div className="px-2">
       <div className="mb-16 mt-16 tracking-tightest ">
         <h2 className="text-3xl sm:text-2xl lg:text-4xl font-RobotSlab font-bold">
-          Lista “pet friendly” restorana u Beogradu za<span className="hidden sm:inline"><br /></span> 2024. godinu:
+          Lista “pet friendly” restorana u Beogradu za  2025. godinu:
         </h2>
       </div>
 

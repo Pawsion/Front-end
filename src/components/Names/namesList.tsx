@@ -15,7 +15,7 @@ interface NameListData {
 
 const NamesList: React.FC = () => {
   return (
-    <div>
+    <div className="lg:w-3/4">
       {allNameLists
         .filter((data) => !excludedTitles.includes(data.title))
         .map((data, index) => {

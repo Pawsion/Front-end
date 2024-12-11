@@ -4,17 +4,17 @@ import Negative from "../../../public/assets/images/Food/Negative.png";
 
 export default function SoftOrRegular() {
   return (
-    <div id="vlažna-hrana-vs-granule" className="mb-16 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular">
+    <div id="vlažna-hrana-vs-granule" className="mb-16 px-4 lg:ml-64 text-base sm:text-lg lg:text-2xl font-openSans font-regular lg:w-3/4">
       <h2 className="text-xl sm:text-3xl lg:text-6xl text-fontColorBlack text-left mb-8 lg:mb-16 font-bold lg:font-normal">
         Da li je za pse bolja vlažna hrana ili granule?
       </h2>
       <p className="mb-6 lg:mb-8 leading-relaxed">
         Jedna od najčeščih nedoumica vlasnika u kojoj formi da dajem mom ljubimcu hranu? Pre no što vam
-        <span className="hidden lg:inline"><br /></span> odgovorimo na ovo pitanje, osvrnućemo se na to šta koja vrsta hrane predstavlja i za šta se koristi.
+         odgovorimo na ovo pitanje, osvrnućemo se na to šta koja vrsta hrane predstavlja i za šta se koristi.
       </p>
       <p className="mb-6 lg:mb-8 leading-relaxed">
         <b>Vlažna,</b> kao što joj i sam naziv kaže, nalazi se u tečnijem, odnosno mekšem obliku. Sastav joj zavisi od vrste,
-        <span className="hidden lg:inline"><br /></span> ali i od proizvođača. Takođe, veliku ulogu igra i činjenica da li je u pitanju komercijalni, ili medicinski proizvod.
+         ali i od proizvođača. Takođe, veliku ulogu igra i činjenica da li je u pitanju komercijalni, ili medicinski proizvod.
       </p>
       <p className="mb-6 lg:mb-8 leading-relaxed">
         Istraživanja su pokazala negativne i pozitivne strane komercijalne, vlažne hrane za pse:
@@ -90,7 +90,7 @@ export default function SoftOrRegular() {
 
       <p className="leading-relaxed">
         Budući da je izbor kvalitetne vlažne hrane limitiran, a <i>mnogi komercijalni vlažni proizvodi sadrže pojačivače ukusa
-        <span className="hidden lg:inline"><br /></span> i druge štetne aditive,</i> radije se opredeljujemo za granule.
+         i druge štetne aditive,</i> radije se opredeljujemo za granule.
       </p>
     </div>
   );

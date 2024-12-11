@@ -7,10 +7,10 @@ const ParkPictures: React.FC = () => {
   const noviSadParks = PARK_DATA.filter((park: Park) => park.city === "Novi Sad");
 
   return (
-    <div className="mt-8 px-4">
+    <div className="mt-8 px-4 lg:w-3/4">
       <p className="text-2xl mb-32 -ml-8">
         Kako ne biste trošili vreme na traženje, već na igranje sa vašim mezimcem,
-        u nastavku smo vam napravili listu<br /> parkova u <b>Beogradu i Novom Sadu:</b>
+        u nastavku smo vam napravili listu parkova u <b>Beogradu i Novom Sadu:</b>
       </p>
 
       <h1 className="mb-16 text-4xl sm:text-5xl lg:text-6xl">Beograd</h1>
