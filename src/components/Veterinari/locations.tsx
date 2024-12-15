@@ -130,136 +130,134 @@ export default function Locations() {
         <div className="space-y-20">
           <h2>Veterinarske ambulante</h2>
 
-          <div className="flex flex-col space-y-4">
-            <div className="flex space-x-4">
-              <div className="relative inline-block text-left xl:w-[800px]">
-                <button
-                  onClick={toggleCityDropdown}
-                  className={`inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 text-fontColorGray bg-white text-lg font-medium ${!isCityDropdownOpen ? "text-inactive" : "text-gray-700"} hover:bg-gray-50`}
-                >
-                  <span className="text-2xl">Izaberite grad</span>
-                  <span className="text-mainColorBlue text-2xl">
-                    {isCityDropdownOpen ? "▴" : "▾"}
-                  </span>
-                </button>
-                {isCityDropdownOpen && (
-                  <div className="mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 max-h-96 text-fontColorGray flex flex-col city-dropdown-scroll">
-                    <div className="py-2 flex-1">
-                      {sortedCities.map((city, index) => (
-                        <div key={index}>
-                          <div className="flex items-center justify-between px-4 py-2 text-2xl text-fontColorGray">
-                            <div
-                              onClick={() => handleCitySelection({ target: { checked: !selectedCity?.includes(city) } } as any, city)}
-                              className="cursor-pointer w-full flex items-center"
-                            >
-                              {city.charAt(0).toUpperCase() + city.slice(1)}
-                              {city === "beograd" && (
-                                <span
-                                  className={`ml-4 cursor-pointer transition-transform ${expandedCity === "beograd" ? "rotate-180" : "rotate-0"}`}
-                                  onClick={() => setExpandedCity(expandedCity === "beograd" ? null : "beograd")}
-                                  style={{
-                                    display: "inline-block",
-                                    width: "0px",
-                                    height: "0px",
-                                    borderLeft: "5px solid transparent",
-                                    borderRight: "5px solid transparent",
-                                    borderTop: "8px solid #000",
-                                    marginLeft: "10px"
-                                  }}
-                                ></span>
-                              )}
-                            </div>
-                            <input
-                              type="checkbox"
-                              checked={selectedCity?.includes(city)}
-                              onChange={(e) => handleCitySelection(e, city)}
-                              className="ml-2 checkbox-custom"
-                            />
+          <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+            <div className="relative inline-block text-left sm:w-[400px] xl:w-[800px]">
+              <button
+                onClick={toggleCityDropdown}
+                className={`inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 text-fontColorGray bg-white text-lg font-medium ${!isCityDropdownOpen ? "text-inactive" : "text-gray-700"} hover:bg-gray-50`}
+              >
+                <span className="text-2xl">Izaberite grad</span>
+                <span className="text-mainColorBlue text-2xl">
+                  {isCityDropdownOpen ? "▴" : "▾"}
+                </span>
+              </button>
+              {isCityDropdownOpen && (
+                <div className="mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 max-h-96 text-fontColorGray flex flex-col city-dropdown-scroll">
+                  <div className="py-2 flex-1">
+                    {sortedCities.map((city, index) => (
+                      <div key={index}>
+                        <div className="flex items-center justify-between px-4 py-2 text-2xl text-fontColorGray">
+                          <div
+                            onClick={() => handleCitySelection({ target: { checked: !selectedCity?.includes(city) } } as any, city)}
+                            className="cursor-pointer w-full flex items-center"
+                          >
+                            {city.charAt(0).toUpperCase() + city.slice(1)}
+                            {city === "beograd" && (
+                              <span
+                                className={`ml-4 cursor-pointer transition-transform ${expandedCity === "beograd" ? "rotate-180" : "rotate-0"}`}
+                                onClick={() => setExpandedCity(expandedCity === "beograd" ? null : "beograd")}
+                                style={{
+                                  display: "inline-block",
+                                  width: "0px",
+                                  height: "0px",
+                                  borderLeft: "5px solid transparent",
+                                  borderRight: "5px solid transparent",
+                                  borderTop: "8px solid #000",
+                                  marginLeft: "10px"
+                                }}
+                              ></span>
+                            )}
                           </div>
+                          <input
+                            type="checkbox"
+                            checked={selectedCity?.includes(city)}
+                            onChange={(e) => handleCitySelection(e, city)}
+                            className="ml-2 checkbox-custom"
+                          />
+                        </div>
 
-                          {city === "beograd" && expandedCity === "beograd" && (
-                            <div className="ml-4">
-                              {Object.keys(combinedVeterinariData["beograd"]).map((area, idx) => (
-                                <div key={idx} className="flex items-center justify-between px-4 py-2 text-2xl text-fontColorGray">
-                                  <div
-                                    onClick={() => handleAreaSelection({ target: { checked: !selectedAreas.includes(area) } } as any, area)}
-                                    className="cursor-pointer w-full"
-                                  >
-                                    {area}
-                                  </div>
-                                  <input
-                                    type="checkbox"
-                                    checked={selectedAreas.includes(area)}
-                                    onChange={(e) => handleAreaSelection(e, area)}
-                                    className="ml-2 checkbox-custom"
-                                  />
+                        {city === "beograd" && expandedCity === "beograd" && (
+                          <div className="ml-4">
+                            {Object.keys(combinedVeterinariData["beograd"]).map((area, idx) => (
+                              <div key={idx} className="flex items-center justify-between px-4 py-2 text-2xl text-fontColorGray">
+                                <div
+                                  onClick={() => handleAreaSelection({ target: { checked: !selectedAreas.includes(area) } } as any, area)}
+                                  className="cursor-pointer w-full"
+                                >
+                                  {area}
                                 </div>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="w-full px-4 py-2 bg-white flex justify-end sticky bottom-0 bg-white z-10">
-                      <button
-                        onClick={handleShowVeterinarians}
-                        className="w-[175px] py-2 px-4 rounded-2xl bg-mainColorBlue bg-opacity-20 text-fontColorGray text-lg font-medium"
-                      >
-                        Prikaži
-                      </button>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              <div className="relative inline-block text-left xl:w-[400px]">
-                <button
-                  onClick={() => {
-                    toggleDezurniCityDropdown();
-                    resetDezurniButtonState();
-                  }}
-                  className={`inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 text-fontColorGray bg-white text-lg font-medium ${!isDezurniDropdownOpen ? "text-inactive" : "text-gray-700"} hover:bg-gray-50`}
-                >
-                  <span className="text-2xl">Dežurni Veterinari</span>
-                  <span className="text-mainColorBlue text-2xl">
-                    {isDezurniDropdownOpen ? "▴" : "▾"}
-                  </span>
-                </button>
-                {isDezurniDropdownOpen && (
-                  <div className="mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 max-h-96 text-fontColorGray flex flex-col">
-                    <div className="py-2 flex-1">
-                      {sortedDezurniCities.map((city, index) => (
-                        <div key={index}>
-                          <div className="flex items-center justify-between px-4 py-2 text-2xl text-fontColorGray">
-                            <span
-                              onClick={() => handleDezurniCitySelection({ target: { checked: !selectedDezurniCity } } as any, city)}
-                              className="cursor-pointer"
-                            >
-                              {city.charAt(0).toUpperCase() + city.slice(1)}
-                            </span>
-                            <input
-                              type="checkbox"
-                              checked={selectedDezurniCity === city}
-                              onChange={(e) => handleDezurniCitySelection(e, city)}
-                              className="ml-2 checkbox-custom"
-                            />
+                                <input
+                                  type="checkbox"
+                                  checked={selectedAreas.includes(area)}
+                                  onChange={(e) => handleAreaSelection(e, area)}
+                                  className="ml-2 checkbox-custom"
+                                />
+                              </div>
+                            ))}
                           </div>
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="w-full px-4 py-2 bg-white flex justify-end">
-                      <button
-                        onClick={handleShowDezurniVeterinarians}
-                        className="w-[175px] py-2 px-4 rounded-2xl bg-mainColorBlue bg-opacity-20 text-fontColorGray text-lg font-medium"
-                      >
-                        Prikaži
-                      </button>
-                    </div>
+                        )}
+                      </div>
+                    ))}
                   </div>
-                )}
-              </div>
+
+                  <div className="w-full px-4 py-2 bg-white flex justify-end sticky bottom-0 bg-white z-10">
+                    <button
+                      onClick={handleShowVeterinarians}
+                      className="w-[175px] py-2 px-4 rounded-2xl bg-mainColorBlue bg-opacity-20 text-fontColorGray text-lg font-medium"
+                    >
+                      Prikaži
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div className="relative inline-block text-left sm:w-[400px] xl:w-[400px]">
+              <button
+                onClick={() => {
+                  toggleDezurniCityDropdown();
+                  resetDezurniButtonState();
+                }}
+                className={`inline-flex justify-between w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 text-fontColorGray bg-white text-lg font-medium ${!isDezurniDropdownOpen ? "text-inactive" : "text-gray-700"} hover:bg-gray-50`}
+              >
+                <span className="text-2xl">Dežurni Veterinari</span>
+                <span className="text-mainColorBlue text-2xl">
+                  {isDezurniDropdownOpen ? "▴" : "▾"}
+                </span>
+              </button>
+              {isDezurniDropdownOpen && (
+                <div className="mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 max-h-96 text-fontColorGray flex flex-col">
+                  <div className="py-2 flex-1">
+                    {sortedDezurniCities.map((city, index) => (
+                      <div key={index}>
+                        <div className="flex items-center justify-between px-4 py-2 text-2xl text-fontColorGray">
+                          <span
+                            onClick={() => handleDezurniCitySelection({ target: { checked: !selectedDezurniCity } } as any, city)}
+                            className="cursor-pointer"
+                          >
+                            {city.charAt(0).toUpperCase() + city.slice(1)}
+                          </span>
+                          <input
+                            type="checkbox"
+                            checked={selectedDezurniCity === city}
+                            onChange={(e) => handleDezurniCitySelection(e, city)}
+                            className="ml-2 checkbox-custom"
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="w-full px-4 py-2 bg-white flex justify-end">
+                    <button
+                      onClick={handleShowDezurniVeterinarians}
+                      className="w-[175px] py-2 px-4 rounded-2xl bg-mainColorBlue bg-opacity-20 text-fontColorGray text-lg font-medium"
+                    >
+                      Prikaži
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -269,9 +267,10 @@ export default function Locations() {
         <div className="mt-8">
           <div className="bg-fontColorPurple">
             <h2 className="m-auto w-11/12 sm:w-3/4 py-8 sm:py-12 text-3xl sm:text-5xl text-white text-left sm:text-left mb-8">
-              Veterinarske ambulante u {selectedAreas.length > 0 ? selectedAreas.join(", ") : "default"}
+              Veterinarske ambulante
             </h2>
           </div>
+
           <div className="m-auto w-11/12 sm:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {selectedCity.split(", ").map((city, idx) => {
               const cityData = combinedVeterinariData[city];
@@ -281,6 +280,10 @@ export default function Locations() {
 
               return (
                 <div key={idx}>
+                  <h3 className="text-2xl text-fontColorPurple mb-4">
+                    Veterinarske ambulante u {city.charAt(0).toUpperCase() + city.slice(1)}
+                  </h3>
+
                   {areaData && areaData.length > 0 ? (
                     areaData.map((vet: Veterinarian, index: number) => (
                       <SaloniCard
@@ -292,7 +295,7 @@ export default function Locations() {
                       />
                     ))
                   ) : (
-                    <p>No data available for {city}</p>
+                    <p>No data available for {city.charAt(0).toUpperCase() + city.slice(1)}</p>
                   )}
                 </div>
               );
