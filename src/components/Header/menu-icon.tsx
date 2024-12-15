@@ -9,8 +9,8 @@ export default function MenuIcon() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="size-8"
-      >
+        className="size-8 stroke-activeLinkGold"
+        >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"

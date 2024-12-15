@@ -41,8 +41,8 @@ export default function PhoneHeader() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-10"
-            >
+              className="size-10 stroke-activeLinkGold"
+              >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
